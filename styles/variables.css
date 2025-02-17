@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #222;
+    --secondary-color: #0f743b;
+    --header-icon-color: rgb(241, 100, 30);
+    --header-hover: #ccebff;
+    --header-message: rgb(18, 40, 104);
+    --gray-color: #595959;
+    --font-family: "Inter", "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+}

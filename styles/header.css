@@ -1,0 +1,218 @@
+/* header style */
+header.container {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  column-gap: 18px;
+  row-gap: 4px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #0e0e0e2e;
+}
+.hide {
+  display: none;
+}
+/* logo */
+.logo-link {
+  margin-right: 6px;
+}
+.logo {
+  fill: var(--header-icon-color);
+  width: 80px;
+  min-width: 80px;
+  height: auto;
+  cursor: pointer;
+}
+
+/*styling part of seacrch and categories menu */
+.easy-access {
+  flex-grow: 2;
+  width: 100%;
+  order: 1;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+/* categories menu style */
+.categories-menu-button {
+  text-align: end;
+  font-size: 13px;
+  font-weight: 500;
+  height: 24px;
+  width: 24px;
+  background-image: url("../assets/icons/burgerSmall.svg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.categories-button-data {
+  display: none;
+}
+.categories-menu-button::before {
+  background-color: var(--header-hover);
+  width: calc(100% + 25px);
+  height: calc(100% + 25px);
+}
+
+/* styling search part */
+.search {
+  height: 48px;
+  border: 2px solid var(--primary-color);
+  border-radius: 35px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 5px;
+}
+input[name="search"] {
+  height: 100%;
+  border-radius: 35px;
+  flex-grow: 2;
+  padding: 9px 0px 9px 18px;
+  font-size: 1rem;
+  font-weight: 350;
+}
+input:focus {
+  outline: none;
+}
+
+.cancel-search {
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+.cancel-search svg {
+  width: 18px;
+  vertical-align: middle;
+}
+.cancel-search::before {
+  width: 100%;
+  height: 100%;
+  background-color: #e9e9e9;
+}
+
+.search-button {
+  width: 42px;
+  height: 100%;
+  position: relative;
+}
+
+.search-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--header-icon-color);
+  border-radius: 50%;
+  transform: scale(0.85);
+  transition: all 0.1s linear;
+  z-index: -1;
+}
+
+.search-button:hover::before {
+  transform: scale(1);
+  border-radius: 0 50% 50% 0;
+}
+
+.search-icon {
+  width: 24px;
+  fill: white;
+}
+
+/* navbar styles */
+nav {
+  max-width: 230px;
+  text-align: end;
+  flex-grow: 1;
+}
+nav svg {
+  width: 24px;
+  vertical-align: middle;
+}
+nav a {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+}
+nav a::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--header-hover);
+}
+
+nav a:hover svg {
+  fill: var(--header-message);
+}
+.button-data {
+  font-size: 0.8rem;
+  color: white;
+  background-color: var(--header-message);
+  padding: 12px;
+  position: absolute;
+  border-radius: 15%;
+  left: 50%;
+  top: calc(100% + 9px);
+  transform: translateX(-50%);
+  display: none;
+  line-height: normal;
+  z-index: 3;
+}
+nav a:hover .button-data {
+  display: block;
+}
+.button-data::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: inherit;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  transform-origin: center;
+}
+
+/* common hover effect */
+header .hover-effect::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.05s linear;
+}
+.hover-effect:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* media query */
+@media (min-width: 900px) {
+  .easy-access {
+    width: auto;
+    order: 0;
+  }
+  .categories-menu-button {
+    width: 95px;
+    height: 18px;
+    background-image: url("../assets/icons/burgerLarge.svg");
+    margin-right: 10px;
+  }
+  .categories-button-data {
+    display: inline;
+  }
+  header .categories-menu-button::before {
+    border-radius: 24px;
+    height: calc(100% + 18px);
+    width: calc(100% + 35px);
+    background-color: #e9e9e9;
+  }
+}

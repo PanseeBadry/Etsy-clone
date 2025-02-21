@@ -1,0 +1,16 @@
+{
+  "categories": [
+    { "id": 1, "name": "Jewelry" },
+    { "id": 2, "name": "Home & Living" },
+    { "id": 3, "name": "Art & Collectibles" },
+    { "id": 4, "name": "Clothing" },
+    { "id": 5, "name": "Craft Supplies & Tools" },
+    { "id": 6, "name": "Accessories" },
+    { "id": 7, "name": "Weddings" },
+    { "id": 8, "name": "Electronics & Accessories" },
+    { "id": 9, "name": "Bags & Purses" },
+    { "id": 10, "name": "Baby" },
+    { "id": 11, "name": "Books, Movies & Music" },
+    { "id": 12, "name": "Gifts" }
+  ]
+}

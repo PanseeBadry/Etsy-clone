@@ -20,9 +20,9 @@ a {
   cursor: pointer;
 }
 .container {
-  width: 100%;
   margin: 0 auto;
   padding: 0 0.8rem;
+  max-width: 1400px;
 }
 @media (min-width: 900px) {
   .container {

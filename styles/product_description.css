@@ -1,3 +1,5 @@
+@import url("global.css");
+@import url("header.css");
 :root {
   --gap: 10px;
   --border-radius: 7px;
@@ -64,7 +66,6 @@
   gap: var(--gap);
 }
 
-
 .slide-item {
   height: 60px;
   width: 60px;
@@ -111,7 +112,6 @@
   transition: all 0.2s;
 }
 
-
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -120,9 +120,9 @@
   height: 48px;
   background-color: white;
   border-radius: 50%;
-  box-shadow: 0px 1px 3px 0px #0000004d,0px 4px 8px 3px #00000026;
+  box-shadow: 0px 1px 3px 0px #0000004d, 0px 4px 8px 3px #00000026;
   cursor: pointer;
-  transition: all 0.2s ;
+  transition: all 0.2s;
 }
 
 .next-btn {
@@ -163,8 +163,9 @@
   padding: 9px;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 1px 3px 0px #0000004d,0px 4px 8px 3px #00000026;
-  transition: transform 0.01s cubic-bezier(0.345, 0.115, 0.135, 1.42), background-color 0.015s ease-out, box-shadow 0.2s ease-out;
+  box-shadow: 0px 1px 3px 0px #0000004d, 0px 4px 8px 3px #00000026;
+  transition: transform 0.01s cubic-bezier(0.345, 0.115, 0.135, 1.42),
+    background-color 0.015s ease-out, box-shadow 0.2s ease-out;
 }
 .favorite-btn svg {
   width: 23px;
@@ -177,7 +178,23 @@
 }
 
 .favorite-btn:hover {
-  box-shadow: 0px 1px 5px 0px #0000004d,0px 5px 20px 6px #00000026;
+  box-shadow: 0px 1px 5px 0px #0000004d, 0px 5px 20px 6px #00000026;
   transform: scale(1.03);
 }
 
+/* product reviews */
+.product-reviews .rev-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+}
+.product-reviews .star {
+  background-image: url("../assets/icons/star.svg");
+}
+.product-reviews .half-star {
+  background-image: url("../assets/icons/half-star.svg");
+}
+.product-reviews .half-star {
+  background-image: url("../assets/icons/empty-star.svg");
+}

@@ -5,23 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
     <title>Document</title>
 </head>
 <body>
-    <section class="filters">
-        <button class="filterbtn">
-            <i class="fa-solid fa-sliders"></i>All Filters
-        </button>
+    <div id="header-placeholder"></div>
 
-    </section>
-    <section class="product-section">
-        <div id="products-container">
+    <section class="products-page container" >
+        <section class="category-section">
+            <div class="category-container">
+                <div class="category-info">
+                    <p class="category-name">Accessories</p>
+                    <span class="category-description">Scarves, hats, and hair accessories that tie it all together</span>
+                </div>
+                <div class="sub-categories-container">
+                    <div class="sub-category-cards">
+                        <!-- <div href="#" class="sub-category-card">
+                            <a href="">
+                                <img class="sub-category-img" src="../assets/images/il_300x300.3427247756_e7k7.webp" alt="">
+                                <p class="sub-category-name">sub category name</p>
+                            </a>
+                        </div>
+                        <div class="sub-category-card">
+                            <a href="">
+                                <img class="sub-category-img" src="../assets/images/il_300x300.4088130142_hfpr.webp" alt="">
+                            <p class="sub-category-name">sub category name</p>
+                            </a>
+                        </div>
+                        <div class="sub-category-card">
+                            <a href="">
+                                <img class="sub-category-img" src="../assets/images/il_300x300.4202758602_dgnj.webp" alt="">
+                            <p class="sub-category-name">sub category name</p>
+                            </a>
+                        </div>
+                        <div class="sub-category-card">
+                            <a href="">
+                                <img class="sub-category-img" src="../assets/images/il_300x300.5558132829_ry9h.webp" alt="">
+                            <p class="sub-category-name">sub category name</p>
+                            </a>
+                        </div>
+                        <div class="sub-category-card">
+                            <a href="">
+                                <img class="sub-category-img" src="../assets/images/il_300x300.6021342607_lls5.webp" alt="">
+                            <p class="sub-category-name">sub category name</p>
+                            </a>
+                        </div>
+                        <div class="sub-category-card">
+                            <a href="">
+                                <img class="sub-category-img" src="../assets/images/il_300x300.6194644034_8rxd.webp" alt="">
+                            <p class="sub-category-name">sub category name</p>
+                            </a>
+                        </div> -->
+                        
+                        
+        
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="Show More" class="show-more-btn btn2">
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+        <section class="filter-section">
+            <button class="filter-btn">
+                <i class="fa-solid fa-sliders"></i>All Filters
+            </button>
+    
+        </section>
+        <section class="product-section">
+            <div id="products-container">
+                <div class="product-cards" id="product-cards">
+                    <!-- <div class="product-card">
+                        <img src=${} alt="" class="product-image">
+                        <div class="product-body">
+                            <i class="fa-regular fa-heart product-favorite"></i>
+                            <p class="product-name">product name</p>
+                            <div class="product-info">
+                                <span class="product-rating">product rate
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                
+                            </div>
+                            <span class="product-description">product seller</span>
+                            
+                            <p class="product-price"> product price</p>
+                            <button class="add-to-cart-btn">
+                                <i class="fa-solid fa-plus"></i>Add to cart
+                           </button>
+                           <button class="more-like-this-btn">More like this <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../assets/images/2.webp" alt="" class="product-image">
+                        <div class="product-body">
+                            <i class="fa-regular fa-heart product-favorite"></i>
+                            <p class="product-name">product name</p>
+                            <div class="product-info">
+                                <span class="product-rating">product rate
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="product-views">product views</span>
+                            </div>
+                            <span class="product-description">product seller</span>
+                            
+                            <p class="product-price"> product price</p>
+                            <button class="add-to-cart-btn">
+                                <i class="fa-solid fa-plus"></i>Add to cart
+                           </button>
+                           <button class="more-like-this-btn">More like this <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../assets/images/3.avif" alt="" class="product-image">
+                        <div class="product-body">
+                            <i class="fa-regular fa-heart product-favorite"></i>
+                            <p class="product-name">product name</p>
+                            <div class="product-info">
+                                <span class="product-rating">product rate
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="product-views">product views</span>
+                            </div>
+                            <span class="product-description">product seller</span>
+                            
+                            <p class="product-price"> product price</p>
+                            <button class="add-to-cart-btn">
+                                <i class="fa-solid fa-plus"></i>Add to cart
+                           </button>
+                           <button class="more-like-this-btn">More like this <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../assets/images/4.webp" alt="" class="product-image">
+                        <div class="product-body">
+                            <i class="fa-regular fa-heart product-favorite"></i>
+                            <p class="product-name">product name</p>
+                            <div class="product-info">
+                                <span class="product-rating">product rate
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="product-views">product views</span>
+                            </div>
+                            <span class="product-description">product seller</span>
+                            
+                            <p class="product-price"> product price</p>
+                            <button class="add-to-cart-btn">
+                                <i class="fa-solid fa-plus"></i>Add to cart
+                           </button>
+                           <button class="more-like-this-btn">More like this <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                 -->
+                
+                </div> 
+                
+            </div>  
+            <div class="btn">
+                <input type="button" value="Show More" class="show-more-btn btn1">
+            </div>  
+    
             
-        </div> 
-
-       <input type="button" value="Show More" class="show-more-btn">
+    
+        </section>
+            
+    
+        
 
     </section>
+    
+
+    
+   
+    <script>
+        fetch('../components/header.html')
+  .then(response => response.text())
+  .then(data => {
+     let tempDiv = document.createElement('div');
+    tempDiv.innerHTML = data;
+    let headerContent = tempDiv.querySelector('header');   
+    if (headerContent) {
+      document.getElementById('header-placeholder').innerHTML = headerContent.outerHTML;
+    } else {
+      console.error('Header tag not found in header.html');
+    }
+  })
+  .catch(error => console.error('Error loading header:', error));
+      </script>
     
 
     <script src="../scripts/pages/products.js"></script>

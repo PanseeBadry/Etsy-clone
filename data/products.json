@@ -3,7 +3,7 @@
     {
       "product_id": 1,
       "category_id": 12,
-      "subcategory_id": 303,
+      "subcategory_id": 302,
       "primary_image": "/assets/images/leatherWallet.png",
       "secondary_image": "gift_for_him_secondary.jpg",
       "current_price": 49.99,
@@ -15,7 +15,7 @@
     {
       "product_id": 2,
       "category_id": 12,
-      "subcategory_id": 305,
+      "subcategory_id": 301,
       "primary_image": "/assets/images/goldEarings.png",
       "secondary_image": "gift_for_her_secondary.jpg",
       "current_price": 39.99,
@@ -35,7 +35,142 @@
       "discount": "5%",
       "vendor": "Vendor C",
       "product_name": "Trendy Summer Hat"
+    },
+    {
+      "product_id": 4,
+      "category_id": 12,
+      "subcategory_id": 301,
+      "images": [
+        "/assets/images/woodCakeStand1.png",
+        "/assets/images/woodCakeStand2.png",
+        "/assets/images/woodCakeStand3.png",
+        "/assets/images/woodCakeStand4.png",
+        "/assets/images/woodCakeStand5.png",
+        "/assets/images/woodCakeStand6.png",
+        "/assets/images/woodCakeStand7.png",
+        "/assets/images/woodCakeStand8.png",
+        "/assets/images/woodCakeStand9.png",
+        "/assets/images/woodCakeStand10.png"
+      ],
+      "current_price": 186.0,
+      "discount": "0",
+      "vendor": "Vendor C",
+      "rating": "5",
+      "description": "Modern Wood Cake Stand Food Riser",
+      "product_name": "Cake Stands"
+    },
+    {
+      "product_id": 5,
+      "category_id": 12,
+      "subcategory_id": 302,
+      "images": [
+        "/assets/images/mug1.png",
+        "/assets/images/mug2.png",
+        "/assets/images/mug3.png",
+        "/assets/images/mug4.png",
+        "/assets/images/mug5.png",
+        "/assets/images/mug6.png",
+        "/assets/images/mug7.png",
+        "/assets/images/mug8.png",
+        "/assets/images/mug9.png",
+        "/assets/images/mug10.png"
+      ],
+      "current_price": 18.75,
+      "discount": "25",
+      "vendor": "Vendor D",
+      "rating": "5",
+      "description": "Espresso Cup, Leather Wrapped Espresso Cup, Housewarming, Coffee Lover, Birthday Gift, Third Anniversary, 3rd, Corporate Gift, Groomsmen",
+      "product_name": "Mugs"
+    },
+    {
+      "product_id": 6,
+      "category_id": 12,
+      "subcategory_id": 303,
+      "images": [
+        "/assets/images/digitalPortrait1.png",
+        "/assets/images/digitalPortrait2.png",
+        "/assets/images/digitalPortrait3.png",
+        "/assets/images/digitalPortrait4.png",
+        "/assets/images/digitalPortrait5.png",
+        "/assets/images/digitalPortrait6.png",
+        "/assets/images/digitalPortrait7.png",
+        "/assets/images/digitalPortrait8.png",
+        "/assets/images/digitalPortrait9.png",
+        "/assets/images/digitalPortrait10.png",
+        "/assets/images/digitalPortrait11.png"
+      ],
+      "current_price": 39.4,
+      "discount": "0",
+      "vendor": "Vendor A",
+      "rating": "5",
+      "description": "Custom Cartoon Portrait of Couple as Sentimental, Unique Valentines, Birthday Gift for Him, Her, Simple and Modern Wall Art, Digital File",
+      "product_name": "Digital"
+    },
+    {
+      "product_id": 7,
+      "category_id": 12,
+      "subcategory_id": 304,
+      "images": [
+        "/assets/images/sign1.png",
+        "/assets/images/sign2.png",
+        "/assets/images/sign3.png",
+        "/assets/images/sign4.png",
+        "/assets/images/sign5.png",
+        "/assets/images/sign6.png",
+        "/assets/images/sign7.png",
+        "/assets/images/sign8.png",
+        "/assets/images/sign9.png"
+      ],
+      "current_price": 25.99,
+      "discount": "0",
+      "vendor": "Vendor A",
+      "rating": "5",
+      "description": "Little Man Cave Sign, Little Babe Cave Sign, Boy Nursery Decor, Boys Room Decor, Playroom Sign, Safari Nursery, Kids Wall Art, Nursery Door",
+      "product_name": "Signs"
+    },
+    {
+      "product_id": 8,
+      "category_id": 12,
+      "subcategory_id": 305,
+      "images": [
+        "/assets/images/ring1.png",
+        "/assets/images/ring2.png",
+        "/assets/images/ring3.png",
+        "/assets/images/ring4.png",
+        "/assets/images/ring5.png",
+        "/assets/images/ring6.png",
+        "/assets/images/ring7.png",
+        "/assets/images/ring8.png",
+        "/assets/images/ring9.png",
+        "/assets/images/ring10.png"
+      ],
+      "current_price": 33.6,
+      "discount": "30",
+      "vendor": "Vendor B",
+      "rating": "5",
+      "description": "Mothers Ring 2, 3, 4 , 5 Stone, Birthstone Ring for Mom, Birthstone Jewelry, Personalized Ring, Personalized Jewelry, Gifts for Mom",
+      "product_name": "Multi-Stone Rings"
+    },
+    {
+      "product_id": 9,
+      "category_id": 12,
+      "subcategory_id": 306,
+      "images": [
+        "/assets/images/flower1.png",
+        "/assets/images/flower2.png",
+        "/assets/images/flower3.png",
+        "/assets/images/flower4.png",
+        "/assets/images/flower5.png",
+        "/assets/images/flower6.png",
+        "/assets/images/flower7.png",
+        "/assets/images/flower8.png"
+      ],
+      "current_price": 69.0,
+      "discount": "0",
+      "vendor": "Vendor C",
+      "rating": "4.5",
+      "description": "Fresh Flowers Elegant Valentine's Day Callie Flower Bouquet: Handcrafted Seasonal Floral Arrangement for Home Decor or Gifts",
+      "product_name": "Fresh Flower Arrangements"
     }
   ]
 }
-    

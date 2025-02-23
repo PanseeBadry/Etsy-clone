@@ -1,0 +1,115 @@
+{
+    "subcategories": [
+      { 
+        "id": 101, 
+        "category_id": 1, 
+        "name": "Watches", 
+        "image": "../assets/images/il_300x300.3427247756_e7k7.webp"
+       },
+      {
+        "id": 102,
+        "category_id": 1,
+        "name": "Rings",
+        "image": "../assets/images/il_300x300.4088130142_hfpr.webp"
+      },
+      {
+        "id": 103,
+        "category_id": 1,
+        "name": "Necklaces",
+        "image": "../assets/images/il_300x300.4202758602_dgnj.webp"
+      },
+      {
+        "id": 104,
+        "category_id": 1,
+        "name": "Earrings",
+        "image": "../assets/images/il_300x300.5558132829_ry9h.webp"
+      },
+      {
+        "id": 105,
+        "category_id": 1,
+        "name": "Bracelets",
+        "image": "../assets/images/il_300x300.6021342607_lls5.webp"
+      },
+      {
+        "id": 106,
+        "category_id": 1,
+        "name": "Jewelry Sets",
+        "image": "../assets/images/il_300x300.6194644034_8rxd.webp"
+      },
+  
+      {
+        "id": 201,
+        "category_id": 1,
+        "name": "Keychains & Lanyards",
+        "image": "keychains.jpg"
+      },
+      { "id": 202, "category_id": 6, "name": "Hats & Caps", "image": "hats.jpg" },
+      {
+        "id": 203,
+        "category_id": 6,
+        "name": "Scarves & Wraps",
+        "image": "scarves.jpg"
+      },
+      {
+        "id": 204,
+        "category_id": 6,
+        "name": "Hair Accessories",
+        "image": "hair_accessories.jpg"
+      },
+      {
+        "id": 205,
+        "category_id": 6,
+        "name": "Patches & Pins",
+        "image": "patches_pins.jpg"
+      },
+      {
+        "id": 206,
+        "category_id": 6,
+        "name": "Belts & Suspenders",
+        "image": "belts_suspenders.jpg"
+      },
+  
+      {
+        "id": 301,
+        "category_id": 12,
+        "name": "Baby Gifts",
+        "image": "/assets/images/baby-gifts.png"
+      },
+      {
+        "id": 302,
+        "category_id": 12,
+        "name": "Gifts for Friends",
+        "image": "gifts_for_friends.jpg"
+      },
+      {
+        "id": 303,
+        "category_id": 12,
+        "name": "Gifts for Him",
+        "image": "/assets/images/gifts-for-him.png"
+      },
+      {
+        "id": 304,
+        "category_id": 12,
+        "name": "Birthday Gifts",
+        "image": "/assets/images/birthday_gifts.png"
+      },
+      {
+        "id": 305,
+        "category_id": 12,
+        "name": "Gifts for Her",
+        "image": "/assets/images/gifts-for-her.png"
+      },
+      {
+        "id": 306,
+        "category_id": 12,
+        "name": "Gifts for Kids",
+        "image": "/assets/images/gifts-for-kids.png"
+      },
+      {
+        "id": 307,
+        "category_id": 12,
+        "name": "Engagement Gifts",
+        "image": "/assets/images/engagement-gifts.png"
+      }
+    ]
+  }

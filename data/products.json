@@ -52,7 +52,7 @@
         "/assets/images/woodCakeStand9.png",
         "/assets/images/woodCakeStand10.png"
       ],
-      "current_price": 186.00,
+      "current_price": 186.0,
       "discount": "0",
       "vendor": "Vendor C",
       "rating": "5",
@@ -99,7 +99,7 @@
         "/assets/images/digitalPortrait10.png",
         "/assets/images/digitalPortrait11.png"
       ],
-      "current_price": 39.40,
+      "current_price": 39.4,
       "discount": "0",
       "vendor": "Vendor A",
       "rating": "5",
@@ -144,7 +144,7 @@
         "/assets/images/ring9.png",
         "/assets/images/ring10.png"
       ],
-      "current_price": 33.60,
+      "current_price": 33.6,
       "discount": "30",
       "vendor": "Vendor B",
       "rating": "5",
@@ -165,7 +165,7 @@
         "/assets/images/flower7.png",
         "/assets/images/flower8.png"
       ],
-      "current_price": 69.00,
+      "current_price": 69.0,
       "discount": "0",
       "vendor": "Vendor C",
       "rating": "4.5",

@@ -21,11 +21,11 @@
 
 .product-imgs,
 .product-reviews {
-  width: calc(60%);
+  width: calc(65%);
 }
 
 .product-details {
-  width: calc(40% - var(--gap));
+  width: calc(35% - var(--gap));
 }
 
 @media (max-width: 899px) {
@@ -180,3 +180,4 @@
   box-shadow: 0px 1px 5px 0px #0000004d,0px 5px 20px 6px #00000026;
   transform: scale(1.03);
 }
+

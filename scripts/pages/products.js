@@ -1,5 +1,4 @@
-var categoryID =1; //initial value when reloading the page (from reem page) 
-
+var categoryID =1; 
 
 //containers 
 var productsContainer = document.getElementsByClassName('product-cards')[0];

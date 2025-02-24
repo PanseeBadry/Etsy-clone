@@ -1,110 +1,110 @@
 {
   "subcategories": [
-    { "id": 101, "category_id": 1, "name": "Watches", "image": "watches.jpg" },
+    { "id": 101, "category_id": 1, "name": "Watches", "image": "../assets/images/summerHats.png" },
     {
       "id": 102,
       "category_id": 1,
       "name": "Rings",
-      "image": "/assets/images/rings.png"
+      "image": "../assets/images/rings.png"
     },
     {
       "id": 103,
       "category_id": 1,
       "name": "Necklaces",
-      "image": "/assets/images/necklaces.pnj"
+      "image": "../assets/images/il_300x300.6194644034_8rxd.webp"
     },
     {
       "id": 104,
-      "category_id": 1,
+      "category_id": 10,
       "name": "Earrings",
-      "image": "earrings.jpg"
+      "image": "../assets/images/il_300x300.6021342607_lls5.webp"
     },
     {
       "id": 105,
-      "category_id": 1,
+      "category_id": 10,
       "name": "Bracelets",
-      "image": "bracelets.png"
+      "image": "../assets/images/il_300x300.5558132829_ry9h.webp"
     },
     {
       "id": 106,
-      "category_id": 1,
+      "category_id": 10,
       "name": "Jewelry Sets",
-      "image": "jewelry_sets.jpg"
+      "image": "../assets/images/il_300x300.4088130142_hfpr.webp"
     },
 
     {
       "id": 201,
-      "category_id": 6,
+      "category_id": 10,
       "name": "Keychains & Lanyards",
-      "image": "keychains.jpg"
+      "image": "../assets/images/il_300x300.3427247756_e7k7.webp"
     },
-    { "id": 202, "category_id": 6, "name": "Hats & Caps", "image": "hats.jpg" },
+    { "id": 202, "category_id": 6, "name": "Hats & Caps", "image": "../assets/images/12.avif" },
     {
       "id": 203,
       "category_id": 6,
       "name": "Scarves & Wraps",
-      "image": "scarves.jpg"
+      "image": "../assets/images/5.avif"
     },
     {
       "id": 204,
       "category_id": 6,
       "name": "Hair Accessories",
-      "image": "hair_accessories.jpg"
+      "image": "../assets/images/4.webp"
     },
     {
       "id": 205,
       "category_id": 6,
       "name": "Patches & Pins",
-      "image": "patches_pins.jpg"
+      "image": "../assets/images/7.avif"
     },
     {
       "id": 206,
       "category_id": 6,
       "name": "Belts & Suspenders",
-      "image": "belts_suspenders.jpg"
+      "image": "../assets/images/1.webp"
     },
 
     {
       "id": 301,
-      "category_id": 12,
+      "category_id": 6,
       "name": "Baby Gifts",
       "image": "/assets/images/baby-gifts.png"
     },
     {
       "id": 302,
-      "category_id": 12,
-      "name": "Gifts for Friends",
-      "image": "gifts_for_friends.jpg"
+      "category_id": 2,
+      "name": "Home decor",
+      "image": "../assets/images/h1.webp"
     },
     {
       "id": 303,
-      "category_id": 12,
-      "name": "Gifts for Him",
-      "image": "/assets/images/gifts-for-him.png"
+      "category_id": 2,
+      "name": "outdoors & gardening",
+      "image": "../assets/images/h2.webp"
     },
     {
       "id": 304,
-      "category_id": 12,
-      "name": "Birthday Gifts",
-      "image": "/assets/images/birthday_gifts.png"
+      "category_id": 2,
+      "name": "furniture",
+      "image": "../assets/images/h3.webp"
     },
     {
       "id": 305,
-      "category_id": 12,
-      "name": "Gifts for Her",
-      "image": "/assets/images/gifts-for-her.png"
+      "category_id": 2,
+      "name": "lighting",
+      "image": "../assets/images/h4.webp"
     },
     {
       "id": 306,
-      "category_id": 12,
-      "name": "Gifts for Kids",
-      "image": "/assets/images/gifts-for-kids.png"
+      "category_id": 2,
+      "name": "storage & organization",
+      "image": "../assets/images/h5.webp"
     },
     {
       "id": 307,
-      "category_id": 12,
-      "name": "Engagement Gifts",
-      "image": "/assets/images/engagement-gifts.png"
+      "category_id": 2,
+      "name": "Kitchen & dining",
+      "image": "../assets/images/h6.webp"
     }
   ]
 }

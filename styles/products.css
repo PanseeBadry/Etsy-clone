@@ -1,13 +1,12 @@
+@import url("global.css");
+@import url("header.css");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: sans-serif;
-  background-color: #f6f6f6;
-  color: #333;
-}
+
 .products-page {
   width: 97%;
   margin: auto;
@@ -97,7 +96,6 @@ body {
   background-color: #0e0e0e17;
   cursor: pointer;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
-  /* color: rgb(34, 34, 34); */
   color: black;
 }
 
@@ -125,6 +123,204 @@ body {
   /* background-color: rgb(226, 220, 208); */
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
+
+
+
+
+.filter-panel{
+    position: fixed;
+    top: 0;
+    left: -450px; 
+    width: 450px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: left 0.3s ease; 
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-panel.active {
+    left: 0;
+  }
+  .filter-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    background: transparent;
+    border: none;
+    line-height: 1;
+  }
+
+.filter-close:hover {
+    color: #000; 
+  }
+
+  .filter-panel h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 20px;
+    
+  }
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 30px;
+  overflow: hidden; 
+ width: 350px;
+ height: 30px;
+ transition: box-shadow 0.3s ease, transform 0.2s ease;
+ margin-left: 5px;
+}
+
+.select-wrapper select.cat-filter {
+  border: none;  
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: auto;
+  text-align: center;
+  outline: none;
+}
+
+.select-wrapper:hover{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+    transform: scale(1.01);
+}
+
+/* Custom arrow for the wrapper */
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: url("data:image/svg+xml;utf8,<svg fill='%23000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat center center;
+  background-size: 16px;
+}
+
+  .filter-content {
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px; 
+  }
+
+  .filter-group {
+    margin-bottom: 20px;
+  }
+
+  .filter-group h3 {
+    font-size: 14px;
+    font-weight:bold;
+    margin-bottom: 8px;
+  }
+
+  .filter-group p {
+    margin-left: 24px; 
+    font-size: 12px;
+    color: #777;
+    margin-top: 4px;
+  }
+
+  .price-range {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    margin-left: 24px; 
+  }
+
+  .price-range input {
+    width: 60px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .filter-group select {
+    margin-left: 24px;
+    margin-top: 6px;
+    padding: 4px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .filter-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cancel-btn,
+  .apply-btn {
+    padding: 10px 20px;    
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
+  }
+
+  .cancel-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    width: 200px;
+  }
+
+  .apply-btn {
+    background-color:black;
+    color: #fff;
+    border: 1px solid black;
+    width :200px;
+    margin-left: 10px;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, 0.4);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    
+    z-index: 998;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  .filter-group label {
+    margin-left: 24px;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .filter-group input[type="radio"],.filter-group input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+  }
 .fa-sliders {
   margin-right: 5px;
 }
@@ -301,6 +497,8 @@ body {
     transform: translateX(8px);
 } */
 
+
+/* mediium screen done  */
 @media (min-width: 678px) and (max-width: 1200px) {
   .sub-categories-container {
     width: 100%;

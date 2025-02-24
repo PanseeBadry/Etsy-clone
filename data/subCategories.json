@@ -1,6 +1,6 @@
 {
   "subcategories": [
-    { "id": 101, "category_id": 1, "name": "Watches", "image": "../assets/images/summerHats.png" },
+    { "id": 101, "category_id": 1, "name": "Watches", "image": "watches.jpg" },
     {
       "id": 102,
       "category_id": 1,
@@ -31,7 +31,6 @@
       "name": "Jewelry Sets",
       "image": "../assets/images/il_300x300.4088130142_hfpr.webp"
     },
-
     {
       "id": 201,
       "category_id": 10,
@@ -39,6 +38,12 @@
       "image": "../assets/images/il_300x300.3427247756_e7k7.webp"
     },
     { "id": 202, "category_id": 6, "name": "Hats & Caps", "image": "../assets/images/12.avif" },
+    {
+      "id": 202,
+      "category_id": 6,
+      "name": "Hats & Caps",
+      "image": "hats.jpg"
+    },
     {
       "id": 203,
       "category_id": 6,
@@ -63,6 +68,11 @@
       "name": "Belts & Suspenders",
       "image": "../assets/images/1.webp"
     },
+
+
+
+
+
 
     {
       "id": 301,
@@ -105,6 +115,34 @@
       "category_id": 2,
       "name": "Kitchen & dining",
       "image": "../assets/images/h6.webp"
+    
+    },
+    {
+      "id": 302,
+      "category_id": 12,
+      "name": "Gifts for Him"
+    },
+    {
+      "id": 303,
+      "category_id": 12,
+      "name": "Engagement Gifts"
+
+    },
+    {
+      "id": 304,
+      "category_id": 12,
+      "name": "Baby Gifts"
+    },
+    {
+      "id": 305,
+      "category_id": 12,
+      "name": "Personalized jewelry"
+
+    },
+    {
+      "id": 306,
+      "category_id": 12,
+      "name": "Flower gifts"
     }
   ]
 }

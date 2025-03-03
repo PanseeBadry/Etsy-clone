@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../styles/products.css">
-    <link rel="stylesheet" href="../styles/header.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
+
     <title>Document</title>
 </head>
 <body>
@@ -14,66 +13,145 @@
 
     <section class="products-page container" >
         <section class="category-section">
-            <div class="category-container">
-                <div class="category-info">
-                    <p class="category-name">Accessories</p>
-                    <span class="category-description">Scarves, hats, and hair accessories that tie it all together</span>
-                </div>
+            <div class="category-container">  </div>              
                 <div class="sub-categories-container">
-                    <div class="sub-category-cards">
-                        <!-- <div href="#" class="sub-category-card">
-                            <a href="">
-                                <img class="sub-category-img" src="../assets/images/il_300x300.3427247756_e7k7.webp" alt="">
-                                <p class="sub-category-name">sub category name</p>
-                            </a>
-                        </div>
-                        <div class="sub-category-card">
-                            <a href="">
-                                <img class="sub-category-img" src="../assets/images/il_300x300.4088130142_hfpr.webp" alt="">
-                            <p class="sub-category-name">sub category name</p>
-                            </a>
-                        </div>
-                        <div class="sub-category-card">
-                            <a href="">
-                                <img class="sub-category-img" src="../assets/images/il_300x300.4202758602_dgnj.webp" alt="">
-                            <p class="sub-category-name">sub category name</p>
-                            </a>
-                        </div>
-                        <div class="sub-category-card">
-                            <a href="">
-                                <img class="sub-category-img" src="../assets/images/il_300x300.5558132829_ry9h.webp" alt="">
-                            <p class="sub-category-name">sub category name</p>
-                            </a>
-                        </div>
-                        <div class="sub-category-card">
-                            <a href="">
-                                <img class="sub-category-img" src="../assets/images/il_300x300.6021342607_lls5.webp" alt="">
-                            <p class="sub-category-name">sub category name</p>
-                            </a>
-                        </div>
-                        <div class="sub-category-card">
-                            <a href="">
-                                <img class="sub-category-img" src="../assets/images/il_300x300.6194644034_8rxd.webp" alt="">
-                            <p class="sub-category-name">sub category name</p>
-                            </a>
-                        </div> -->
-                        
-                        
-        
+                    <div class="sub-category-cards">                       
                     </div>
                     <div class="btn">
-                        <input type="button" value="Show More" class="show-more-btn btn2">
-                    </div>
-                    
+                        <input type="button" value="Show More" class="show-more-btn sbtn2">
+                    </div>                    
                 </div>
-            </div>
+            
 
         </section>
         <section class="filter-section">
+            <div id="pageOverlay" class="overlay"></div>
             <button class="filter-btn">
                 <i class="fa-solid fa-sliders"></i>All Filters
             </button>
+            <div class="filter-panel">
+                <div  class="filter-close">&times;</div>
+                <h2>Filters</h2>
+            
+                <div class="filter-content">
+                    <!-- categories section -->
+                  <div class="filter-group">
+                    <h3>Filter by category</h3>
+                    <div class="select-wrapper">
+                        <select class="cat-filter" name="" id="">
+                            <option value="" disabled selected>Select a category</option>
+                            <option catId="1"> Jewelry </option>
+                            <option catId="2"> Home & Living </option>
+                            <option catId="3"> Art & Collectibles  </option>
+                            <option catId="4"> Clothing </option>
+                            <option catId="5"> Craft Supplies & Tools </option>
+                            <option catId="6"> Accessories </option>
+                            <option catId="7"> Bags & Purses </option>
+                            <option catId="8"> Baby </option>
+                            <option catId="9"> Books, Movies & Music </option>
     
+                        </select>
+
+                    </div>
+                   
+                    
+
+                  </div>
+            
+                  <!-- special offers section-->
+                  <div class="filter-group">
+                    <h3>Special offers</h3>
+                    <label><input type="checkbox" /> FREE shipping</label>
+                    <label><input type="checkbox" /> On sale</label>
+                  </div>
+            
+                  <!-- shop location section-->
+                  <div class="filter-group">
+                    <h3>Shop Location</h3>
+                    <label><input type="radio"/> Anywhere</label>
+                    <label><input type="radio"/> Egypt</label>
+                    <label><input type="radio"/> Custom</label>
+                  </div>
+            
+                  <!-- item format section-->
+                  <div class="filter-group">
+                    <h3>Item format</h3>
+                    <label><input type="radio"/> All</label>
+                    <label><input type="radio"/> Physical items</label>
+                    <label><input type="radio"/> Digital downloads</label>
+                  </div>
+            
+                  <!-- etsy’s best section-->
+                  <div class="filter-group">
+                    <h3>Etsy's best</h3>
+                    <label><input type="checkbox" /> Etsy's Pick</label>
+                    <label style="color: #9560b8; display: inline-flex; align-items: center; gap: 4px;"><input type="checkbox" /> Star Seller <svg xmlns="http://www.w3.org/2000/svg"  style="width: 20px; height:20px; fill:#9560b8;"  viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m20.902 7.09-2.317-1.332-1.341-2.303H14.56L12.122 2 9.805 3.333H7.122L5.78 5.758 3.341 7.09v2.667L2 12.06l1.341 2.303v2.666l2.318 1.334L7 20.667h2.683L12 22l2.317-1.333H17l1.342-2.303 2.317-1.334v-2.666L22 12.06l-1.341-2.303V7.09zm-6.097 6.062.732 3.515-.488.363-2.927-1.818-3.049 1.697-.488-.363.732-3.516-2.56-2.181.121-.485 3.537-.243 1.341-3.273h.488l1.341 3.273 3.537.243.122.484z"></path></svg></label>
+                    <p>Consistently earned 5-star reviews, shipped orders on time, and replied quickly to messages</p>
+                  </div>
+            
+                  <!-- ready to ship in section-->
+                  <div class="filter-group">
+                    <h3>Ready to ship in</h3>
+                    <label><input type="radio"/> 1 day</label>
+                    <label><input type="radio"/> 1–3 days</label>
+                  </div>
+            
+                  <!-- price section-->
+                  <div class="filter-group">
+                    <h3>Price ($)</h3>
+                    <label><input type="radio"/> Any price</label>
+                    <label><input type="radio"/> Under USD 25</label>
+                    <label><input type="radio"/> USD 25 to USD 50</label>
+                    <label><input type="radio"/> USD 50 to USD 100</label>
+                    <label><input type="radio"/> Over USD 100</label>
+                    <label><input type="radio"/> Custom</label>
+                    <div class="price-range">
+                      <input type="text" placeholder="Low" />
+                      <span>to</span>
+                      <input type="text" placeholder="High" />
+                    </div>
+                  </div>
+            
+                  <!-- color section-->
+                  <div class="filter-group">
+                    <h3>Color</h3>
+                    <label><input type="checkbox" /> Beige</label>
+                    <label><input type="checkbox" /> Black</label>
+                    <label><input type="checkbox" /> Blue</label>
+                  </div>
+            
+                  <!-- item type -->
+                  <div class="filter-group">
+                    <h3>Item type</h3>
+                    <label><input type="radio"/> All items</label>
+                    <label><input type="radio"/> Vintage</label>
+                  </div>
+            
+                  <!-- ordering options -->
+                  <div class="filter-group">
+                    <h3>Ordering options</h3>
+                    <label><input type="checkbox" /> Accepts Etsy gift cards</label>
+                    <label><input type="checkbox" /> Can be gift-wrapped</label>
+                    <label><input type="checkbox" /> Customizable</label>
+                  </div>
+            
+                  <!-- ship to -->
+                  <div class="filter-group">
+                    <h3>Ship to</h3>
+                    <select>
+                      <option>Egypt</option>
+                      <option>United States</option>
+                      <option>Canada</option>
+                      <option>United Kingdom</option>
+                    </select>
+                  </div>
+                </div> 
+            
+                <div class="filter-footer">
+                  <button  class="cancel-btn">Cancel</button>
+                  <button  class="apply-btn">Apply</button>
+                </div>
+              </div>
         </section>
         <section class="product-section">
             <div id="products-container">
@@ -181,7 +259,7 @@
                 
             </div>  
             <div class="btn">
-                <input type="button" value="Show More" class="show-more-btn btn1">
+                <input type="button" value="Show More" class="show-more-btn sbtn1">
             </div>  
     
             
@@ -197,19 +275,16 @@
     
    
     <script>
-        fetch('../components/header.html')
-  .then(response => response.text())
-  .then(data => {
-     let tempDiv = document.createElement('div');
-    tempDiv.innerHTML = data;
-    let headerContent = tempDiv.querySelector('header');   
-    if (headerContent) {
-      document.getElementById('header-placeholder').innerHTML = headerContent.outerHTML;
-    } else {
-      console.error('Header tag not found in header.html');
-    }
-  })
-  .catch(error => console.error('Error loading header:', error));
+        fetch("../components/header.html")
+  .then((response) => response.text())
+  .then((data) => {
+    const body = document.body;
+    body.insertAdjacentHTML("afterbegin", data);
+    const head = document.getElementsByTagName("head")[0];
+    let headerScript = document.createElement("script");
+    headerScript.src = "../scripts/components/header.js";
+    head.appendChild(headerScript);
+  });
       </script>
     
 

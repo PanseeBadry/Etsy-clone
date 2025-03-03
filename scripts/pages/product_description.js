@@ -42,7 +42,7 @@ function goNext() {
 updateProductImages(slideIndex);
 
 // reviews section
-let prodId = 7;
+let prodId = 5;
 
 // render part
 fetch("../../data/products.json")

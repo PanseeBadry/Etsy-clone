@@ -1,16 +1,14 @@
 {
   "categories": [
-    { "id": 1, "name": "Jewelry" },
-    { "id": 2, "name": "Home & Living" },
-    { "id": 3, "name": "Art & Collectibles" },
-    { "id": 4, "name": "Clothing" },
-    { "id": 5, "name": "Craft Supplies & Tools" },
-    { "id": 6, "name": "Accessories" },
-    { "id": 7, "name": "Weddings" },
-    { "id": 8, "name": "Electronics & Accessories" },
-    { "id": 9, "name": "Bags & Purses" },
-    { "id": 10, "name": "Baby" },
-    { "id": 11, "name": "Books, Movies & Music" },
-    { "id": 12, "name": "Gifts" }
+    { "id": 1, "name": "Jewelry", "description": "Rings, earrings and necklaces to instantly raise your jewelry-box game"},
+    { "id": 2, "name": "Home & Living","description":"Kitchen and dining, storage solutions, rugs, lighting, wall decor, and furniture—everything you need to make your home yours" },
+    { "id": 3, "name": "Art & Collectibles","description":"Custom artwork, portraits, and totally original paintings and prints to turn your home into a gallery" },
+    { "id": 4, "name": "Clothing","description":"Clothing for adults and kids—we got you covered" },
+    { "id": 5, "name": "Craft Supplies & Tools","description":"" },
+    { "id": 6, "name": "Accessories","description":"Scarves, hats, and hair accessories that tie it all together" },
+    { "id": 7, "name": "Bags & Purses","description":"Handbags, clutches and totes to carry it all with you" },    
+    { "id": 8, "name": "Baby" ,"description":"baby cloths description " },
+    { "id": 9, "name": "Books, Movies & Music","description":"Celebrate creativity with planners, journals, and blank notebooks, or music, movies, and books" },
+    { "id": 10, "name": "Gifts","description":"gifts" }
   ]
 }

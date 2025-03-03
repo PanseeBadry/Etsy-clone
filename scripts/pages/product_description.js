@@ -1,3 +1,5 @@
+import ReviewsSection from "../sections/review.js";
+
 fetch("../../components/header.html")
   .then((response) => response.text())
   .then((data) => {
@@ -38,3 +40,17 @@ function goNext() {
 }
 
 updateProductImages(slideIndex);
+
+// reviews section
+let prodId = 7;
+
+// render part
+fetch("../../data/products.json")
+  .then((data) => data.json())
+  .then((products) => {
+    let product = products.products.filter(
+      (prod) => prod.product_id == prodId
+    )[0];
+
+    ReviewsSection.initialize(product.rating, product.reviews);
+  });

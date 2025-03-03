@@ -9,7 +9,11 @@
       type="text/css"
       href="../styles/product_description.css"
     />
-    <script src="../scripts/pages/product_description.js" defer></script>
+    <script
+      src="../scripts/pages/product_description.js"
+      defer
+      type="module"
+    ></script>
     <title>Document</title>
   </head>
 
@@ -170,17 +174,67 @@
           </button>
         </div>
         <div class="product product-details">det</div>
-        <div class="product product-reviews">
+
+        <!-- products reviews part -->
+        <div id="product-reviews" class="product product-reviews">
           <header>
-            <span class="review-count">47</span>
-            <span>reviews</span>
-            <div class="rev-stars">
-              <span class="star rev-icon"></span>
-              <span class="star rev-icon"></span>
-              <span class="star rev-icon"></span>
-              <span class="star rev-icon"></span>
-            </div>
+            <h2>
+              <span id="review-count" class="review-count"></span> reviews
+            </h2>
+            <div id="main-prod-rating" class="rev-stars"></div>
           </header>
+          <div class="reviews-sort" tabindex="0">
+            <button class="comments-sort-button">
+              <span class="choice">Sort by: Suggested</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <polygon points="16.5 10 12 16 7.5 10 16.5 10"></polygon>
+              </svg>
+            </button>
+            <div class="sort-menu hide" tabindex="0">
+              <ul>
+                <li data-page="1" id="0" class="sort-item checked">
+                  Suggested
+                </li>
+                <li data-page="1" id="1" class="sort-item">Most recent</li>
+                <li data-page="1" id="2" class="sort-item">Highest Rating</li>
+                <li data-page="1" id="3" class="sort-item">Lowest Rating</li>
+              </ul>
+            </div>
+          </div>
+          <div id="reviews-cards"></div>
+          <div class="pagination">
+            <button id="prev-page" data-page="0" class="page-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M6.7 11.3L6 12l.7.7 4 4c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4L9.8 13H17c.6 0 1-.4 1-1s-.4-1-1-1H9.8l2.3-2.3c.2-.2.3-.4.3-.7 0-.6-.4-1-1-1-.3 0-.5.1-.7.3l-4 4z"
+                ></path>
+              </svg>
+            </button>
+            <div id="page-buttons" class="pagination"></div>
+
+            <button id="next-page" data-page="2" class="page-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M17.3 12.7l.7-.7-.7-.7-4-4c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l2.3 2.3H7c-.6 0-1 .4-1 1s.4 1 1 1h7.2l-2.3 2.3c-.2.2-.3.4-.3.7 0 .6.4 1 1 1 .3 0 .5-.1.7-.3l4-4z"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>

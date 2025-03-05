@@ -1,38 +1,65 @@
+main,
 .categories {
     position: relative;
 }
 
+.menu-overlay {
+    opacity: 0;
+    z-index: 800;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0e0e0e91;
+    transition: opacity .18s ease-out;
+}
+
+.categories-arrow {
+    opacity: 0;
+    z-index: 900;
+    position: absolute;
+    top: 39px;
+    left: calc(50% - 6px);
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    border-top: 1px solid #0e0e0e2e;
+    border-left: 1px solid #0e0e0e2e;
+    transition: opacity .1s ease-out;
+}
+
+.categories-arrow.active,
+.menu-overlay.active {
+    opacity: 1;
+}
+
 .categories-on-air {
-    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 900;
     display: flex;
     position: absolute;
     top: 45px;
     left: -125px;
-
     width: 888px;
-    max-height: 734px;
-    padding-bottom: 12px;
-    
+    max-height: 85vh;
+    height: 720px;
     border-radius: 12px;
     border: 1px #0e0e0e2e solid;
     background-color: #fff;
     overflow: hidden;
-    
+    transform-origin: 0 0;
+    transform: scaleX(.5) scaleY(.2) perspective(1px);
     transition: opacity .18s ease-out, box-shadow .18s cubic-bezier(.175, .885, .4, 1.1), transform .18s cubic-bezier(.175, .885, .4, 1.1), visibility .18s linear;
+}
 
-    /* opacity: 0; */
-    /* visibility: hidden; */
-    /* transform-origin: 0 0; */
-    /* transform: scaleX(.5) scaleY(.2) perspective(1px); */
-
-    /* opacity: 1; */
-    /* visibility: visible; */
-    /* transform: scaleX(1) scaleY(1) perspective(1px); */
+.categories-on-air.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1) scaleY(1) perspective(1px);
     box-shadow: 0px 1px 3px 0px #0000004d, 0px 4px 8px 3px #00000026;
-    /* text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    min-width: 0 !important;
-    overflow: hidden !important; */
 }
 
 .categories-menu {
@@ -86,7 +113,8 @@
     height: 24px;
 }
 
-.categories-menu button:hover {
+.categories-menu button:hover,
+.categories-menu button.active {
     background: #eaeaea;
 }
 
@@ -96,10 +124,8 @@
     border-left: 1px solid #eaeaea;
     font-weight: 700;
     line-height: 1.4;
-
     padding: 36px 0 36px 36px;
 }
-
 
 .sub-categories {
     display: flex;
@@ -112,7 +138,7 @@
     max-width: calc(100% / 3);
     padding: 18px 30px 18px 0;
     height: 100%;
-    object-fit: cover;   
+    object-fit: cover;
 }
 
 .sub-category-card-padding {
@@ -121,10 +147,6 @@
     z-index: 1000;
     max-width: 100%;
     position: relative;
-    /* border-radius: 12px; */
-    
-    /* background-color: #ff0000; */
-
 }
 
 .sub-category-card-padding::before {
@@ -132,15 +154,13 @@
     position: absolute;
     opacity: 0;
     box-shadow: 0px 1px 3px 0px #0000004d, 0px 4px 8px 3px #00000026;
-    /* -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; */
     z-index: -1;
     top: 3px;
     bottom: 3px;
     left: 3px;
     right: 3px;
     border-radius: 18px;
-    transition: opacity .15s ease-out, top .2s cubic-bezier(.345,.115,.135,1.42), bottom .15s ease-out, left .2s cubic-bezier(.345,.115,.135,1.42), right .15s ease-out;
+    transition: opacity .15s ease-out, top .2s cubic-bezier(.345, .115, .135, 1.42), bottom .15s ease-out, left .2s cubic-bezier(.345, .115, .135, 1.42), right .15s ease-out;
 }
 
 .sub-category-card-padding:hover::before {
@@ -162,7 +182,6 @@
     text-align: left;
     cursor: pointer;
     transition: border-radius .2s ease-out;
-
 }
 
 .sub-category-card-content img {
@@ -178,19 +197,16 @@
 .sub-category-card-content p {
     max-width: 156px;
     color: #222;
-    /* letter-spacing: 0.1299px; */
+    letter-spacing: 0.14px;
     font-size: 12.99px;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 1.4;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
     min-width: 0;
     overflow: hidden;
-    padding-top: 6px;
 }
-
-
 
 .all-categories {
     position: relative;
@@ -215,4 +231,3 @@
 .all-categories:hover::after {
     transform: translateX(4px);
 }
-

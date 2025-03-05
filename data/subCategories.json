@@ -72,10 +72,9 @@
       "name": "Belts & Suspenders",
       "image": "../assets/images/1.webp"
     },
-
     {
       "id": 301,
-      "category_id": 12,
+      "category_id": 10,
       "name": "Gifts for Her"
     },
     {
@@ -116,27 +115,27 @@
     },
     {
       "id": 302,
-      "category_id": 12,
+      "category_id": 10,
       "name": "Gifts for Him"
     },
     {
       "id": 303,
-      "category_id": 12,
+      "category_id": 10,
       "name": "Engagement Gifts"
     },
     {
       "id": 304,
-      "category_id": 12,
+      "category_id": 10,
       "name": "Baby Gifts"
     },
     {
       "id": 305,
-      "category_id": 12,
+      "category_id": 10,
       "name": "Personalized jewelry"
     },
     {
       "id": 306,
-      "category_id": 12,
+      "category_id": 10,
       "name": "Flower gifts"
     }
   ]

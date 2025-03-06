@@ -6,10 +6,13 @@ const menuOverlay = document.querySelector(".menu-overlay");
 const categoriesArrow = document.querySelector(".categories-arrow");
 const subCategoriesContainer = document.querySelector(".sub-categories");
 const allCategories = document.querySelector(".all-categories");
+const closeBtn = document.querySelector(".close-button");
 
 // Variables to store categories and subcategories data
 let categories = [];
 let subCategories = [];
+let activeBtn = null;
+
 
 /**
  * Fetches categories and subcategories data from JSON files.
@@ -26,62 +29,125 @@ async function fetchCategoriesData() {
     subCategories = subCategoriesData.subCategories;
 
     // Display the categories menu after data is loaded
-    showCategoriesMenu(categories, subCategories);
+    initializeCategoriesMenu();
   } catch (error) {
     console.error("Error loading data:", error);
   }
 }
 
+
+
 /**
  * Renders the categories menu by creating buttons for each category.
  * Sets the first category as the default active category.
- *
- * @param {Array} categories - List of category objects.
- * @param {Array} subCategories - List of subcategory objects.
  */
-function showCategoriesMenu(categories, subCategories) {
-  // Populate the categories menu with buttons for each category
+function initializeCategoriesMenu() {
   categoriesMenu.innerHTML = categories
     .map((category) => `<button data-category-id="${category.id}">${category.name}</button>`)
     .join("");
 
-  // Set the first category as active by default
-  setActiveCategory(categories[0].id, subCategories);
+  activeBtn = document.querySelector(`[data-category-id="${categories[0].id}"]`);
+  activeBtn.classList.add("active");
+  allCategories.textContent = `All ${activeBtn.textContent}`;
+  displaySubCategoriesGrid(categories[0].id);
 }
+
+
 
 /**
  * Updates the UI to highlight the selected category and display its subcategories.
  *
  * @param {number|string} categoryID - The ID of the selected category.
- * @param {Array} subCategories - List of subcategory objects.
  */
-function setActiveCategory(categoryID, subCategories) {
-  // Find the button corresponding to the selected category
-  const activeBtn = document.querySelector(`[data-category-id="${categoryID}"]`);
-
-  // Remove the "active" class from all category buttons
+function setActiveCategory(categoryID) {
   document.querySelectorAll(".categories-menu button").forEach((btn) => btn.classList.remove("active"));
-
-  // Add the "active" class to the selected category button
+  if (activeBtn) activeBtn.classList.remove("rotated");
+  activeBtn = document.querySelector(`[data-category-id="${categoryID}"]`);
   activeBtn.classList.add("active");
-
-  // Update the heading to indicate the selected category
   allCategories.textContent = `All ${activeBtn.textContent}`;
 
-  // Filter subcategories based on the selected category and render them
   subCategoriesContainer.innerHTML = subCategories
     .filter((sub) => sub.category_id == categoryID)
     .map(sub => `
-      <div class="sub-category-card" data-category-id="${categoryID}" data-sub-category-id="${sub.id}">
-        <div class="sub-category-card-padding">
-          <div class="sub-category-card-content">
-            <img src="${sub.image}" alt="${sub.name}">
-            <p>${sub.name}</p>
-          </div>
+    <div class="sub-category-card" data-category-id="${categoryID}" data-sub-category-id="${sub.id}">
+      <div class="sub-category-card-padding">
+        <div class="sub-category-card-content">
+          <img src="${sub.image}" alt="${sub.name}">
+          <p>${sub.name}</p>
         </div>
       </div>
-    `).join('\n');
+    </div>
+  `).join('');
+
+  window.innerWidth < 920 ? displaySubCategoriesList(categoryID) : '';
 }
+
+
+
+/**
+ * Display subcategories as a list for small screens.
+ * @param {number} categoryID - The selected category ID.
+ */
+function displaySubCategoriesList(categoryID) {
+  // activeBtn = document.querySelector(`[data-category-id="${categoryID}"]`);
+  const existingList = document.querySelector(".sub-category-list");
+
+  if (existingList) {
+    if (existingList.getAttribute("data-category-id") === categoryID) {
+      activeBtn.classList.remove("rotated");
+      existingList.remove();
+      return;
+    } else {
+      existingList.remove();
+    }
+  }
+
+  const subCategoryList = document.createElement("div");
+  subCategoryList.classList.add("sub-category-list");
+  subCategoryList.setAttribute("data-category-id", categoryID);
+  subCategoryList.innerHTML = subCategories
+    .filter((sub) => sub.category_id == categoryID)
+    .map((sub) => `<div class="sub-category-item">${sub.name}</div>`)
+    .join("");
+
+  activeBtn.insertAdjacentElement("afterend", subCategoryList);
+  activeBtn.classList.add("rotated");
+}
+
+
+
+/**
+ * Handles category selection on hover (large screens).
+ * Handles category selection on click (small screens).
+ */
+function catBtnHandler(event) {
+  const categoryBtn = event.target.closest("button");
+
+  if (categoryBtn) setActiveCategory(categoryBtn.getAttribute("data-category-id"));
+}
+
+
+
+/**
+ * Adjust menu behavior based on screen size and retain active category.
+ */
+function updateMenuBehavior() {
+  const screenWidth = window.innerWidth;
+
+  categoriesMenu.removeEventListener("mouseover", catBtnHandler);
+  categoriesMenu.removeEventListener("click", catBtnHandler);
+  if (screenWidth > 919) {
+    categoriesMenu.addEventListener("mouseover", catBtnHandler);
+    const existingList = document.querySelector(".sub-category-list");
+    if (existingList) {
+      existingList.remove();
+    }
+  } else {
+    categoriesMenu.addEventListener("click", catBtnHandler);
+  }
+}
+
+
 
 /**
  * Toggles the visibility of the categories menu.
@@ -103,25 +169,20 @@ function toggleMenu(forceClose = false) {
   }
 }
 
-// Event listener for toggling the categories menu on button click
-categoriesBtn.addEventListener("click", () => toggleMenu());
 
-// Event listener to close the menu when clicking outside of it
+
+// Event Listeners
+categoriesBtn.addEventListener("click", () => toggleMenu());
+closeBtn.addEventListener("click", () => toggleMenu());
 document.addEventListener("click", (event) => {
   if (!categoriesContainer.contains(event.target) && !categoriesBtn.contains(event.target)) {
     toggleMenu(true);
   }
 });
+window.addEventListener("resize", updateMenuBehavior);
 
-/**
- * Handles category selection on hover.
- * When a category button is hovered over, its subcategories are displayed.
- */
-categoriesMenu.addEventListener("mouseover", (event) => {
-  const categoryBtn = event.target.closest("button");
 
-  if (categoryBtn) setActiveCategory(categoryBtn.getAttribute("data-category-id"), subCategories);
-});
 
-// Fetch and display categories data when the page loads
+// Initialize script
 fetchCategoriesData();
+updateMenuBehavior();

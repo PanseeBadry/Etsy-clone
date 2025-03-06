@@ -49,7 +49,7 @@ function initializeCategoriesMenu() {
   activeBtn = document.querySelector(`[data-category-id="${categories[0].id}"]`);
   activeBtn.classList.add("active");
   allCategories.textContent = `All ${activeBtn.textContent}`;
-  displaySubCategoriesGrid(categories[0].id);
+  setActiveCategory(categories[0].id);
 }
 
 

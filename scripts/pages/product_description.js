@@ -9,6 +9,9 @@ fetch("../../components/header.html")
     let headerScript = document.createElement("script");
     headerScript.src = "../scripts/components/header.js";
     head.appendChild(headerScript);
+    let CategoriesScript = document.createElement("script");
+    CategoriesScript.src = "/scripts/components/categories.js";
+    head.appendChild(CategoriesScript);
   });
 
 let slideIndex = 0;
@@ -19,8 +22,8 @@ function updateProductImages() {
     slideIndex > images.length - 1
       ? 0
       : slideIndex < 0
-      ? images.length - 1
-      : slideIndex;
+        ? images.length - 1
+        : slideIndex;
   slideShow.innerHTML = images[slideIndex].outerHTML;
   images[slideIndex].classList.add("active-slide");
 }

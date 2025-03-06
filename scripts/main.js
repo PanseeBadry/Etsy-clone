@@ -8,7 +8,7 @@ fetch("../components/header.html")
     headerScript.src = "./scripts/components/header.js";
     head.appendChild(headerScript);
     let CategoriesScript = document.createElement("script");
-    CategoriesScript.src = "./scripts/components/categories.js";
+    CategoriesScript.src = "/scripts/components/categories.js";
     head.appendChild(CategoriesScript);
   });
 

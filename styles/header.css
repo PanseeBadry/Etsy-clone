@@ -1,5 +1,5 @@
 /* header style */
-body > header .container {
+header .container {
   display: flex;
   align-items: center;
   padding-top: 20px;
@@ -9,7 +9,7 @@ body > header .container {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-body > header {
+header {
   border-bottom: 2px solid #0e0e0e2e;
 }
 .hide {

@@ -4,7 +4,7 @@ Promise.all([
 ])
     .then(([subCategoriesData, productsData]) => {
         let giftsCards = document.querySelector(".gifts-cards");
-        let subCategories = subCategoriesData.subCategories.filter((sub) => sub.category_id === 12);
+        let subCategories = subCategoriesData.subCategories.filter((sub) => sub.category_id === 10);
         let products = productsData.products.filter((prod) => prod.category_id === 12 && prod.rating >= 4.5);
 
         for (let i = 0; i < subCategories.length; i++) {

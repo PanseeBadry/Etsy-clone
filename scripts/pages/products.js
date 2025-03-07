@@ -67,7 +67,7 @@ function fetchSubCategoriesData(){
         displayInitialItems(subCategories , 6);
         
         // if(showMoreBtn2){
-            // showMoreBtn2.replaceWith(showMoreBtn2.cloneNode(true));
+            showMoreBtn2.replaceWith(showMoreBtn2.cloneNode(true));
             showMoreBtn2 = document.getElementsByClassName('sbtn2')[0]; 
             showMoreBtn2.addEventListener("click", () => {
             if (showMoreBtn2.value == "Show More") {
@@ -95,7 +95,7 @@ function fetchProductsData(){
         }
         displayInitialItems(products , 4);
         // if(showMoreBtn1){
-            // showMoreBtn1.replaceWith(showMoreBtn1.cloneNode(true));
+            showMoreBtn1.replaceWith(showMoreBtn1.cloneNode(true));
             showMoreBtn1 = document.getElementsByClassName('sbtn1')[0]; 
             showMoreBtn1.addEventListener("click", () => {
             if (showMoreBtn1.value == "Show More") {

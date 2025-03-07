@@ -1,6 +1,6 @@
 {
   "subcategories": [
-    { "id": 101, "category_id": 1, "name": "Watches", "image": "watches.jpg" },
+    { "id": 101, "category_id": 1, "name": "Watches", "image": "../assets/images/10.avif" },
     {
       "id": 102,
       "category_id": 1,
@@ -42,7 +42,7 @@
       "id": 202,
       "category_id": 6,
       "name": "Hats & Caps",
-      "image": "hats.jpg"
+      "image": "../assets/images/11.avif"
     },
     {
       "id": 203,

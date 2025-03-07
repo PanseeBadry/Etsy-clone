@@ -2,7 +2,7 @@
   "products": [
     {
       "product_id": 1,
-      "category_id": 12,
+      "category_id": 1,
       "subcategory_id": 302,
       "primary_image": "/assets/images/leatherWallet.png",
       "secondary_image": "gift_for_him_secondary.jpg",
@@ -14,7 +14,7 @@
     },
     {
       "product_id": 2,
-      "category_id": 12,
+      "category_id": 1,
       "subcategory_id": 301,
       "primary_image": "/assets/images/goldEarings.png",
       "secondary_image": "gift_for_her_secondary.jpg",

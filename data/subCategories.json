@@ -1,6 +1,11 @@
 {
-  "subcategories": [
-    { "id": 101, "category_id": 1, "name": "Watches", "image": "../assets/images/10.avif" },
+  "subCategories": [
+    {
+      "id": 101,
+      "category_id": 1,
+      "name": "Watches",
+      "image": "../assets/images/watch.avif"
+    },
     {
       "id": 102,
       "category_id": 1,
@@ -11,138 +16,236 @@
       "id": 103,
       "category_id": 1,
       "name": "Necklaces",
-      "image": "../assets/images/il_300x300.6194644034_8rxd.webp"
+      "image": "../assets/images/necklace.avif"
     },
     {
       "id": 104,
-      "category_id": 10,
+      "category_id": 1,
       "name": "Earrings",
-      "image": "../assets/images/il_300x300.6021342607_lls5.webp"
+      "image": "../assets/images/earing.avif"
     },
     {
       "id": 105,
-      "category_id": 10,
+      "category_id": 1,
       "name": "Bracelets",
-      "image": "../assets/images/il_300x300.5558132829_ry9h.webp"
+      "image": "../assets/images/bracelets.png"
     },
     {
       "id": 106,
-      "category_id": 10,
+      "category_id": 1,
       "name": "Jewelry Sets",
       "image": "../assets/images/il_300x300.4088130142_hfpr.webp"
     },
     {
       "id": 201,
-      "category_id": 10,
-      "name": "Keychains & Lanyards",
-      "image": "../assets/images/il_300x300.3427247756_e7k7.webp"
-    },
-    { "id": 202, "category_id": 6, "name": "Hats & Caps", "image": "../assets/images/12.avif" },
-    {
-      "id": 202,
-      "category_id": 6,
-      "name": "Hats & Caps",
-      "image": "../assets/images/11.avif"
-    },
-    {
-      "id": 203,
-      "category_id": 6,
-      "name": "Scarves & Wraps",
-      "image": "../assets/images/5.avif"
-    },
-    {
-      "id": 204,
-      "category_id": 6,
-      "name": "Hair Accessories",
-      "image": "../assets/images/4.webp"
-    },
-    {
-      "id": 205,
-      "category_id": 6,
-      "name": "Patches & Pins",
-      "image": "../assets/images/7.avif"
-    },
-    {
-      "id": 206,
-      "category_id": 6,
-      "name": "Belts & Suspenders",
-      "image": "../assets/images/1.webp"
-    },
-
-
-
-
-
-
-    {
-      "id": 301,
-      "category_id": 6,
-      "name": "Baby Gifts",
-      "image": "/assets/images/baby-gifts.png"
-    },
-    {
-      "id": 302,
       "category_id": 2,
       "name": "Home decor",
       "image": "../assets/images/h1.webp"
     },
     {
-      "id": 303,
+      "id": 202,
       "category_id": 2,
       "name": "outdoors & gardening",
       "image": "../assets/images/h2.webp"
     },
     {
-      "id": 304,
+      "id": 203,
       "category_id": 2,
       "name": "furniture",
       "image": "../assets/images/h3.webp"
     },
     {
-      "id": 305,
+      "id": 204,
       "category_id": 2,
-      "name": "lighting",
+      "name": "Bathroom",
       "image": "../assets/images/h4.webp"
     },
     {
-      "id": 306,
+      "id": 205,
       "category_id": 2,
       "name": "storage & organization",
       "image": "../assets/images/h5.webp"
     },
     {
-      "id": 307,
+      "id": 206,
       "category_id": 2,
-      "name": "Kitchen & dining",
+      "name": "lighting",
       "image": "../assets/images/h6.webp"
-    
+    },
+    {
+      "id": 301,
+      "category_id": 3,
+      "name": "painting",
+      "image": "../assets/images/p1.avif"
     },
     {
       "id": 302,
-      "category_id": 12,
-      "name": "Gifts for Him"
+      "category_id": 3,
+      "name": "prints",
+      "image": "../assets/images/p2.avif"
     },
     {
       "id": 303,
-      "category_id": 12,
-      "name": "Engagement Gifts"
-
+      "category_id": 3,
+      "name": "sculpture",
+      "image": "../assets/images/p3.avif"
     },
     {
       "id": 304,
-      "category_id": 12,
-      "name": "Baby Gifts"
+      "category_id": 3,
+      "name": "Fine Arts Ceramics",
+      "image": "../assets/images/p4.avif"
     },
     {
       "id": 305,
-      "category_id": 12,
-      "name": "Personalized jewelry"
-
+      "category_id": 3,
+      "name": "Glass Art",
+      "image": "../assets/images/p5.avif"
     },
     {
       "id": 306,
-      "category_id": 12,
-      "name": "Flower gifts"
+      "category_id": 3,
+      "name": "Drawing & Illustration",
+      "image": "../assets/images/p6.avif"
+    },
+    {
+      "id": 307,
+      "category_id": 3,
+      "name": "Collectibles",
+      "image": "../assets/images/p7.avif"
+    },
+    {
+      "id": 401,
+      "category_id": 4,
+      "name": "Women's Clothings",
+      "image": "../assets/images/c1.webp"
+    },
+    {
+      "id": 402,
+      "category_id": 4,
+      "name": "Men's Clothings",
+      "image": "../assets/images/c2.webp"
+    },
+    {
+      "id": 403,
+      "category_id": 4,
+      "name": "Girl's Clothings",
+      "image": "../assets/images/c3.webp"
+    },
+    {
+      "id": 404,
+      "category_id": 4,
+      "name": "Gender Neutral Adult Clothings",
+      "image": "../assets/images/c4.webp"
+    },
+    {
+      "id": 405,
+      "category_id": 4,
+      "name": "Boys Clothings",
+      "image": "../assets/images/c5.webp"
+    },
+    {
+      "id": 501,
+      "category_id": 5,
+      "name": "Home & Hobby",
+      "image": "../assets/images/cs1.webp"
+    },
+    {
+      "id": 502,
+      "category_id": 5,
+      "name": "Sewing & Fiber",
+      "image": "../assets/images/cs2.avif"
+    },
+    {
+      "id": 503,
+      "category_id": 5,
+      "name": "Jewlery & Beauty",
+      "image": "../assets/images/cs3.webp"
+    },
+    {
+      "id": 504,
+      "category_id": 5,
+      "name": "Visual Arts",
+      "image": "../assets/images/cs4.webp"
+    },
+    {
+      "id": 505,
+      "category_id": 5,
+      "name": "sculpting & Forming",
+      "image": "../assets/images/cs5.avif"
+    },
+    {
+      "id": 506,
+      "category_id": 5,
+      "name": "Paper & Party & Kids",
+      "image": "../assets/images/cs6.avif"
+    },
+    {
+      "id": 601,
+      "category_id": 6,
+      "name": "Keychains & Lanyards",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 602,
+      "category_id": 6,
+      "name": "Hats & Caps",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 603,
+      "category_id": 6,
+      "name": "Scarves & Wraps",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 604,
+      "category_id": 6,
+      "name": "Hair Accessories",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 701,
+      "category_id": 7,
+      "name": "Hand Bags",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 702,
+      "category_id": 7,
+      "name": "Totes",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 703,
+      "category_id": 7,
+      "name": "Backpacks",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 704,
+      "category_id": 7,
+      "name": "Wallets & Money Clips",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 705,
+      "category_id": 7,
+      "name": "Luggage & Travel",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 706,
+      "category_id": 7,
+      "name": "sculpting & Forming",
+      "image": "../assets/images/h6.webp"
+    },
+    {
+      "id": 707,
+      "category_id": 7,
+      "name": "Messenger Bags",
+      "image": "../assets/images/h6.webp"
     }
+
   ]
 }

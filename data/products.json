@@ -1,278 +1,12 @@
 {
   "products": [
     {
+      "free_shipping": true,
       "product_id": 1,
       "category_id": 1,
-      "subcategory_id": 302,
-      "primary_image": "/assets/images/leatherWallet.png",
-      "secondary_image": "gift_for_him_secondary.jpg",
-      "current_price": 49.99,
-      "discount": "10%",
-      "rating": "3",
-      "vendor": "Vendor A",
-      "product_name": "Classic Leather Wallet"
-    },
-    {
-      "product_id": 2,
-      "category_id": 1,
-      "subcategory_id": 301,
-      "primary_image": "/assets/images/goldEarings.png",
-      "secondary_image": "gift_for_her_secondary.jpg",
-      "current_price": 39.99,
-      "discount": "15%",
-      "vendor": "Vendor B",
-      "rating": "4",
-      "product_name": "Gold tone stud earings",
-      "free_shipping": true
-    },
-    {
-      "product_id": 3,
-      "category_id": 1,
-      "subcategory_id": 1,
-      "primary_image": "/assets/images/summerHats.png",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat",
-      "free_shipping":true
-    },
-    {
-      "product_id": 4,
-      "category_id": 10,
-      "subcategory_id": 1,
-      "primary_image": "../assets/images/1.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 5,
-      "category_id": 10,
-      "subcategory_id": 1,
-      "primary_image": "../assets/images/2.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 6,
-      "category_id": 10,
-      "subcategory_id": 202,
-      "primary_image": "/assets/images/3.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 7,
-      "category_id": 10,
-      "subcategory_id": 202,
-      "primary_image": "/assets/images/4.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 8,
-      "category_id": 10,
-      "subcategory_id": 202,
-      "primary_image": "/assets/images/5.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 9,
-      "category_id": 10,
-      "subcategory_id": 202,
-      "primary_image": "/assets/images/6.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 10,
-      "category_id": 10,
-      "subcategory_id": 202,
-      "primary_image": "/assets/images/7.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 11,
-      "category_id": 10,
-      "subcategory_id": 202,
-      "primary_image": "/assets/images/8.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 12,
-      "category_id": 10,
-      "subcategory_id": 202,
-      "primary_image": "/assets/images/9.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 13,
-      "category_id": 6,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/a1.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 14,
-      "category_id": 6,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/a2.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 14,
-      "category_id": 6,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/a3.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 14,
-      "category_id": 6,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/a4.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 15,
-      "category_id": 6,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/a5.avif",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 15,
-      "category_id": 2,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/h21.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 15,
-      "category_id": 2,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/h22.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-
-    {
-      "product_id": 15,
-      "category_id": 2,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/h23.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 15,
-      "category_id": 2,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/h24.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 15,
-      "category_id": 2,
-      "subcategory_id": 202,
-      "primary_image": "../assets/images/h25.webp",
-      "secondary_image": "accessory_hat_secondary.jpg",
-      "current_price": 24.99,
-      "rating": "4",
-      "discount": "5%",
-      "vendor": "Vendor C",
-      "product_name": "Trendy Summer Hat"
-    },
-    {
-      "product_id": 4,
-      "category_id": 12,
-      "subcategory_id": 301,
+      "subcategory_id": 101,
       "images": [
-        "/assets/images/woodCakeStand1.png",
+        "/assets/images/1.webp",
         "/assets/images/woodCakeStand2.png",
         "/assets/images/woodCakeStand3.png",
         "/assets/images/woodCakeStand4.png",
@@ -288,14 +22,378 @@
       "vendor": "Vendor C",
       "rating": "5",
       "description": "Modern Wood Cake Stand Food Riser",
-      "product_name": "Cake Stands"
+      "product_name": "Cake Stands",
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Absolutely love these cake stands! They add a modern touch to my kitchen and elevate my desserts.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Alice Johnson",
+            "date": "2025-02-22"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Absolutely perfect! The cake stands are both stylish and highly functional.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Julia Roberts",
+            "date": "2025-01-28"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3.5,
+          "review": "Very sturdy and stylish, though shipping took a bit longer than expected.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Bob Smith",
+            "date": "2025-02-20"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 3,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Excellent quality and design—perfect for my home bakery. Highly satisfied with the purchase.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Charlie Brown",
+            "date": "2025-02-18"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Beautiful and modern design. These cake stands truly enhance my dining presentation.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Diana Prince",
+            "date": "2025-02-15"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Good quality product, though I expected a slightly more premium finish. Overall, a solid purchase.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ethan Hunt",
+            "date": "2025-02-10"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 4,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Sturdy, attractive, and exactly as described. I am very pleased with my new cake stands.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Fiona Gallagher",
+            "date": "2025-02-08"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3,
+          "review": "Decent product but not as impressive as I had hoped. The quality is average overall.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "George Lucas",
+            "date": "2025-02-05"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 3,
+            "shipping": 3,
+            "customer_service": 3
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Exceeds expectations! The design is sleek and the build quality is impressive.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Hannah Montana",
+            "date": "2025-02-03"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Good product overall. Shipping could be improved, but the cake stands are worth it.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ian Malcolm",
+            "date": "2025-01-30"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+
+        {
+          "rating": 5,
+          "review": "High quality and modern design that really elevates my dessert presentation.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Kevin Durant",
+            "date": "2025-01-25"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Well-made and attractive, though shipping was a bit slower than I expected.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Laura Palmer",
+            "date": "2025-01-22"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 3,
+          "review": "The product is okay, but I was disappointed with the customer service.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Michael Scott",
+            "date": "2025-01-20"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 3,
+            "shipping": 2,
+            "customer_service": 3
+          }
+        },
+        {
+          "rating": 5,
+          "review": "These cake stands are a work of art! They add elegance to any occasion.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Nina Simone",
+            "date": "2025-01-18"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Elegance and functionality combined perfectly. I'm very happy with my purchase.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Oscar Wilde",
+            "date": "2025-01-15"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Nice design overall, though I had some minor issues with the packaging upon arrival.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Pam Beesly",
+            "date": "2025-01-12"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Impressive quality and design. A great addition to my kitchen decor.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Quincy Jones",
+            "date": "2025-01-10"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "I love this product! The modern design fits perfectly with my dining table setup.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Rachel Green",
+            "date": "2025-01-08"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Good quality cake stands, though I wish the finish was a bit smoother.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Steve Rogers",
+            "date": "2025-01-05"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 4,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Innovative design and excellent build quality. Definitely worth the price.",
+          "purchased_item": {
+            "name": "Cake Stands",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Tony Stark",
+            "date": "2025-01-03"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        }
+      ]
     },
     {
-      "product_id": 5,
-      "category_id": 12,
-      "subcategory_id": 302,
+      "free_shipping": false,
+      "product_id": 2,
+      "category_id": 1,
+      "subcategory_id": 101,
       "images": [
-        "/assets/images/mug1.png",
+        "/assets/images/2.webp",
         "/assets/images/mug2.png",
         "/assets/images/mug3.png",
         "/assets/images/mug4.png",
@@ -311,12 +409,249 @@
       "vendor": "Vendor D",
       "rating": "5",
       "description": "Espresso Cup, Leather Wrapped Espresso Cup, Housewarming, Coffee Lover, Birthday Gift, Third Anniversary, 3rd, Corporate Gift, Groomsmen",
-      "product_name": "Mugs"
+      "product_name": "Mugs",
+      "reviews": [
+        {
+          "rating": 4.5,
+          "review": "Absolutely love this mug! The leather wrap adds a stylish touch and keeps my coffee warm for longer.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Emily Johnson",
+            "date": "2025-02-20"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 4,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "This mug is fantastic! It's stylish, well-made, and perfect for my morning coffee.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Daniel Smith",
+            "date": "2025-02-18"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3.5,
+          "review": "Nice cup, but I wish the leather wrap was removable for easier cleaning.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Sophia Martinez",
+            "date": "2025-02-15"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 3,
+            "shipping": 4,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Great quality, but it's a little smaller than I expected.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Michael Brown",
+            "date": "2025-02-10"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 4.5,
+          "review": "Beautiful craftsmanship! It looks elegant on my coffee table.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Olivia Taylor",
+            "date": "2025-02-08"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 4,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 2.5,
+          "review": "Not what I expected. The leather wrap was a little loose and felt cheap.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "James Wilson",
+            "date": "2025-02-05"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 2,
+            "shipping": 5,
+            "customer_service": 3
+          }
+        },
+        {
+          "rating": 5,
+          "review": "The perfect gift for coffee lovers! My friend was thrilled to receive this.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Sophia Roberts",
+            "date": "2025-02-02"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Good quality, but a little overpriced for what it is.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Liam Jackson",
+            "date": "2025-01-29"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 4,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 3,
+          "review": "Decent mug but nothing special. Expected better material for the price.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Emma Davis",
+            "date": "2025-01-25"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 3,
+            "shipping": 5,
+            "customer_service": 3
+          }
+        },
+        {
+          "rating": 5,
+          "review": "One of the best mugs I’ve ever owned! Feels solid and looks premium.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Noah Harris",
+            "date": "2025-01-22"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4.5,
+          "review": "I love it! The handle could be slightly bigger, but overall a great purchase.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Lucas Carter",
+            "date": "2025-01-18"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 2,
+          "review": "Disappointed. The cup was smaller than described, and the leather smelled strange.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ella Scott",
+            "date": "2025-01-15"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 2,
+            "shipping": 5,
+            "customer_service": 3
+          }
+        },
+        {
+          "rating": 5,
+          "review": "This has become my favorite espresso cup! Highly recommend to coffee lovers.",
+          "purchased_item": {
+            "name": "Espresso Cup, Leather Wrapped Espresso Cup",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Benjamin Adams",
+            "date": "2025-01-12"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        }
+      ]
     },
     {
-      "product_id": 6,
-      "category_id": 12,
-      "subcategory_id": 303,
+      "free_shipping": true,
+      "product_id": 3,
+      "category_id": 1,
+      "subcategory_id": 101,
       "images": [
         "/assets/images/digitalPortrait1.png",
         "/assets/images/digitalPortrait2.png",
@@ -335,12 +670,141 @@
       "vendor": "Vendor A",
       "rating": "5",
       "description": "Custom Cartoon Portrait of Couple as Sentimental, Unique Valentines, Birthday Gift for Him, Her, Simple and Modern Wall Art, Digital File",
-      "product_name": "Digital"
+      "product_name": "Digital",
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Absolutely stunning portrait! The details were spot on, and it made for a perfect anniversary gift. The artist captured us beautifully.",
+          "purchased_item": {
+            "name": "Digital Cartoon Portrait",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Emma Carter",
+            "date": "2025-02-20"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "I love how this turned out! It was a birthday gift for my boyfriend, and he was amazed. Quick turnaround and excellent quality.",
+          "purchased_item": {
+            "name": "Digital Cartoon Portrait",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Sophia Martinez",
+            "date": "2025-02-18"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "The portrait was amazing, but the colors were slightly different from what I expected. Still, it made a fantastic gift!",
+          "purchased_item": {
+            "name": "Digital Cartoon Portrait",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Daniel Reed",
+            "date": "2025-02-15"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Absolutely worth every penny! The artwork was delivered quickly, and the seller was very responsive to my requests.",
+          "purchased_item": {
+            "name": "Digital Cartoon Portrait",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Olivia Bennett",
+            "date": "2025-02-12"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Such a unique and personal gift! My wife loved it, and we printed it for our living room. Highly recommend!",
+          "purchased_item": {
+            "name": "Digital Cartoon Portrait",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Michael Harris",
+            "date": "2025-02-10"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Great quality and fast delivery, but I wish there were more customization options. Still very happy with my purchase!",
+          "purchased_item": {
+            "name": "Digital Cartoon Portrait",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Liam Cooper",
+            "date": "2025-02-08"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Superb work! The details, colors, and overall style were just perfect. Can't wait to order another one!",
+          "purchased_item": {
+            "name": "Digital Cartoon Portrait",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Chloe Richardson",
+            "date": "2025-02-05"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        }
+      ]
     },
     {
-      "product_id": 7,
-      "category_id": 12,
-      "subcategory_id": 304,
+      "free_shipping": false,
+      "product_id": 4,
+      "category_id": 1,
+      "subcategory_id": 101,
       "images": [
         "/assets/images/sign1.png",
         "/assets/images/sign2.png",
@@ -357,12 +821,447 @@
       "vendor": "Vendor A",
       "rating": "5",
       "description": "Little Man Cave Sign, Little Babe Cave Sign, Boy Nursery Decor, Boys Room Decor, Playroom Sign, Safari Nursery, Kids Wall Art, Nursery Door",
-      "product_name": "Signs"
+      "product_name": "Signs",
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Superb work! The details, colors, and overall style were just perfect. Can't wait to order another one!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Chloe Richardson",
+            "date": "2025-02-05"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Great quality, but I expected a slightly larger size.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Daniel Brooks",
+            "date": "2025-02-10"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Beautiful craftsmanship, looks amazing in my son's nursery!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Sophia Turner",
+            "date": "2025-01-28"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 4,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Exactly what I was looking for! The design is adorable.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Lucas Adams",
+            "date": "2025-02-15"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3,
+          "review": "Nice sign, but the packaging was slightly damaged when delivered.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Emma Carter",
+            "date": "2025-01-30"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 2,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Absolutely love it! Looks even better in person.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Jacob Mitchell",
+            "date": "2025-02-08"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Well-made and stylish. Just wish it arrived a bit sooner.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Olivia Harper",
+            "date": "2025-01-25"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Perfect addition to our playroom. Very satisfied!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ethan Reynolds",
+            "date": "2025-02-12"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Super cute and well-crafted. Worth every penny!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ava Scott",
+            "date": "2025-02-02"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Great product, but the shipping took a bit longer than expected.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Liam Bennett",
+            "date": "2025-01-27"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Such a cute design! My son loves it!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Mia Walker",
+            "date": "2025-02-06"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Superb work! The details, colors, and overall style were just perfect. Can't wait to order another one!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Chloe Richardson",
+            "date": "2025-02-05"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Great quality, but I expected a slightly larger size.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Daniel Brooks",
+            "date": "2025-02-10"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Beautiful craftsmanship, looks amazing in my son's nursery!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Sophia Turner",
+            "date": "2025-01-28"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 4,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Exactly what I was looking for! The design is adorable.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Lucas Adams",
+            "date": "2025-02-15"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3,
+          "review": "Nice sign, but the packaging was slightly damaged when delivered.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Emma Carter",
+            "date": "2025-01-30"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 2,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Absolutely love it! Looks even better in person.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Jacob Mitchell",
+            "date": "2025-02-08"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Well-made and stylish. Just wish it arrived a bit sooner.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Olivia Harper",
+            "date": "2025-01-25"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Perfect addition to our playroom. Very satisfied!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ethan Reynolds",
+            "date": "2025-02-12"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Super cute and well-crafted. Worth every penny!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ava Scott",
+            "date": "2025-02-02"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Great product, but the shipping took a bit longer than expected.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Liam Bennett",
+            "date": "2025-01-27"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Such a cute design! My son loves it!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Mia Walker",
+            "date": "2025-02-06"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3,
+          "review": "Decent quality but the frame was a bit wobbly.",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Noah Jenkins",
+            "date": "2025-02-11"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 3,
+            "shipping": 4,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Very happy with my purchase, will buy again!",
+          "purchased_item": {
+            "name": "Signs",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Grace Miller",
+            "date": "2025-02-14"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        }
+      ]
     },
     {
-      "product_id": 8,
-      "category_id": 12,
-      "subcategory_id": 305,
+      "free_shipping": false,
+      "product_id": 5,
+      "category_id": 1,
+      "subcategory_id": 102,
       "images": [
         "/assets/images/ring1.png",
         "/assets/images/ring2.png",
@@ -380,12 +1279,249 @@
       "vendor": "Vendor B",
       "rating": "5",
       "description": "Mothers Ring 2, 3, 4 , 5 Stone, Birthstone Ring for Mom, Birthstone Jewelry, Personalized Ring, Personalized Jewelry, Gifts for Mom",
-      "product_name": "Multi-Stone Rings"
+      "product_name": "Multi-Stone Rings",
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Absolutely stunning! The birthstones are beautifully set, and the ring looks even better in person.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Sophia Carter",
+            "date": "2025-02-05"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Very elegant! The ring is perfect, but I wish the stones were a bit larger.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "James Wright",
+            "date": "2025-02-10"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "This ring made the perfect gift for my mom. She loved the personalized touch!",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Emily Harris",
+            "date": "2025-01-28"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 4,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "So pretty and comfortable to wear. I love how delicate yet durable it is.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Oliver Martinez",
+            "date": "2025-02-15"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3,
+          "review": "Nice design, but the ring size was slightly off. Had to get it resized.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ava Nelson",
+            "date": "2025-01-30"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 2,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Exceeded my expectations! The birthstones are vibrant, and the engraving is perfect.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Benjamin Clark",
+            "date": "2025-02-08"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Lovely ring! The personalization is a great touch, though shipping took a little longer than expected.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Charlotte Lee",
+            "date": "2025-01-25"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Such a meaningful and beautiful piece. My wife loved it!",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "William Robinson",
+            "date": "2025-02-12"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Amazing craftsmanship! The stones are securely set, and the metal is high quality.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Isabella Hall",
+            "date": "2025-02-02"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Very nice ring, though I wish there were more customization options for the band style.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Liam Turner",
+            "date": "2025-01-27"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 3,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "I adore this ring! It represents my family beautifully.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Mia Gonzalez",
+            "date": "2025-02-06"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3,
+          "review": "Decent ring, but the stones were a bit smaller than I expected.",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Noah Walker",
+            "date": "2025-02-11"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 3,
+            "shipping": 4,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Such a unique and sentimental piece. I wear it every day!",
+          "purchased_item": {
+            "name": "Multi-Stone Rings",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Grace Thompson",
+            "date": "2025-02-14"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        }
+      ]
     },
     {
-      "product_id": 9,
-      "category_id": 12,
-      "subcategory_id": 306,
+      "free_shipping": true,
+      "product_id": 6,
+      "category_id": 1,
+      "subcategory_id": 102,
       "images": [
         "/assets/images/flower1.png",
         "/assets/images/flower2.png",
@@ -401,7 +1537,498 @@
       "vendor": "Vendor C",
       "rating": "4.5",
       "description": "Fresh Flowers Elegant Valentine's Day Callie Flower Bouquet: Handcrafted Seasonal Floral Arrangement for Home Decor or Gifts",
-      "product_name": "Fresh Flower Arrangements"
+      "product_name": "Fresh Flower Arrangements",
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Absolutely gorgeous bouquet! The flowers were fresh and smelled amazing.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Emma Williams",
+            "date": "2025-02-10"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Very pretty arrangement, but a couple of flowers wilted sooner than expected.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Liam Johnson",
+            "date": "2025-02-08"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Perfect gift for Valentine's Day! My wife loved them.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Noah Brown",
+            "date": "2025-02-14"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 3,
+          "review": "Nice bouquet, but not as full as the pictures showed.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Olivia Davis",
+            "date": "2025-02-07"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 3,
+            "shipping": 4,
+            "customer_service": 4
+          }
+        },
+        {
+          "rating": 5,
+          "review": "Exceeded expectations! The flowers were vibrant and lasted over a week.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Sophia Martinez",
+            "date": "2025-02-11"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "Very well arranged and fresh, but I wish there were more roses included.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "James Anderson",
+            "date": "2025-02-12"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 5,
+          "review": "These flowers brightened up my home beautifully! Will order again.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Isabella Wilson",
+            "date": "2025-02-09"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 2,
+          "review": "The flowers were fresh, but the bouquet arrived later than expected.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Ethan Thomas",
+            "date": "2025-02-06"
+          },
+          "recommendation": false,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 2,
+            "customer_service": 3
+          }
+        },
+        {
+          "rating": 5,
+          "review": "The flowers were well-packaged and smelled amazing. Highly recommended!",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Mia Harris",
+            "date": "2025-02-13"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 5,
+            "shipping": 5,
+            "customer_service": 5
+          }
+        },
+        {
+          "rating": 4,
+          "review": "The flowers were fresh and lovely, but the arrangement wasn't as neat as shown.",
+          "purchased_item": {
+            "name": "Fresh Flower Arrangements",
+            "link": "URL_HERE"
+          },
+          "reviewer": {
+            "name": "Mason Clark",
+            "date": "2025-02-15"
+          },
+          "recommendation": true,
+          "ratings": {
+            "item_quality": 4,
+            "shipping": 5,
+            "customer_service": 4
+          }
+        }
+      ]
+    },
+    {
+      "product_id": 7,
+      "category_id": 1,
+      "subcategory_id": 102,
+      "images": ["/assets/images/leatherWallet.png"],
+      "current_price": 49.99,
+      "discount": "10%",
+      "rating": "3",
+      "vendor": "Vendor A",
+      "product_name": "Classic Leather Wallet",
+      "reviews": [],
+      "description": "",
+      "free_shipping": true
+    },
+    {
+      "product_id": 8,
+      "category_id": 1,
+      "subcategory_id": 103,
+      "images": ["/assets/images/goldEarings.png"],
+      "current_price": 39.99,
+      "discount": "15%",
+      "vendor": "Vendor B",
+      "rating": "4",
+      "product_name": "Gold tone stud earings",
+      "free_shipping": true,
+      "reviews": [],
+      "description": ""
+    },
+    {
+      "product_id": 9,
+      "category_id": 2,
+      "subcategory_id": 202,
+      "images": ["/assets/images/summerHats.png"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "free_shipping": true,
+      "reviews": [],
+      "description": ""
+    },
+    {
+      "product_id": 10,
+      "category_id": 2,
+      "subcategory_id": 202,
+      "images": ["../assets/images/1.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 11,
+      "category_id": 2,
+      "subcategory_id": 202,
+      "images": ["../assets/images/2.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 12,
+      "category_id": 2,
+      "subcategory_id": 202,
+      "images": ["/assets/images/3.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 13,
+      "category_id": 2,
+      "subcategory_id": 203,
+      "images": ["/assets/images/4.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 14,
+      "category_id": 2,
+      "subcategory_id": 203,
+      "images": ["/assets/images/5.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 15,
+      "category_id": 3,
+      "subcategory_id": 303,
+      "images": ["/assets/images/6.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 16,
+      "category_id": 3,
+      "subcategory_id": 303,
+      "images": ["/assets/images/7.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 17,
+      "category_id": 3,
+      "subcategory_id": 303,
+      "images": ["/assets/images/8.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 18,
+      "category_id": 3,
+      "subcategory_id": 303,
+      "images": ["/assets/images/9.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 19,
+      "category_id": 3,
+      "subcategory_id": 303,
+      "images": ["../assets/images/a1.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 20,
+      "category_id": 4,
+      "subcategory_id": 402,
+      "images": ["../assets/images/a2.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 21,
+      "category_id": 4,
+      "subcategory_id": 402,
+      "images": ["../assets/images/a3.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 22,
+      "category_id": 4,
+      "subcategory_id": 402,
+      "images": ["../assets/images/a4.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 23,
+      "category_id": 4,
+      "subcategory_id": 402,
+      "images": ["../assets/images/a5.avif"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 24,
+      "category_id": 4,
+      "subcategory_id": 402,
+      "images": ["../assets/images/h21.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 25,
+      "category_id": 4,
+      "subcategory_id": 402,
+      "images": ["../assets/images/h22.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+
+    {
+      "product_id": 26,
+      "category_id": 5,
+      "subcategory_id": 502,
+      "images": ["../assets/images/h23.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 27,
+      "category_id": 5,
+      "subcategory_id": 502,
+      "images": ["../assets/images/h24.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
+    },
+    {
+      "product_id": 28,
+      "category_id": 5,
+      "subcategory_id": 502,
+      "images": ["../assets/images/h25.webp"],
+      "current_price": 24.99,
+      "rating": "4",
+      "discount": "5%",
+      "vendor": "Vendor C",
+      "product_name": "Trendy Summer Hat",
+      "description": "",
+      "free_shipping": true,
+      "reviews": []
     }
   ]
 }

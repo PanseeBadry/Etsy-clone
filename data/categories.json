@@ -1,5 +1,6 @@
 {
   "categories": [
+    { "id": 0, "name": "Etsy Picks", "description": "All the things you need to make your house a home" },
     { "id": 1, "name": "Jewelry", "description": "Rings, earrings and necklaces to instantly raise your jewelry-box game"},
     { "id": 2, "name": "Home & Living","description":"Kitchen and dining, storage solutions, rugs, lighting, wall decor, and furniture—everything you need to make your home yours" },
     { "id": 3, "name": "Art & Collectibles","description":"Custom artwork, portraits, and totally original paintings and prints to turn your home into a gallery" },

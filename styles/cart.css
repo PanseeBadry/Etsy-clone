@@ -255,14 +255,24 @@ select:hover {
   font-size: 16px;
   font-weight: 500;
   position: relative;
-  max-width: 360px;
+  max-width: 100%;
   display: inline-block;
   padding: 12px 24px 12px 0;
   cursor: pointer;
+  min-width: 0;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
 }
 .shipping span {
+  display: inline-block;
   position: relative;
   top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 74px);
 }
 .shipping::after {
   position: absolute;
@@ -519,6 +529,9 @@ button[type="submit"]:hover::before {
   }
   .item .main-item-section {
     margin: 19px 0 36px 0;
+  }
+  .shipping span {
+    max-width: 340px;
   }
 }
 

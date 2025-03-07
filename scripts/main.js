@@ -7,6 +7,9 @@ fetch("../components/header.html")
     let headerScript = document.createElement("script");
     headerScript.src = "./scripts/components/header.js";
     head.appendChild(headerScript);
+    let CategoriesScript = document.createElement("script");
+    CategoriesScript.src = "/scripts/components/categories.js";
+    head.appendChild(CategoriesScript);
   });
 
 // big deals part
@@ -256,9 +259,9 @@ for (let prod of testArray) {
                 <div class="pricing">
                   <p class="current-price">USD ${prod.current_price}</p>
                   <p class="old-price">USD ${(
-                    prod.current_price /
-                    (1 - prod.discount / 100.0)
-                  ).toFixed(2)}</p>
+      prod.current_price /
+      (1 - prod.discount / 100.0)
+    ).toFixed(2)}</p>
                   <p class="disc">${prod.discount}% off</p>
                 </div>
               </div>`;

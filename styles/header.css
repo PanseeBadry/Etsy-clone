@@ -1,5 +1,5 @@
 /* header style */
-body > header .container {
+header .container {
   display: flex;
   align-items: center;
   padding-top: 20px;

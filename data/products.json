@@ -3,10 +3,10 @@
     {
       "free_shipping": true,
       "product_id": 1,
-      "category_id": 12,
-      "subcategory_id": 301,
+      "category_id": 1,
+      "subcategory_id": 101,
       "images": [
-        "/assets/images/woodCakeStand1.png",
+        "/assets/images/1.webp",
         "/assets/images/woodCakeStand2.png",
         "/assets/images/woodCakeStand3.png",
         "/assets/images/woodCakeStand4.png",
@@ -388,12 +388,12 @@
       ]
     },
     {
-      "free_shipping": true,
+      "free_shipping": false,
       "product_id": 2,
-      "category_id": 12,
-      "subcategory_id": 302,
+      "category_id": 1,
+      "subcategory_id": 101,
       "images": [
-        "/assets/images/mug1.png",
+        "/assets/images/2.webp",
         "/assets/images/mug2.png",
         "/assets/images/mug3.png",
         "/assets/images/mug4.png",
@@ -649,9 +649,9 @@
     },
     {
       "free_shipping": true,
-      "product_id": 2,
-      "category_id": 12,
-      "subcategory_id": 303,
+      "product_id": 3,
+      "category_id": 1,
+      "subcategory_id": 101,
       "images": [
         "/assets/images/digitalPortrait1.png",
         "/assets/images/digitalPortrait2.png",
@@ -801,10 +801,10 @@
       ]
     },
     {
-      "free_shipping": true,
+      "free_shipping": false,
       "product_id": 4,
-      "category_id": 12,
-      "subcategory_id": 304,
+      "category_id": 1,
+      "subcategory_id": 101,
       "images": [
         "/assets/images/sign1.png",
         "/assets/images/sign2.png",
@@ -1258,10 +1258,10 @@
       ]
     },
     {
-      "free_shipping": true,
+      "free_shipping": false,
       "product_id": 5,
-      "category_id": 12,
-      "subcategory_id": 305,
+      "category_id": 1,
+      "subcategory_id": 102,
       "images": [
         "/assets/images/ring1.png",
         "/assets/images/ring2.png",
@@ -1520,8 +1520,8 @@
     {
       "free_shipping": true,
       "product_id": 6,
-      "category_id": 12,
-      "subcategory_id": 306,
+      "category_id": 1,
+      "subcategory_id": 102,
       "images": [
         "/assets/images/flower1.png",
         "/assets/images/flower2.png",
@@ -1723,8 +1723,8 @@
     },
     {
       "product_id": 7,
-      "category_id": 12,
-      "subcategory_id": 302,
+      "category_id": 1,
+      "subcategory_id": 102,
       "images": ["/assets/images/leatherWallet.png"],
       "current_price": 49.99,
       "discount": "10%",
@@ -1737,8 +1737,8 @@
     },
     {
       "product_id": 8,
-      "category_id": 12,
-      "subcategory_id": 301,
+      "category_id": 1,
+      "subcategory_id": 103,
       "images": ["/assets/images/goldEarings.png"],
       "current_price": 39.99,
       "discount": "15%",
@@ -1751,8 +1751,8 @@
     },
     {
       "product_id": 9,
-      "category_id": 1,
-      "subcategory_id": 1,
+      "category_id": 2,
+      "subcategory_id": 202,
       "images": ["/assets/images/summerHats.png"],
       "current_price": 24.99,
       "rating": "4",
@@ -1765,8 +1765,8 @@
     },
     {
       "product_id": 10,
-      "category_id": 10,
-      "subcategory_id": 1,
+      "category_id": 2,
+      "subcategory_id": 202,
       "images": ["../assets/images/1.webp"],
       "current_price": 24.99,
       "rating": "4",
@@ -1779,8 +1779,8 @@
     },
     {
       "product_id": 11,
-      "category_id": 10,
-      "subcategory_id": 1,
+      "category_id": 2,
+      "subcategory_id": 202,
       "images": ["../assets/images/2.webp"],
       "current_price": 24.99,
       "rating": "4",
@@ -1793,7 +1793,7 @@
     },
     {
       "product_id": 12,
-      "category_id": 10,
+      "category_id": 2,
       "subcategory_id": 202,
       "images": ["/assets/images/3.avif"],
       "current_price": 24.99,
@@ -1807,8 +1807,8 @@
     },
     {
       "product_id": 13,
-      "category_id": 10,
-      "subcategory_id": 202,
+      "category_id": 2,
+      "subcategory_id": 203,
       "images": ["/assets/images/4.webp"],
       "current_price": 24.99,
       "rating": "4",
@@ -1821,8 +1821,8 @@
     },
     {
       "product_id": 14,
-      "category_id": 10,
-      "subcategory_id": 202,
+      "category_id": 2,
+      "subcategory_id": 203,
       "images": ["/assets/images/5.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1835,8 +1835,8 @@
     },
     {
       "product_id": 15,
-      "category_id": 10,
-      "subcategory_id": 202,
+      "category_id": 3,
+      "subcategory_id": 303,
       "images": ["/assets/images/6.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1849,8 +1849,8 @@
     },
     {
       "product_id": 16,
-      "category_id": 10,
-      "subcategory_id": 202,
+      "category_id": 3,
+      "subcategory_id": 303,
       "images": ["/assets/images/7.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1863,8 +1863,8 @@
     },
     {
       "product_id": 17,
-      "category_id": 10,
-      "subcategory_id": 202,
+      "category_id": 3,
+      "subcategory_id": 303,
       "images": ["/assets/images/8.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1877,8 +1877,8 @@
     },
     {
       "product_id": 18,
-      "category_id": 10,
-      "subcategory_id": 202,
+      "category_id": 3,
+      "subcategory_id": 303,
       "images": ["/assets/images/9.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1891,8 +1891,8 @@
     },
     {
       "product_id": 19,
-      "category_id": 6,
-      "subcategory_id": 202,
+      "category_id": 3,
+      "subcategory_id": 303,
       "images": ["../assets/images/a1.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1905,8 +1905,8 @@
     },
     {
       "product_id": 20,
-      "category_id": 6,
-      "subcategory_id": 202,
+      "category_id": 4,
+      "subcategory_id": 402,
       "images": ["../assets/images/a2.webp"],
       "current_price": 24.99,
       "rating": "4",
@@ -1919,8 +1919,8 @@
     },
     {
       "product_id": 21,
-      "category_id": 6,
-      "subcategory_id": 202,
+      "category_id": 4,
+      "subcategory_id": 402,
       "images": ["../assets/images/a3.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1933,8 +1933,8 @@
     },
     {
       "product_id": 22,
-      "category_id": 6,
-      "subcategory_id": 202,
+      "category_id": 4,
+      "subcategory_id": 402,
       "images": ["../assets/images/a4.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1947,8 +1947,8 @@
     },
     {
       "product_id": 23,
-      "category_id": 6,
-      "subcategory_id": 202,
+      "category_id": 4,
+      "subcategory_id": 402,
       "images": ["../assets/images/a5.avif"],
       "current_price": 24.99,
       "rating": "4",
@@ -1961,8 +1961,8 @@
     },
     {
       "product_id": 24,
-      "category_id": 2,
-      "subcategory_id": 202,
+      "category_id": 4,
+      "subcategory_id": 402,
       "images": ["../assets/images/h21.webp"],
       "current_price": 24.99,
       "rating": "4",
@@ -1975,8 +1975,8 @@
     },
     {
       "product_id": 25,
-      "category_id": 2,
-      "subcategory_id": 202,
+      "category_id": 4,
+      "subcategory_id": 402,
       "images": ["../assets/images/h22.webp"],
       "current_price": 24.99,
       "rating": "4",
@@ -1990,8 +1990,8 @@
 
     {
       "product_id": 26,
-      "category_id": 2,
-      "subcategory_id": 202,
+      "category_id": 5,
+      "subcategory_id": 502,
       "images": ["../assets/images/h23.webp"],
       "current_price": 24.99,
       "rating": "4",
@@ -2004,8 +2004,8 @@
     },
     {
       "product_id": 27,
-      "category_id": 2,
-      "subcategory_id": 202,
+      "category_id": 5,
+      "subcategory_id": 502,
       "images": ["../assets/images/h24.webp"],
       "current_price": 24.99,
       "rating": "4",
@@ -2018,8 +2018,8 @@
     },
     {
       "product_id": 28,
-      "category_id": 2,
-      "subcategory_id": 202,
+      "category_id": 5,
+      "subcategory_id": 502,
       "images": ["../assets/images/h25.webp"],
       "current_price": 24.99,
       "rating": "4",

@@ -136,7 +136,7 @@ section header {
 
 .hero-hover:hover,
 .hero .main button:hover,
-#carousel #content > div:hover {
+#carousel > div:hover {
   box-shadow: 0px 1px 3px 0px #00000065, 0px 4px 5px 4px #00000026;
 }
 
@@ -352,7 +352,7 @@ section.recently {
 
 /* responsive design */
 @media (min-width: 540px) {
-  #carousel #content > div {
+  #carousel .slide {
     flex: 0 0 calc((100% - 1 * 16px) / 2);
     max-width: calc((100% - 1 * 16px) / 2);
   }
@@ -381,14 +381,14 @@ section.recently {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #carousel #content > div {
+  #carousel .slide {
     flex: 0 0 calc((100% - 2 * 16px) / 3);
     max-width: calc((100% - 2 * 16px) / 3);
   }
 }
 
 @media (min-width: 900px) {
-  #carousel #content > div {
+  #carousel .slide {
     flex: 0 0 calc((100% - 3 * 16px) / 3.5);
     max-width: calc((100% - 3 * 16px) / 3.5);
   }
@@ -411,7 +411,7 @@ section.recently {
     max-height: 400px;
   }
 
-  #carousel #content > div {
+  #carousel .slide {
     flex: 0 0 calc(100% / 4.5 - 16px);
     max-width: calc((100% - 16px * 4) / 4.5);
   }

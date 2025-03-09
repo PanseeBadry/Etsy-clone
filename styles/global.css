@@ -24,6 +24,12 @@ a {
   padding: 0 0.8rem;
   max-width: 1400px;
 }
+i.red {
+  color: #b50330;
+}
+.hide {
+  display: none;
+}
 @media (min-width: 900px) {
   .container {
     padding: 0 2.25rem;

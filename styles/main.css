@@ -3,47 +3,51 @@
 @import url("slider.css");
 
 /* common styles*/
+
 /* favorite icon style */
 .product-favorite {
-  width: 30px;
-  height: 30px;
   position: absolute;
   top: 8px;
   right: 8px;
+  font-size: 15px;
   opacity: 0;
-  border-radius: 50%;
+  color: black;
+  border-radius: 15px;
   padding: 5px;
-  transition: all 0.2s linear;
+  transition: transform 0.5s ease-in-out;
 }
 
-.product-favorite::before {
+i.product-favorite {
+  font-size: 17px;
+}
+.product-favorite::after {
   content: "";
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 50%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   background-color: white;
-  transition: all 0.1s linear;
+  border-radius: 15px;
+}
+.recently-prod:hover .product-favorite,
+.slide:hover .product-favorite {
+  animation: favorite-animation 0.5s forwards;
 }
 
 .product-favorite:hover {
   box-shadow: 0px 0px 5px 3px #00000040;
 }
 
-.product-favorite:hover::before {
-  transform: scale(1.03);
+.product-favorite:hover::after {
+  transform: scale(1.09);
 }
 
 .product-favorite img {
   width: 18px;
   vertical-align: middle;
-}
-
-#carousel .slide:hover .product-favorite {
-  animation: favorite-animation 0.5s forwards;
 }
 
 @keyframes favorite-animation {
@@ -102,12 +106,19 @@ section header {
   background-image: url("../assets/images/landing2.png");
   width: 400px;
   height: 400px;
-  padding: 18px;
 }
-
-.hero .second p {
+.hero .second div {
+  background-color: rgba(0, 0, 0, 0.164);
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero .second div p {
   color: white;
-  vertical-align: end;
+  padding: 0 18px;
 }
 
 .hero .second p:first-child {
@@ -116,15 +127,16 @@ section header {
   line-height: 1.3;
 }
 
-.hero .second p+p {
+.hero .second p + p {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
+  margin-bottom: 18px;
 }
 
 .hero-hover:hover,
 .hero .main button:hover,
-#carousel #content>div:hover {
+#carousel #content > div:hover {
   box-shadow: 0px 1px 3px 0px #00000065, 0px 4px 5px 4px #00000026;
 }
 
@@ -157,7 +169,7 @@ section header {
   font-weight: 300;
 }
 
-.hero .main .data p+p {
+.hero .main .data p + p {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.7rem;
@@ -187,7 +199,55 @@ section header {
 .gifts h2 {
   text-align: center;
 }
+/* ------------------------------------------------------------------------------------- */
+/* recently viewed */
+section.recently {
+  padding-top: 15px;
+}
+.recently h2 {
+  font-size: 19.01px;
+}
+.recently-viewed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  cursor: pointer;
+  gap: 18px;
+}
+.recently-prod {
+  position: relative;
+  border-radius: 12px;
+  height: 156px;
+}
+.recently-prod:hover {
+  box-shadow: 0px 1px 3px 0px #00000065, 0px 4px 5px 4px #00000026;
+}
+.recently-prod img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.recently-prod p {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: white;
+  border: 1px solid #949494;
+  border-radius: inherit;
+  font-size: 12.99px;
+}
+.recently-prod .current {
+  font-weight: 700;
+}
+.recently-prod .old {
+  text-decoration: line-through;
+}
 
+/* ------------------------------------------------------------------------------------- */
 /* big deals section */
 .big-deals header {
   display: flex;
@@ -210,7 +270,7 @@ section header {
   position: relative;
 }
 
-.big-deals .slide>img {
+.big-deals .slide > img {
   max-width: 100%;
   border-radius: 12px 12px 0 0;
   object-fit: cover;
@@ -292,7 +352,7 @@ section header {
 
 /* responsive design */
 @media (min-width: 540px) {
-  #carousel #content>div {
+  #carousel #content > div {
     flex: 0 0 calc((100% - 1 * 16px) / 2);
     max-width: calc((100% - 1 * 16px) / 2);
   }
@@ -317,17 +377,23 @@ section header {
     transform: scaleX(1.04) scaleY(1.035);
     background-color: #3e3e3e;
   }
+  .recently-viewed {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-  #carousel #content>div {
+  #carousel #content > div {
     flex: 0 0 calc((100% - 2 * 16px) / 3);
     max-width: calc((100% - 2 * 16px) / 3);
   }
 }
 
 @media (min-width: 900px) {
-  #carousel #content>div {
+  #carousel #content > div {
     flex: 0 0 calc((100% - 3 * 16px) / 3.5);
     max-width: calc((100% - 3 * 16px) / 3.5);
+  }
+  .recently-viewed {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -345,8 +411,11 @@ section header {
     max-height: 400px;
   }
 
-  #carousel #content>div {
+  #carousel #content > div {
     flex: 0 0 calc(100% / 4.5 - 16px);
     max-width: calc((100% - 16px * 4) / 4.5);
+  }
+  .recently-viewed {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/gifts.css" />
+    <link rel="stylesheet" href="styles/categories.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/main.css" />
-  <link rel="stylesheet" href="styles/gifts.css" />
-  <link rel="stylesheet" href="styles/categories.css" />
-  <script src="./scripts/components/slider.js" defer></script>
-  <script src="scripts/components/gifts.js" defer></script>
-  <script src="scripts/main.js" defer></script>
+    <script src="./scripts/components/slider.js" defer></script>
+    <script src="scripts/components/gifts.js" defer></script>
+    <script src="scripts/main.js" defer type="module"></script>
 
-  <title>
-    Etsy Egypt - Shop for handmade, vintage, custom, and unique gifts for
-    everyone
-  </title>
+    <title>
+      Etsy Egypt - Shop for handmade, vintage, custom, and unique gifts for
+      everyone
+    </title>
 
-  <link rel="icon" href="./assets/images/favicon.png" type="image/png" sizes="32x32" />
-</head>
+    <link
+      rel="icon"
+      href="./assets/images/favicon.png"
+      type="image/png"
+      sizes="32x32"
+    />
+  </head>
 
-<body>
-  <main>
-    <div class="menu-overlay"></div>
+  <body>
+    <main>
+      <div class="menu-overlay"></div>
 
-    <section class="hero container">
-      <div class="main hero-hover cats" data-cat="0" data-sub-cat="0">
-        <div class="data">
-          <p>Refresh your closet!</p>
-          <p>Outfit yourself with original style pieces</p>
-          <button>Shop now</button>
+      <section class="hero container">
+        <div class="main hero-hover cats" data-cat="0" data-sub-cat="0">
+          <div class="data">
+            <p>Refresh your closet!</p>
+            <p>Outfit yourself with original style pieces</p>
+            <button>Shop now</button>
+          </div>
+          <img src="./assets/images/landing1.png" alt="shop" />
         </div>
-        <img src="./assets/images/landing1.png" alt="shop" />
-      </div>
-      <div class="second hero-hover cats">
-        <p>Rings</p>
-        <p>Shop Now</p>
-      </div>
-    </section>
-
-    <section class="recently container"></section>
-
-    <section class="container gifts">
-      <header>
-        <h2>Discover gifts for every occasion</h2>
-      </header>
-      <div class="gifts-cards"></div>
-    </section>
-
-    <section id="scroller" class="big-deals container">
-      <header>
-        <h2>Today's big deals</h2>
-        <div class="control">
-          <button id="prev" title="Previous">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path
-                d="M16 21.002a1 1 0 0 1-.664-.253L5.5 12.002l9.841-8.748a1 1 0 0 1 1.328 1.494L8.5 12.002l8.159 7.252A1 1 0 0 1 16 21.002">
-              </path>
-            </svg>
-          </button>
-          <button id="next" title="Next">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path
-                d="M8 21a1 1 0 0 1-.664-1.747l8.164-7.254-8.164-7.252a1 1 0 0 1 1.328-1.494L18.5 12l-9.836 8.747A1 1 0 0 1 8 21">
-              </path>
-            </svg>
-          </button>
+        <div class="second hero-hover cats">
+          <div>
+            <p class="sub-cat-name">Clothing</p>
+            <p>Shop Now</p>
+          </div>
         </div>
-      </header>
-      <div id="carousel">
-        <div id="content"></div>
-      </div>
-    </section>
+      </section>
 
-    <section class="gifts-for-1 container"></section>
+      <section id="recently" class="recently container">
+        <header>
+          <h2>Recently viewed</h2>
+        </header>
+        <div class="recently-viewed"></div>
+      </section>
 
-    <section class="gifts-for-2 container"></section>
+      <section class="container gifts">
+        <header>
+          <h2>Discover gifts for every occasion</h2>
+        </header>
+        <div class="gifts-cards"></div>
+      </section>
 
-    <section class="what-is container"></section>
-  </main>
+      <section id="scroller" class="big-deals container">
+        <header>
+          <h2>Today's big deals</h2>
+          <div class="control">
+            <button id="prev" title="Previous">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M16 21.002a1 1 0 0 1-.664-.253L5.5 12.002l9.841-8.748a1 1 0 0 1 1.328 1.494L8.5 12.002l8.159 7.252A1 1 0 0 1 16 21.002"
+                ></path>
+              </svg>
+            </button>
+            <button id="next" title="Next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M8 21a1 1 0 0 1-.664-1.747l8.164-7.254-8.164-7.252a1 1 0 0 1 1.328-1.494L18.5 12l-9.836 8.747A1 1 0 0 1 8 21"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </header>
+        <div id="carousel">
+          <div id="content"></div>
+        </div>
+      </section>
 
-</body>
+      <section class="gifts-for-1 container"></section>
 
+      <section class="gifts-for-2 container"></section>
+
+      <section class="what-is container"></section>
+    </main>
+  </body>
 </html>

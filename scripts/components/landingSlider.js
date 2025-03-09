@@ -10,31 +10,36 @@ export default function renderSlider(products) {
     slide.setAttribute("data-prod-id", prod.product_id);
     slide.className = "slide";
     slide.onclick = Helper.goToProduct;
-    let fav = document.createElement("button");
-    fav.className = "product-favorite";
-    fav.onclick = Helper.toggleFav;
-    fav.innerHTML = "<img src='./assets/icons/heart.svg' alt='fav' />";
+
+    slide.innerHTML = `
+      <img src="${prod.images[0]}" alt="${prod.product_name}" />
+      <div class="product-data">
+        <div>
+          <p class="title">${prod.product_name}</p>
+          <div class="rating">
+            <p>${prod.rating}</p>
+            <img src="./assets/icons/star.svg" alt="Star Icon" />
+          </div>
+        </div>
+        <div class="pricing">
+          <p class="current-price">USD ${prod.current_price}</p>
+          <p class="old-price">USD ${(
+            prod.current_price /
+            (1 - prod.discount / 100)
+          ).toFixed(2)}</p>
+          <p class="disc">${prod.discount}% off</p>
+        </div>
+      </div>`;
+
+    // add fav button
+    let fav = document.createElement("i");
+    fav.className = `fa-heart product-favorite ${
+      Helper.isFav(prod.product_id) ? "fa-solid red" : "fa-regular"
+    }`;
+    fav.onclick = Helper.toggleIcon;
+    fav.dataset.prodId = prod.product_id;
+    fav.addEventListener("click", Helper.toggleFav);
     slide.appendChild(fav);
-    slide.innerHTML += `<img src=${prod.images[0]} alt=${prod.product_name} />
-              <div class="product-data">
-                <div>
-                  <p class="title">
-                    ${prod.product_name}
-                  </p>
-                  <div class="rating">
-                    <p>${prod.rating}</p>
-                    <img src="./assets/icons/star.svg" alt="" />
-                  </div>
-                </div>
-                <div class="pricing">
-                  <p class="current-price">USD ${prod.current_price}</p>
-                  <p class="old-price">USD ${(
-                    prod.current_price /
-                    (1 - prod.discount / 100.0)
-                  ).toFixed(2)}</p>
-                  <p class="disc">${prod.discount}% off</p>
-                </div>
-              </div>`;
     bigDeals.appendChild(slide);
   }
 }

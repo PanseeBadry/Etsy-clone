@@ -1,4 +1,5 @@
-
+import Helper from "../utils/helper.js";
+import * as Cookies from "../utils/cookiesLibrary.js";
 //containers 
 var productsContainer = document.getElementsByClassName('product-cards')[0];
 var categoryContainer = document.getElementsByClassName('category-container')[0];
@@ -16,6 +17,8 @@ var closebutton = document.getElementsByClassName('filter-close')[0];
 var showMoreBtn1 = document.getElementsByClassName('sbtn1')[0]
 var showMoreBtn2 = document.getElementsByClassName('sbtn2')[0];
 
+
+
 //filter panel
 var filterPanel = document.getElementsByClassName('filter-panel')[0];
 var pageOverlay = document.getElementsByClassName('overlay')[0];
@@ -27,20 +30,21 @@ var cats = [];
 var subCats = [];
 var products = [];
 
-
+var checkFav 
+var productName;
 
 window.onload = function () {
-    fetchIDS()
+    fetchQueryString()
     fetchAllData()
 
 
 }
 
-function fetchIDS() {
+function fetchQueryString() {
     var arr = []
     if (location.search.length > 0) {
-        data = location.search.substring(1, location.search.length)
-        info = data.split("&")
+        var data = location.search.substring(1, location.search.length)
+        var info = data.split("&")
 
         for (var i = 0; i < info.length; i++) {
             arr[info[i].split("=")[0]] = info[i].split("=")[1]
@@ -55,13 +59,22 @@ function fetchIDS() {
         } else {
             subcategoryID = 0
         }
+        if(arr['fav']){
+            checkFav = arr['fav']
+        }
+
+        if (arr['search']){
+            productName = arr['search']
+            console.log(productName)
+        }
 
 
     } else {
         categoryID = 0
         subcategoryID = 0
+        checkFav = false
     }
-
+    // console.log(checkFav)
     console.log(arr)
 
 }
@@ -92,6 +105,9 @@ async function fetchAllData() {
 
 
 
+
+
+
 function displayPage() {
     displayCategory()
     displaySubCategories()
@@ -100,18 +116,27 @@ function displayPage() {
 
 function displayCategory() {
     var category;
-    if (subcategoryID != 0 && categoryID == 0) {
-        var foundSubCat = subCats.find(s => s.id == subcategoryID)
+    var foundSubCat ={};
+    if (subcategoryID != 0 ) {
+        foundSubCat = subCats.find(s => s.id == subcategoryID)
         category = cats.find(c => c.id == foundSubCat.category_id)
-    } else {
+        console.log("Displaying SubCategory:", foundSubCat);
+    } else if(checkFav){
+        category = cats.find(c => c.id == 0)
+        foundSubCat.name= "Favorites" 
+        
+    }else{
         category = cats.find(c => c.id == categoryID)
     }
+
+    
     console.log("Displaying Category:", category);
+    
 
     var cat = document.createElement('div');
     cat.classList.add('category-info');
     cat.innerHTML = `        
-                    <p class="category-name">${category.name}</p>
+                    <p class="category-name">${category.name} <span  style="font-size: 23px; color:grey "> ${foundSubCat.name != undefined  ?  "/ " + foundSubCat.name   : ""} </span></p>
                     <span class="category-description">${category.description}</span>
                 
     `
@@ -164,7 +189,7 @@ function displaySubCategories() {
 
 function displayProducts() {
     var displayedProducts;
-    if (categoryID == 0 && subcategoryID == 0) {
+    if (categoryID == 0 && subcategoryID == 0 ) {
         displayedProducts = products.slice(0, 12);
 
     } else if (categoryID != 0 && subcategoryID != 0) {
@@ -176,9 +201,33 @@ function displayProducts() {
         displayedProducts = products.filter(pro => pro.subcategory_id == subcategoryID);
     }
 
+    if(checkFav){
+        let cookieValue = Cookies.getCookie("favProducts");
+            let favProducts = cookieValue ? JSON.parse(cookieValue).map((prod) => +prod) : [];
+         console.log(favProducts)
+          displayedProducts = products.filter(pro => favProducts.includes(pro.product_id));
+        //   console.log(displayedProducts)
 
+    }
 
-    if (displayedProducts.length <= 4) {
+    if(productName){
+        let regex = new RegExp(productName, "i");
+        
+        displayedProducts = products.filter((prod) => regex.test(prod.product_name))
+    }
+
+    if(displayedProducts.length == 0){
+        showMoreBtn1.style.display = 'none';
+        productsContainer.innerHTML = ``
+        productsContainer.style = `
+        display: flex;
+        justify-content: center;  
+        align-items: center;`
+        productsContainer.innerHTML = `<h1> No Products Yet </h1>`
+        
+    }
+    console.log(displayedProducts)
+    if (displayedProducts.length <= 4 && displayedProducts.length >= 0) {
         showMoreBtn1.style.display = 'none';
     } else {
         showMoreBtn1.style.display = 'block';
@@ -271,7 +320,7 @@ function displayProduct(product, len) {
            
                         <img src=${product.images[0]} alt="" class="product-image">
                         <div class="product-body">
-                            <i class="fa-regular fa-heart product-favorite"></i>
+                            
                             <p class="product-name">${product.product_name}</p>
                             <div class="product-info">
                                 <span class="product-rating">
@@ -286,11 +335,22 @@ function displayProduct(product, len) {
                             </div>
                              <p >${product.discount && product.discount !== "0%" ? `<span class="product-after-discount"> USD ${priceAfterDiscount} </span>  <span class="product-current-price"><s style="text-decoration: line-through;"> USD ${product.current_price}</s> (${product.discount}off)</span>` : `<span class="product-current-price">${product.current_price}</span>`} </p>
                             <span class="product-vendor">${product.vendor}</span> <br>
-                            ${product.free_shipping ? `<span class="free-shipping">FREE Shipping</span>` : ''}                    
+                            ${product.free_shipping ? `<span class="free-shipping">FREE Shipping</span>` : ''}
+                                                
                         </div>                    
         `
 
         productsContainer.appendChild(item);
+        let favIcon = document.createElement('i')
+        favIcon.className = `fa-heart product-favorite ${
+        Helper.isFav(product.product_id) ? "red fa-solid" : "fa-regular"
+        } `
+        item.dataset.prodId = product.product_id
+        item.addEventListener('click', Helper.goToProduct)
+        favIcon.onclick = Helper.toggleIcon 
+        favIcon.dataset.prodId = product.product_id
+        favIcon.addEventListener('click',Helper.toggleFav)
+        item.appendChild(favIcon)
         setTimeout(() => {
             item.classList.add('show');
         }, 1000);
@@ -299,11 +359,15 @@ function displayProduct(product, len) {
             showMoreBtn1.value = "Show Less"
         }
 
+
+        
+
     } else {
         currentProductIndex = len
     }
 
-
+    
+    
 
 
 }

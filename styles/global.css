@@ -26,6 +26,18 @@ a {
 }
 i.red {
   color: #b50330;
+  animation: favorite-animation 0.1s forwards;
+}
+@keyframes favorite-animation {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .hide {
   display: none;

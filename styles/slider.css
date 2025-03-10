@@ -38,8 +38,8 @@
 #carousel::-webkit-scrollbar {
   height: 0;
 }
-#prev:disabled,
-#next:disabled {
+#prev.prev:disabled,
+#next.next:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }

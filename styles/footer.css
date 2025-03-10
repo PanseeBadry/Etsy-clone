@@ -1,0 +1,43 @@
+footer {
+  background-color: var(--primary-color);
+  padding: 0 18px;
+}
+
+footer svg,
+footer path {
+  width: 18px;
+  fill: white;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  min-height: 100%;
+  min-height: 73px;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+footer,
+footer a {
+  color: white;
+  font-size: 12.99px;
+  line-height: 1.4;
+}
+footer a {
+  text-decoration: underline;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .right-part {
+  gap: 18px;
+}
+
+footer .left-part {
+  gap: 10px;
+  font-weight: 550;
+}

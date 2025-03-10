@@ -1,6 +1,7 @@
 @import url("global.css");
 @import url("header.css");
 @import url("slider.css");
+@import url("footer.css");
 
 /* common styles*/
 
@@ -19,6 +20,7 @@
 
 i.product-favorite {
   font-size: 17px;
+  padding: 6px;
 }
 .product-favorite::after {
   content: "";
@@ -26,8 +28,9 @@ i.product-favorite {
   top: 0;
   right: 0;
   display: inline-block;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #d7d7d7;
   z-index: -1;
   background-color: white;
   border-radius: 15px;
@@ -155,7 +158,7 @@ section header {
 .hero .main .data {
   padding: 24px;
   flex-grow: 3;
-  min-width: 375px;
+  min-width: 0;
   flex-grow: 1;
 }
 
@@ -350,11 +353,109 @@ section.recently {
   padding: 2px;
 }
 
+/* what is section */
+.what-is {
+  background-color: #fffbd8;
+  padding: 55px 18px 25px;
+}
+.what-is .container h2 {
+  letter-spacing: 0;
+  font-size: 42px;
+  font-weight: 200;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.what-is .columns {
+  padding-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.what-is .column {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.what-is .column h3 {
+  letter-spacing: 0.13505px;
+  font-size: 27.01px;
+  font-weight: 550;
+  line-height: 1.3;
+  margin-bottom: 13px;
+}
+.what-is .column div {
+  letter-spacing: 0.16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  /* display: inline-block; */
+}
+.what-is .column .msg {
+  display: inline;
+  position: relative;
+}
+.what-is .column .under-lined {
+  text-decoration: underline dashed 1px;
+  text-underline-position: under;
+  font-size: 16px;
+  cursor: help;
+  user-select: none;
+}
+.what-is .column ul {
+  position: absolute;
+  z-index: 4;
+  background-color: white;
+  width: 230px;
+  padding: 12px;
+  border: 1px solid #0e0e0e2e;
+  border-radius: 14px;
+  right: 0;
+  top: -270px;
+  box-shadow: 0px 1px 3px 0px #0000004d, 0px 4px 8px 3px #00000026;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+  text-align: start;
+}
+.column li {
+  list-style-type: disc;
+  letter-spacing: 0.1299px;
+  font-size: 12.99px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-left: 15px;
+}
+.under-lined:after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -12.6px;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #0e0e0e2e;
+  border-left: 0;
+  border-top: 0;
+  background-color: white;
+  z-index: 10;
+}
+.under-lined:hover::after,
+.msg:hover ul {
+  display: block;
+}
 /* responsive design */
+
 @media (min-width: 540px) {
   #carousel .slide {
     flex: 0 0 calc((100% - 1 * 16px) / 2);
     max-width: calc((100% - 1 * 16px) / 2);
+  }
+  .hero .main .data {
+    min-width: 375px;
   }
 }
 
@@ -394,6 +495,14 @@ section.recently {
   }
   .recently-viewed {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .what-is .column {
+    width: 30%;
+    text-align: start;
+  }
+  .what-is ul {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

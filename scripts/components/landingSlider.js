@@ -1,11 +1,16 @@
 import Helper from "../utils/helper.js";
 
+const carousel = document.getElementById("carousel"),
+  next = document.getElementById("next"),
+  prev = document.getElementById("prev"),
+  scroller = document.getElementById("scroller");
+
 export default function renderSlider(products) {
   renderScroll();
-  let bigDeals = document.getElementById("carousel");
   let prodArray = products
     .filter((prod) => +prod.discount > 0)
     .sort((a, b) => b.discount - a.discount);
+  prodArray.length == 0 && scroller.classList.add("hide");
   for (let prod of prodArray.slice(0, 20)) {
     let slide = document.createElement("div");
     slide.setAttribute("data-prod-id", prod.product_id);
@@ -41,44 +46,31 @@ export default function renderSlider(products) {
     fav.dataset.prodId = prod.product_id;
     fav.addEventListener("click", Helper.toggleFav);
     slide.appendChild(fav);
-    bigDeals.appendChild(slide);
+    carousel.appendChild(slide);
   }
-  checkScroll();
+  prodArray.length != 0 && checkButtons();
 }
 
 function renderScroll() {
-  const carousel = document.getElementById("carousel"),
-    next = document.getElementById("next"),
-    prev = document.getElementById("prev");
-
-  carousel.onscroll = checkScroll;
-  window.addEventListener("resize", checkScroll);
+  carousel.addEventListener("scroll", pauseScrolling);
+  window.addEventListener("resize", checkButtons);
 
   next.onclick = function () {
-    disableButtons();
     carousel.scrollBy({
       left: updateScrollAmount(),
       behavior: "smooth",
     });
-    setTimeout(() => {
-      enableButtons();
-    }, 1800);
   };
 
   prev.onclick = function () {
-    disableButtons();
     carousel.scrollBy({
       left: -updateScrollAmount(),
       behavior: "smooth",
     });
-    setTimeout(() => {
-      enableButtons;
-    }, 1800);
   };
 }
 
 function updateScrollAmount() {
-  const carousel = document.getElementById("carousel");
   let gap = 16.5;
   let res;
   let carouselWidth = carousel.getBoundingClientRect().width;
@@ -93,22 +85,22 @@ function updateScrollAmount() {
   return res;
 }
 
-function checkScroll() {
-  const carousel = document.getElementById("carousel");
+function checkButtons() {
+  next.classList.add("next");
+  prev.classList.add("prev");
   let maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
   prev.disabled = carousel.scrollLeft <= 0;
   next.disabled = carousel.scrollLeft >= maxScrollLeft;
 }
+function pauseScrolling() {
+  disableButtons();
+  setTimeout(function () {
+    checkButtons();
+  }, 400);
+}
 function disableButtons() {
-  const next = document.getElementById("next"),
-    prev = document.getElementById("prev");
+  next.classList.remove("next");
+  prev.classList.remove("prev");
   next.disabled = true;
   prev.disabled = true;
-}
-
-function enableButtons() {
-  const next = document.getElementById("next"),
-    prev = document.getElementById("prev");
-  next.disabled = false;
-  prev.disabled = false;
 }

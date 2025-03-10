@@ -2,20 +2,22 @@ import renderSlider from "./components/landingSlider.js";
 import renderRecently from "./components/recentlyViewed.js";
 import Helper from "./utils/helper.js";
 
-fetch("/components/header.html")
-  .then((response) => response.text())
-  .then((data) => {
-    const body = document.body;
-    body.insertAdjacentHTML("afterbegin", data);
-    const head = document.getElementsByTagName("head")[0];
-    let headerScript = document.createElement("script");
-    headerScript.src = "/scripts/components/header.js";
-    headerScript.type = "module";
-    head.appendChild(headerScript);
-    let CategoriesScript = document.createElement("script");
-    CategoriesScript.src = "/scripts/components/categories.js";
-    head.appendChild(CategoriesScript);
-  });
+Promise.all([
+  fetch("/components/header.html").then((res) => res.text()),
+  fetch("/components/footer.html").then((res) => res.text()),
+]).then(([header, footer]) => {
+  const body = document.body;
+  body.insertAdjacentHTML("afterbegin", header);
+  body.insertAdjacentHTML("beforeend", footer);
+  const head = document.getElementsByTagName("head")[0];
+  let headerScript = document.createElement("script");
+  headerScript.src = "/scripts/components/header.js";
+  headerScript.type = "module";
+  head.appendChild(headerScript);
+  let CategoriesScript = document.createElement("script");
+  CategoriesScript.src = "/scripts/components/categories.js";
+  head.appendChild(CategoriesScript);
+});
 
 // get data
 try {

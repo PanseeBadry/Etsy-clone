@@ -24,7 +24,9 @@ export default async function initializeSearch() {
     console.log(searchInput.value.length);
     searchInput.value.trim().length == 0 || searchItems.length == 0
       ? window.location.assign("/")
-      : searchItems[0].click();
+      : window.location.assign(
+          `/pages/products.html?search=${searchInput.value}`
+        );
   };
   searchInput.oninput = handleSearchInput;
   searchCancel.onclick = handleSearchCancel;

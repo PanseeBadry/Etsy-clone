@@ -387,6 +387,13 @@
     opacity: 1;
   }
 }
+.product-favorite:hover {
+  box-shadow: 0px 0px 5px 3px #00000040;
+}
+
+.product-favorite:hover::after {
+  transform: scale(1.09);
+}
 
 .product-body {
   width: 100%;

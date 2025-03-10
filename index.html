@@ -11,7 +11,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <script src="./scripts/components/slider.js" defer></script>
     <script src="scripts/components/gifts.js" defer></script>
     <script src="scripts/main.js" defer type="module"></script>
 
@@ -67,7 +66,7 @@
         <header>
           <h2>Today's big deals</h2>
           <div class="control">
-            <button id="prev" title="Previous">
+            <button class="prev" id="prev" title="Previous">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -79,7 +78,7 @@
                 ></path>
               </svg>
             </button>
-            <button id="next" title="Next">
+            <button class="next" id="next" title="Next">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -93,16 +92,68 @@
             </button>
           </div>
         </header>
-        <div id="carousel">
-          <div id="content"></div>
-        </div>
+        <div id="carousel"></div>
       </section>
 
       <section class="gifts-for-1 container"></section>
 
       <section class="gifts-for-2 container"></section>
 
-      <section class="what-is container"></section>
+      <section class="what-is">
+        <div class="container">
+          <h2>What is Etsy?</h2>
+
+          <div class="columns">
+            <div class="column">
+              <h3>A community doing good</h3>
+              <div>
+                Etsy is a global online marketplace, where people come together
+                to make, sell, buy, and collect unique items. We're also a
+                community pushing for positive change for small businesses,
+                people, and the planet.
+                <div class="msg">
+                  <span class="under-lined"
+                    >Here are some of the ways we're making a positive impact,
+                    together.
+                  </span>
+                  <ul>
+                    <li>
+                      Your purchases on Etsy in 2020 generated nearly $4 billion
+                      in income for small businesses.
+                    </li>
+                    <li>
+                      We advocate for policy—at the global and local level—that
+                      benefits creative entrepreneurs and helps small businesses
+                      grow and thrive.
+                    </li>
+                    <li>
+                      We are deepening our commitment to a sustainable future
+                      and are working towards a new goal to reach net zero
+                      emissions by 2030.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <h3>Support independent creators</h3>
+              <p>
+                There's no Etsy warehouse – just millions of people selling the
+                things they love. We make the whole process easy, helping you
+                connect directly with makers to find something extraordinary.
+              </p>
+            </div>
+            <div class="column">
+              <h3>Peace of mind</h3>
+              <p>
+                Your privacy is the highest priority of our dedicated team. And
+                if you ever need assistance, we are always ready to step in for
+                support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

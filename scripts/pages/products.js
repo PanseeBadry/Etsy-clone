@@ -1,5 +1,24 @@
 import Helper from "../utils/helper.js";
 import * as Cookies from "../utils/cookiesLibrary.js";
+
+
+
+Promise.all([
+    fetch("/components/header.html").then((res) => res.text()),
+    fetch("/components/footer.html").then((res) => res.text()),
+  ]).then(([header, footer]) => {
+    const body = document.body;
+    body.insertAdjacentHTML("afterbegin", header);
+    body.insertAdjacentHTML("beforeend", footer);
+    const head = document.getElementsByTagName("head")[0];
+    let headerScript = document.createElement("script");
+    headerScript.src = "/scripts/components/header.js";
+    headerScript.type = "module";
+    head.appendChild(headerScript);
+    let CategoriesScript = document.createElement("script");
+    CategoriesScript.src = "/scripts/components/categories.js";
+    head.appendChild(CategoriesScript);
+  });
 //containers 
 var productsContainer = document.getElementsByClassName('product-cards')[0];
 var categoryContainer = document.getElementsByClassName('category-container')[0];
@@ -333,7 +352,7 @@ function displayProduct(product, len) {
                                 </span>
 
                             </div>
-                             <p >${product.discount && product.discount !== "0%" ? `<span class="product-after-discount"> USD ${priceAfterDiscount} </span>  <span class="product-current-price"><s style="text-decoration: line-through;"> USD ${product.current_price}</s> (${product.discount}off)</span>` : `<span class="product-current-price">${product.current_price}</span>`} </p>
+                             <p >${product.discount && product.discount !== "0%" ? `<span class="product-after-discount"> USD ${priceAfterDiscount} </span>  <span class="product-current-price"><span style="text-decoration: line-through; "> USD ${product.current_price.toFixed(2)}</span> (${product.discount}% off)</span>` : `<span class="product-current-price">${product.current_price}</span>`} </p>
                             <span class="product-vendor">${product.vendor}</span> <br>
                             ${product.free_shipping ? `<span class="free-shipping">FREE Shipping</span>` : ''}
                                                 

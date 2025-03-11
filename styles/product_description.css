@@ -1,46 +1,32 @@
 @import url("global.css");
 @import url("header.css");
+
 :root {
-  --gap: 10px;
+  --gap: 20px;
   --border-radius: 7px;
   --slider-width: 70px;
 }
 
 .product-layout {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 65% 1fr;
   gap: var(--gap);
-  /* border: 1px solid #000;
-  border-radius: var(--border-radius); */
-  justify-content: space-between;
   padding: 20px 0;
-}
-
-/* .product-layout .product {
-  border: 1px solid #000;
-  border-radius: var(--border-radius);
-} */
-
-.product-imgs,
-.product-reviews {
-  width: calc(65%);
+  min-height: 100vh;
 }
 
 .product-details {
-  width: calc(35% - var(--gap));
+  grid-row: span 2;
 }
 
 @media (max-width: 899px) {
-  .product-imgs,
-  .product-reviews,
-  .product-details {
-    width: 100%;
+  .product-layout {
+    grid-template-columns: 1fr;
   }
 }
 
 .product-imgs {
   position: relative;
-  /* max-height: 665px; */
   display: flex;
   justify-content: center;
 }
@@ -100,7 +86,6 @@
   height: 100%;
   width: calc(80% - var(--slider-width));
   margin-left: var(--slider-width);
-  /* border: 1px solid #000; */
 }
 
 .slide-show img {
@@ -137,6 +122,7 @@
 .favorite-btn:hover {
   background-color: #eaeaea;
 }
+
 .carousel-btn .icon,
 .favorite-btn .icon {
   display: flex;
@@ -167,12 +153,14 @@
   transition: transform 0.01s cubic-bezier(0.345, 0.115, 0.135, 1.42),
     background-color 0.015s ease-out, box-shadow 0.2s ease-out;
 }
+
 .favorite-btn svg {
   width: 23px;
   height: 23px;
   fill: var(--primary-color);
   transition: fill 0.3s;
 }
+
 .favorite-btn.active svg {
   fill: red;
 }
@@ -199,19 +187,23 @@
   max-height: 19px;
   width: 20.2px;
 }
+
 .product-reviews .rev-stars {
   display: flex;
   align-items: center;
   gap: 3.8px;
 }
+
 .product-reviews .star {
   background: url("../assets/icons/star1.png") no-repeat center center;
   background-size: cover;
 }
+
 .product-reviews .half-star {
   background: url("../assets/icons/half-empty.png") no-repeat center center;
   background-size: cover;
 }
+
 .product-reviews .empty-star {
   background: url("../assets/icons/star\(1\).png") no-repeat center center;
   background-size: cover;
@@ -225,6 +217,7 @@
   border-bottom: 2px solid #0e0e0e17;
   padding-bottom: 20px;
 }
+
 .product-reviews header h2 {
   letter-spacing: 0.31238px;
   font-size: 24.99px;
@@ -269,12 +262,15 @@
   transition: all 0.05s linear;
   border-radius: 24px;
 }
+
 .comments-sort-button svg {
   width: 24px;
 }
+
 .comments-sort-button:hover::before {
   transform: translate(-50%, -50%) scale(1);
 }
+
 .sort-menu {
   width: 100%;
   position: absolute;
@@ -288,9 +284,11 @@
   border-radius: 12px;
   cursor: pointer;
 }
+
 .hide {
   display: none;
 }
+
 .sort-menu li {
   padding: 12px 18px;
   font-size: 13px;
@@ -299,12 +297,15 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .sort-menu li:last-child {
   border-radius: 0 0 12px 12px;
 }
+
 .sort-menu li:hover {
   background-color: #eaeaea;
 }
+
 .sort-menu li::after {
   content: "";
   background-image: url("../assets/icons/check.svg");
@@ -316,15 +317,19 @@
   margin-right: -2px;
   display: none;
 }
+
 .sort-menu .checked::after {
   display: block;
 }
+
 .sort-menu .checked {
   background-color: #f2f2f2;
 }
+
 .product-reviews .reviews-sort .clicked::before {
   display: none;
 }
+
 /* reviews cards */
 #reviews-cards {
   display: flex;
@@ -332,6 +337,7 @@
   gap: 17px;
   margin-bottom: 45px;
 }
+
 .review-card {
   padding: 6px 6px 18px 6px;
   border-bottom: 1px solid #0e0e0e2e;
@@ -340,9 +346,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .review-info {
   width: 100%;
 }
+
 .review-content {
   letter-spacing: 0.16px;
   font-size: 16px;
@@ -355,6 +363,7 @@
 .purchased-item {
   padding-top: 6px;
 }
+
 .purchased-item,
 .purchased-item a,
 .review-details {
@@ -363,13 +372,16 @@
   font-size: 14px;
   line-height: 1.6;
 }
+
 .purchased-item strong {
   line-height: 1.4;
 }
+
 .purchased-item a {
   text-decoration: underline;
   font-weight: 400;
 }
+
 .review-owner {
   display: flex;
   align-items: end;
@@ -381,6 +393,7 @@
   gap: 10px;
   padding-top: 6px;
 }
+
 .review-owner img {
   width: 20px;
   height: 20px;
@@ -390,6 +403,7 @@
 .review-summary {
   text-align: start;
 }
+
 .review-recommend {
   font-size: 13px;
   font-weight: 100;
@@ -397,19 +411,23 @@
   color: rgb(89, 89, 89);
   margin: 19px 0 3px;
 }
+
 .review-recommend .right {
   color: rgb(75, 196, 109);
   font-size: 14px;
   display: none;
 }
+
 .review-recommend .wrong {
   color: rgb(208, 7, 57);
   font-size: 16px;
   display: none;
 }
+
 .review-recommend.check .right {
   display: inline;
 }
+
 .review-recommend.uncheck .wrong {
   display: inline;
 }
@@ -418,11 +436,13 @@
   color: black;
   font-weight: 400px;
 }
+
 .review-details li {
   margin-top: 6px;
   font-size: 13.6px;
   color: var(--primary-color);
 }
+
 .review-details .star {
   width: 18px;
   height: 18px;
@@ -431,6 +451,7 @@
   background: url("../assets/icons/star.svg") no-repeat center center;
   background-size: cover;
 }
+
 .review-details .count {
   margin-left: 10px;
   margin-right: 3px;
@@ -444,6 +465,7 @@
   gap: 12 px;
   justify-content: center;
 }
+
 .pagination button {
   width: 36px;
   height: 36px;
@@ -452,27 +474,33 @@
   font-weight: 500;
   transition: all 0.1s linear;
 }
+
 .pagination button:hover {
   background-color: #d4d4d4;
   border: none;
   box-shadow: none;
 }
+
 #next-page,
 #prev-page {
   display: flex;
   align-self: center;
   justify-content: center;
 }
+
 .pagination svg {
   width: 18px;
 }
+
 .pagination .active {
   border: 2px solid var(--primary-color);
 }
+
 #next-page:disabled,
 #prev-page:disabled {
   cursor: not-allowed;
 }
+
 #next-page:disabled:hover,
 #prev-page:disabled:hover {
   background-color: #e9e9e9;
@@ -483,16 +511,20 @@
   .review-card {
     flex-wrap: nowrap;
   }
+
   .review-summary {
     text-align: end;
   }
+
   .review-info {
     width: 60%;
   }
+
   .pagination {
     justify-content: start;
     gap: 6px;
   }
+
   .review-recommend {
     margin: 0;
     margin-bottom: 18px;

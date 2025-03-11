@@ -1,59 +1,188 @@
+import DataStore from "/scripts/utils/data_store.js";
 import ReviewsSection from "../sections/review.js";
+import LS from "/scripts/utils/localStorage.js";
 
-fetch("../../components/header.html")
-  .then((response) => response.text())
-  .then((data) => {
-    const body = document.body;
-    body.insertAdjacentHTML("afterbegin", data);
-    const head = document.getElementsByTagName("head")[0];
-    let headerScript = document.createElement("script");
-    headerScript.src = "../scripts/components/header.js";
-    head.appendChild(headerScript);
-    let CategoriesScript = document.createElement("script");
-    CategoriesScript.src = "/scripts/components/categories.js";
-    head.appendChild(CategoriesScript);
+
+// Load Header Component
+async function loadHeader() {
+  try {
+    const response = await fetch("../../components/header.html");
+    const data = await response.text();
+    document.body.insertAdjacentHTML("afterbegin", data);
+    loadScripts([
+      "../scripts/components/header.js",
+      "/scripts/components/categories.js"
+    ]);
+  } catch (error) {
+    console.error("Error loading header:", error);
+  }
+}
+
+// Load External Scripts
+function loadScripts(scripts) {
+  const head = document.head;
+  scripts.forEach((src) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.defer = true;
+    head.appendChild(script);
+  });
+}
+
+
+
+// Initialize Product Description Rendering
+async function renderProductDescription() {
+  const productId = new URLSearchParams(window.location.search).get("prodId");
+  const products = await DataStore.getProducts();
+  const product = products.find((prod) => prod.product_id == productId);
+
+  if (!product) return;
+
+  initializeSlider(product);
+  ReviewsSection.initialize(product.rating, product.reviews);
+  renderProductDetails(product);
+  handleCartButton(product);
+}
+
+
+
+// Initialize Image Slider
+function initializeSlider(product) {
+  const slider = document.querySelector(".slider");
+  const slideShow = document.querySelector(".slide-show");
+  const prev = document.querySelector(".prev-btn");
+  const next = document.querySelector(".next-btn");
+  let slideIndex = 0;
+
+  product.images.forEach((image, index) => {
+    const slideItem = document.createElement("div");
+    slideItem.classList.add("slide-item");
+
+    const img = document.createElement("img");
+    img.src = image;
+    img.alt = `${product.name} ${product.description}`;
+    slideItem.appendChild(img);
+    slideItem.addEventListener("click", () => selectSlide(index));
+
+    slider.appendChild(slideItem);
   });
 
-let slideIndex = 0;
-const images = document.querySelectorAll(".slide-item img");
-const slideShow = document.querySelector(".slide-show");
-function updateProductImages() {
-  slideIndex =
-    slideIndex > images.length - 1
-      ? 0
-      : slideIndex < 0
-        ? images.length - 1
-        : slideIndex;
-  slideShow.innerHTML = images[slideIndex].outerHTML;
-  images[slideIndex].classList.add("active-slide");
+  prev.addEventListener("click", () => selectSlide(slideIndex - 1));
+  next.addEventListener("click", () => selectSlide(slideIndex + 1));
+  selectSlide(0);
+
+  function selectSlide(index) {
+    const slides = document.querySelectorAll(".slide-item");
+    slides[slideIndex].classList.remove("active-slide");
+    slideIndex = (index + product.images.length) % product.images.length;
+    slides[slideIndex].classList.add("active-slide");
+    slideShow.innerHTML = slides[slideIndex].innerHTML;
+  }
 }
 
-function selectSlide(n) {
-  images[slideIndex].classList.remove("active-slide");
-  slideIndex = n;
-  updateProductImages();
+
+
+// Render Product Details
+function renderProductDetails(product) {
+  const productDetails = document.querySelector(".product-details");
+  productDetails.innerHTML = `
+    ${product.quantity < 5 ? `<div class="low-stock">Low in stock, only ${product.quantity} left</div>` : ""}
+    <div class="product-price">
+      <div class="price-container">
+        ${product.discount > 0 ? `
+          <span class="price with-discount">USD ${product.current_price}</span>
+          <span class="discount">USD ${(product.current_price * (1 + product.discount / 100)).toFixed(2)}</span>
+        </div>
+        <div class="discount-percent">${product.discount}% off</div>
+        ` : `<span class="price">USD ${product.current_price}</span></div>`}
+    </div>
+    <div class="tax">Local taxes included (where applicable)</div>
+    <div class="product-description">${product.description}</div>
+    <div class="product-vendor">
+      <span>${product.vendor}</span>
+      ${product.rating == 5 ? renderStarSellerBadge() : ""}
+    </div>
+    ${renderQuantitySelector(product.quantity)}
+    <div class="add-to-cart">
+      <button type="submit"><span>Add to cart</span></button>
+    </div>
+  `;
 }
 
-function goPrev() {
-  selectSlide(slideIndex - 1);
+
+
+// Render Star Seller Badge
+function renderStarSellerBadge() {
+  return `
+    <div class="star-seller-badge">
+      <button aria-label="Star Seller">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="m20.902 7.09-2.317-1.332-1.341-2.303H14.56L12.122 2 9.805 3.333H7.122L5.78 5.758 3.341 7.09v2.667L2 12.06l1.341 2.303v2.666l2.318 1.334L7 20.667h2.683L12 22l2.317-1.333H17l1.342-2.303 2.317-1.334v-2.666L22 12.06l-1.341-2.303V7.09zm-6.097 6.062.732 3.515-.488.363-2.927-1.818-3.049 1.697-.488-.363.732-3.516-2.56-2.181.121-.485 3.537-.243 1.341-3.273h.488l1.341 3.273 3.537.243.122.484z"></path>
+          </svg>
+        </span>
+      </button>
+      <div class="star-seller-popover">
+        <p class="text-title">Star Seller</p>
+        <p class="text-caption">Star Sellers have an outstanding track record for providing a great customer experience—they consistently earned 5-star reviews, shipped orders on time, and replied quickly to any messages they received.</p>
+        <span class="popover-arrow"></span>
+      </div>
+    </div>
+    <div class="review-stars">
+      <a href="#reviews" aria-label="See reviews">
+          ${Array.from({ length: 5 }, (_, i) => i + 1)
+      .map((num) => `<svg class="star" viewBox="3 3 18 18" aria-hidden="true"><path d="M20.83,9.15l-6-.52L12.46,3.08h-.92L9.18,8.63l-6,.52L2.89,10l4.55,4L6.08,19.85l.75.55L12,17.3l5.17,3.1.75-.55L16.56,14l4.55-4Z"></path></svg>`)
+      .join("\n")}
+      </a>
+    </div>
+  `;
 }
 
-function goNext() {
-  selectSlide(slideIndex + 1);
+
+
+// Render Quantity Selector
+function renderQuantitySelector(quantity) {
+  return `
+    <div class="product-quantity">
+      <label for="quantity">Quantity</label>
+      <select name="quantity" id="quantity">
+        ${Array.from({ length: quantity }, (_, i) => i + 1)
+      .map((num) => `<option value="${num}" ${num == 1 ? "selected" : ""}>${num}</option>`)
+      .join("\n")}
+      </select>
+    </div>
+  `;
 }
 
-updateProductImages(slideIndex);
 
-// reviews section
-let prodId = 5;
 
-// render part
-fetch("../../data/products.json")
-  .then((data) => data.json())
-  .then((products) => {
-    let product = products.products.filter(
-      (prod) => prod.product_id == prodId
-    )[0];
+// Handle Add to Cart Button
+function handleCartButton(product) {
+  const cartButton = document.querySelector(".add-to-cart button");
+  const quantitySelector = document.querySelector(".product-quantity select");
 
-    ReviewsSection.initialize(product.rating, product.reviews);
+  cartButton.addEventListener("click", () => {
+    const quantity = parseInt(quantitySelector.value);
+    const cart = LS.getItem("cart") || {};
+    const cartItem = cart[product.product_id];
+
+    if (cartItem) {
+      if (cartItem.quantity + quantity <= product.quantity) {
+        cartItem.quantity += quantity;
+      } else {
+        cartItem.quantity = product.quantity;
+      }
+    } else {
+      cart[product.product_id] = { quantity };
+    }
+
+    LS.setItem("cart", cart);
   });
+}
+
+
+
+// Execute Functions
+loadHeader();
+renderProductDescription();

@@ -1,3 +1,4 @@
+import DataStore from "../utils/data_store.js";
 let categories, subCategories, products;
 const searchInput = document.getElementById("header-search-input"),
   searchCancel = document.getElementById("header-search-cancel"),
@@ -7,15 +8,9 @@ const searchInput = document.getElementById("header-search-input"),
 
 export default async function initializeSearch() {
   try {
-    const [categoriesData, subCategoriesData, productData] = await Promise.all([
-      fetch("/data/categories.json").then((res) => res.json()),
-      fetch("/data/subCategories.json").then((res) => res.json()),
-      fetch("/data/products.json").then((res) => res.json()),
-    ]);
-
-    categories = categoriesData.categories;
-    subCategories = subCategoriesData.subCategories;
-    products = productData.products;
+    categories = await DataStore.getCategories();
+    subCategories = await DataStore.getSubCategories();
+    products = await DataStore.getProducts();
   } catch (error) {
     console.error("Error loading data:", error);
   }

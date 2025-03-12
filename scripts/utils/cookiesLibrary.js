@@ -1,10 +1,10 @@
 export function setCookie(key, value, expiryDate) {
+  let cookie = `${key}=${value}; path=/`;
+
   if (expiryDate) {
-    document.cookie =
-      key + "=" + value + ";expires=" + expiryDate.toUTCString();
-  } else {
-    document.cookie = key + "=" + value;
+    cookie += `; expires=${expiryDate.toUTCString()}`;
   }
+  document.cookie = cookie;
 }
 
 export function getAllcookies() {

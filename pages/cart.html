@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etsy-Shopping Cart</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/Etsylogo.png"
+      type="image/x-icon"
+    />
+    <script src="../scripts/pages/cart.js" type="module" defer></script>
+    <link rel="stylesheet" href="../styles/cart.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Etsy-Shopping Cart</title>
-  <link rel="shortcut icon" href="../assets/icons/Etsylogo.png" type="image/x-icon" />
-  <script src="../scripts/pages/cart.js" type="module" defer></script>
-  <link rel="stylesheet" href="../styles/cart.css" />
-</head>
-
-<body>
-  <main>
-    <div class="menu-overlay"></div>
-    <section class="cart-heading container">
-      <img src="../assets/icons/shakeHand.svg" alt="" />
-      <p>
-        <strong>Buy confidently</strong> with Etsy's Purchase Protection
-        program for buyers, get a full refund in the rare case your item
-        doesn't arrive, arrives damaged, or isn't as described.
-      </p>
-    </section>
-    <section class="cart-content container">
-      <p class="empty-cart">Your cart is empty.</p>
-      <div class="cart-items"></div>
-      <div class="check-out">
-        <h2>How you'll pay</h2>
-        <form action="">
-          <label class="payment-method">
-            <input type="radio" name="method" value="visa" checked />
-            <span class="radio-mark"></span>
-            <div><img src="../assets/icons/visa.svg" alt="Visa" /></div>
-            <div>
-              <img src="../assets/icons/mastercard.svg" alt="mastercard" />
-            </div>
-            <div class="americanExpress">
-              <img src="../assets/icons/americanExpress.svg" alt="americanExpress" />
-            </div>
-          </label>
-
-          <label class="payment-method">
-            <input type="radio" name="method" value="paypal" />
-            <span class="radio-mark"></span>
-            <div><img src="../assets/icons/paypal.svg" alt="Visa" /></div>
-          </label>
-          <label class="payment-method">
-            <input type="radio" name="method" value="googlepay" />
-            <span class="radio-mark"></span>
-            <div class="googlepay">
-              <img src="../assets/icons/googlepay.svg" alt="googlepay" />
-            </div>
-          </label>
-
-          <p class="summary">
-            <span>Item(s) total</span>
-            <span class="total-price"></span>
-          </p>
-
-          <p class="summary">
-            <span>Shipping</span>
-            <span>free</span>
-          </p>
-          <p class="shipping-note">(To <span class="coun">Egypt</span>)</p>
-
-          <div class="line"></div>
-          <p class="summary total-amount">
-            <strong></strong>
-            <strong></strong>
-          </p>
-
-          <div class="gift">
-            <label class="gift-mark">
-              <input type="checkbox" name="gift" value="true" />
-              <span class="checkmark"></span>
-              Mark order as a gift
+  <body>
+    <main>
+      <div class="menu-overlay"></div>
+      <section class="cart-heading container">
+        <img src="../assets/icons/shakeHand.svg" alt="" />
+        <p>
+          <strong>Buy confidently</strong> with Etsy's Purchase Protection
+          program for buyers, get a full refund in the rare case your item
+          doesn't arrive, arrives damaged, or isn't as described.
+        </p>
+      </section>
+      <section class="cart-content container">
+        <p class="empty-cart">Your cart is empty.</p>
+        <div class="cart-items"></div>
+        <div class="check-out">
+          <h2>How you'll pay</h2>
+          <form action="">
+            <label class="payment-method">
+              <input type="radio" name="method" value="visa" checked />
+              <span class="radio-mark"></span>
+              <div><img src="../assets/icons/visa.svg" alt="Visa" /></div>
+              <div>
+                <img src="../assets/icons/mastercard.svg" alt="mastercard" />
+              </div>
+              <div class="americanExpress">
+                <img
+                  src="../assets/icons/americanExpress.svg"
+                  alt="americanExpress"
+                />
+              </div>
             </label>
-            <span class="learn-more">Learn more</span>
-          </div>
-          <button type="submit">Proceed to checkout</button>
-        </form>
-      </div>
-    </section>
-  </main>
-</body>
 
+            <label class="payment-method">
+              <input type="radio" name="method" value="paypal" />
+              <span class="radio-mark"></span>
+              <div><img src="../assets/icons/paypal.svg" alt="Visa" /></div>
+            </label>
+            <label class="payment-method">
+              <input type="radio" name="method" value="googlepay" />
+              <span class="radio-mark"></span>
+              <div class="googlepay">
+                <img src="../assets/icons/googlepay.svg" alt="googlepay" />
+              </div>
+            </label>
+
+            <p class="summary">
+              <span>Item(s) total</span>
+              <span class="total-price"></span>
+            </p>
+
+            <p class="summary">
+              <span>Shipping</span>
+              <span>free</span>
+            </p>
+            <p class="shipping-note">(To <span class="coun">Egypt</span>)</p>
+
+            <div class="line"></div>
+            <p class="summary total-amount">
+              <strong></strong>
+              <strong></strong>
+            </p>
+
+            <div class="gift">
+              <label class="gift-mark">
+                <input type="checkbox" name="gift" value="true" />
+                <span class="checkmark"></span>
+                Mark order as a gift
+              </label>
+              <span class="learn-more">Learn more</span>
+            </div>
+            <button class="submit-checkout" type="submit">
+              Proceed to checkout
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

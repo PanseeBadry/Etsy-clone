@@ -166,116 +166,15 @@
         </div>
       </section>
       <section class="product-section">
+
         <div id="products-container">
-          <div class="product-cards" id="product-cards">
-            <!-- <div class="product-card">
-                        <img src=${} alt="" class="product-image">
-                        <div class="product-body">
-                            <i class="fa-regular fa-heart product-favorite"></i>
-                            <p class="product-name">product name</p>
-                            <div class="product-info">
-                                <span class="product-rating">product rate
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                
-                            </div>
-                            <span class="product-description">product seller</span>
-                            
-                            <p class="product-price"> product price</p>
-                            <button class="add-to-cart-btn">
-                                <i class="fa-solid fa-plus"></i>Add to cart
-                           </button>
-                           <button class="more-like-this-btn">More like this <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="../assets/images/2.webp" alt="" class="product-image">
-                        <div class="product-body">
-                            <i class="fa-regular fa-heart product-favorite"></i>
-                            <p class="product-name">product name</p>
-                            <div class="product-info">
-                                <span class="product-rating">product rate
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                <span class="product-views">product views</span>
-                            </div>
-                            <span class="product-description">product seller</span>
-                            
-                            <p class="product-price"> product price</p>
-                            <button class="add-to-cart-btn">
-                                <i class="fa-solid fa-plus"></i>Add to cart
-                           </button>
-                           <button class="more-like-this-btn">More like this <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="../assets/images/3.avif" alt="" class="product-image">
-                        <div class="product-body">
-                            <i class="fa-regular fa-heart product-favorite"></i>
-                            <p class="product-name">product name</p>
-                            <div class="product-info">
-                                <span class="product-rating">product rate
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                <span class="product-views">product views</span>
-                            </div>
-                            <span class="product-description">product seller</span>
-                            
-                            <p class="product-price"> product price</p>
-                            <button class="add-to-cart-btn">
-                                <i class="fa-solid fa-plus"></i>Add to cart
-                           </button>
-                           <button class="more-like-this-btn">More like this <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="../assets/images/4.webp" alt="" class="product-image">
-                        <div class="product-body">
-                            <i class="fa-regular fa-heart product-favorite"></i>
-                            <p class="product-name">product name</p>
-                            <div class="product-info">
-                                <span class="product-rating">product rate
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                <span class="product-views">product views</span>
-                            </div>
-                            <span class="product-description">product seller</span>
-                            
-                            <p class="product-price"> product price</p>
-                            <button class="add-to-cart-btn">
-                                <i class="fa-solid fa-plus"></i>Add to cart
-                           </button>
-                           <button class="more-like-this-btn">More like this <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    
-                 -->
+          <div class="product-cards" id="product-cards">            
 
           </div>
-
         </div>
         <div class="btn">
           <input type="button" value="Show More" class="show-more-btn sbtn1">
         </div>
-
-
-
       </section>
 
 
@@ -288,21 +187,6 @@
 
 
 
-  <script>
-    fetch("../components/header.html")
-      .then((response) => response.text())
-      .then((data) => {
-        const body = document.body;
-        body.insertAdjacentHTML("afterbegin", data);
-        const head = document.getElementsByTagName("head")[0];
-        let headerScript = document.createElement("script");
-        headerScript.src = "../scripts/components/header.js";
-        head.appendChild(headerScript);
-        let CategoriesScript = document.createElement("script");
-        CategoriesScript.src = "/scripts/components/categories.js";
-        head.appendChild(CategoriesScript);
-      });
-  </script>
 
 
   <script src="../scripts/pages/products.js" type="module"></script>

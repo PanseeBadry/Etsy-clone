@@ -1,9 +1,9 @@
 let categories, subCategories, products;
 const searchInput = document.getElementById("header-search-input"),
   searchCancel = document.getElementById("header-search-cancel"),
-  searchButton = document.getElementById("header-search"),
   searchMenu = document.getElementById("search-menu"),
-  searchItems = document.getElementsByClassName("search-item");
+  searchItems = document.getElementsByClassName("search-item"),
+  searchForm = document.getElementById("search-con");
 
 export default async function initializeSearch() {
   try {
@@ -20,7 +20,8 @@ export default async function initializeSearch() {
     console.error("Error loading data:", error);
   }
 
-  searchButton.onclick = function () {
+  searchForm.onsubmit = function (e) {
+    e.preventDefault();
     console.log(searchInput.value.length);
     searchInput.value.trim().length == 0 || searchItems.length == 0
       ? window.location.assign("/")
@@ -73,5 +74,4 @@ function renderSearchElements(pattern) {
 function handleSearchCancel() {
   searchCancel.classList.add("hide");
   searchMenu.classList.add("hide");
-  searchInput.value = "";
 }

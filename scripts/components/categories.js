@@ -47,8 +47,8 @@ function initializeCategoriesMenu() {
     .join("");
 
   activeBtn = document.querySelector(`[data-category-id="${categories[0].id}"]`);
-  activeBtn.classList.add("active");
-  allCategories.textContent = `All ${activeBtn.textContent}`;
+  // activeBtn.classList.add("active");
+  // allCategories.textContent = `All ${activeBtn.textContent}`;
   setActiveCategory(categories[0].id);
 }
 
@@ -94,7 +94,7 @@ function displaySubCategoriesList(categoryID) {
 
   if (existingList) {
     if (existingList.getAttribute("data-category-id") === categoryID) {
-      activeBtn.classList.remove("rotated");
+      // activeBtn.classList.remove("rotated");
       existingList.remove();
       return;
     } else {

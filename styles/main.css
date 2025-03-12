@@ -400,6 +400,7 @@ section.recently {
   text-underline-position: under;
   font-size: 16px;
   cursor: help;
+  -webkit-user-select: none;
   user-select: none;
 }
 .what-is .column ul {

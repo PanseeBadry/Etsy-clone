@@ -32,6 +32,16 @@ class DataStore {
     }
 
     /**
+     * Retrieves a product by its ID.
+     * @param {number} productId - The ID of the product to find
+     * @returns {Promise<Object>} The product object
+     */
+    static async getProductById(productId) {
+        const products = await this.getProducts();
+        return products.find((product) => product.product_id == productId);
+    }
+
+    /**
      * Fetches data from a JSON file and caches it.
      * @param {string} type - The type of data to fetch (categories, subCategories, or products).
      * @returns {Promise<Array>} The fetched data

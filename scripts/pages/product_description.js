@@ -1,33 +1,8 @@
 import DataStore from "/scripts/utils/data_store.js";
 import ReviewsSection from "../sections/review.js";
 import LS from "/scripts/utils/localStorage.js";
-
-
-// Load Header Component
-async function loadHeader() {
-  try {
-    const response = await fetch("../../components/header.html");
-    const data = await response.text();
-    document.body.insertAdjacentHTML("afterbegin", data);
-    loadScripts([
-      "../scripts/components/header.js",
-      "/scripts/components/categories.js"
-    ]);
-  } catch (error) {
-    console.error("Error loading header:", error);
-  }
-}
-
-// Load External Scripts
-function loadScripts(scripts) {
-  const head = document.head;
-  scripts.forEach((src) => {
-    const script = document.createElement("script");
-    script.src = src;
-    script.defer = true;
-    head.appendChild(script);
-  });
-}
+import updateCartIcon from "/scripts/components/cartIcon.js";
+import loadHeader from "/scripts/utils/loadHeader.js";
 
 
 
@@ -40,9 +15,13 @@ async function renderProductDescription() {
   if (!product) return;
 
   initializeSlider(product);
-  ReviewsSection.initialize(product.rating, product.reviews);
   renderProductDetails(product);
   handleCartButton(product);
+  if (product.reviews.length > 0) {
+    ReviewsSection.initialize(product.rating, product.reviews);
+  } else {
+    document.querySelector(".product-reviews").style.display = "none";
+  }
 }
 
 
@@ -178,6 +157,7 @@ function handleCartButton(product) {
     }
 
     LS.setItem("cart", cart);
+    updateCartIcon();
   });
 }
 

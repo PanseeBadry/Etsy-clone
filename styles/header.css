@@ -9,16 +9,20 @@ header .container {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-body > header {
+
+body>header {
   border-bottom: 2px solid #0e0e0e2e;
 }
+
 .hide {
   display: none;
 }
+
 /* logo */
 .logo-link {
   margin-right: 6px;
 }
+
 .logo {
   fill: var(--header-icon-color);
   width: 80px;
@@ -49,9 +53,11 @@ body > header {
   background-repeat: no-repeat;
   position: relative;
 }
+
 .categories-button-data {
   display: none;
 }
+
 .categories-menu-button::before {
   background-color: var(--header-hover);
   width: calc(100% + 25px);
@@ -69,6 +75,7 @@ body > header {
   gap: 5px;
   position: relative;
 }
+
 input[name="search"] {
   height: 100%;
   border-radius: 35px;
@@ -77,6 +84,7 @@ input[name="search"] {
   font-size: 1rem;
   font-weight: 350;
 }
+
 input:focus {
   outline: none;
 }
@@ -86,10 +94,12 @@ input:focus {
   height: 36px;
   position: relative;
 }
+
 .cancel-search svg {
   width: 18px;
   vertical-align: middle;
 }
+
 .cancel-search::before {
   width: 100%;
   height: 100%;
@@ -121,6 +131,7 @@ input:focus {
   transform: scale(1);
   border-radius: 0 50% 50% 0;
 }
+
 .search-button:hover {
   opacity: 0.65;
 }
@@ -136,10 +147,12 @@ nav {
   text-align: end;
   flex-grow: 1;
 }
+
 nav svg {
   width: 24px;
   vertical-align: middle;
 }
+
 nav a {
   position: relative;
   display: inline-block;
@@ -149,6 +162,7 @@ nav a {
   text-align: center;
   line-height: 48px;
 }
+
 nav a::before {
   width: 100%;
   height: 100%;
@@ -158,6 +172,7 @@ nav a::before {
 nav a:hover svg {
   fill: var(--header-message);
 }
+
 .button-data {
   font-size: 0.8rem;
   color: white;
@@ -172,9 +187,11 @@ nav a:hover svg {
   line-height: normal;
   z-index: 3;
 }
+
 nav a:hover .button-data {
   display: block;
 }
+
 .button-data::after {
   content: "";
   width: 9px;
@@ -198,6 +215,7 @@ header .hover-effect::before {
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.05s linear;
 }
+
 .hover-effect:hover::before {
   transform: translate(-50%, -50%) scale(1);
 }
@@ -246,25 +264,31 @@ header .search-menu li:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+  display: none;
 }
+
 nav .cart-link:hover .header-cart-total {
   background-color: var(--header-message);
 }
+
 /* media query */
 @media (min-width: 900px) {
   .easy-access {
     width: auto;
     order: 0;
   }
+
   .categories-menu-button {
     width: 95px;
     height: 18px;
     background-image: url("../assets/icons/burgerLarge.svg");
     margin-right: 10px;
   }
+
   .categories-button-data {
     display: inline;
   }
+
   header .categories-menu-button::before {
     border-radius: 24px;
     height: calc(100% + 18px);

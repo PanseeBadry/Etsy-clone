@@ -33,12 +33,12 @@ label {
 .cart-items {
   min-width: 0;
   width: 100%;
-  /* display: none; */
+  display: none;
 }
 .check-out {
   padding: 0 24px;
   width: 100%;
-  /* display: none; */
+  display: none;
 }
 .total-amount,
 .gift-mark,
@@ -57,6 +57,8 @@ label {
   font-weight: 200;
   line-height: 1.1;
   display: none;
+  width: 100%;
+  text-align: center;
 }
 
 /* cart items */

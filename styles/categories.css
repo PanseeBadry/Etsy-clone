@@ -3,6 +3,10 @@ body,
     position: relative;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .categories-on-air {
     opacity: 0;
     visibility: hidden;

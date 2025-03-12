@@ -1,10 +1,8 @@
 import DataStore from "/scripts/utils/data_store.js";
-import ReviewsSection from "../sections/review.js";
+import ReviewsSection from "../components/review.js";
 import LS from "/scripts/utils/localStorage.js";
 import updateCartIcon from "/scripts/components/cartIcon.js";
 import loadHeader from "/scripts/utils/loadHeader.js";
-
-
 
 // Initialize Product Description Rendering
 async function renderProductDescription() {
@@ -23,8 +21,6 @@ async function renderProductDescription() {
     document.querySelector(".product-reviews").style.display = "none";
   }
 }
-
-
 
 // Initialize Image Slider
 function initializeSlider(product) {
@@ -60,21 +56,30 @@ function initializeSlider(product) {
   }
 }
 
-
-
 // Render Product Details
 function renderProductDetails(product) {
   const productDetails = document.querySelector(".product-details");
   productDetails.innerHTML = `
-    ${product.quantity < 5 ? `<div class="low-stock">Low in stock, only ${product.quantity} left</div>` : ""}
+    ${
+      product.quantity < 5
+        ? `<div class="low-stock">Low in stock, only ${product.quantity} left</div>`
+        : ""
+    }
     <div class="product-price">
       <div class="price-container">
-        ${product.discount > 0 ? `
+        ${
+          product.discount > 0
+            ? `
           <span class="price with-discount">USD ${product.current_price}</span>
-          <span class="discount">USD ${(product.current_price * (1 + product.discount / 100)).toFixed(2)}</span>
+          <span class="discount">USD ${(
+            product.current_price *
+            (1 + product.discount / 100)
+          ).toFixed(2)}</span>
         </div>
         <div class="discount-percent">${product.discount}% off</div>
-        ` : `<span class="price">USD ${product.current_price}</span></div>`}
+        `
+            : `<span class="price">USD ${product.current_price}</span></div>`
+        }
     </div>
     <div class="tax">Local taxes included (where applicable)</div>
     <div class="product-description">${product.description}</div>
@@ -88,8 +93,6 @@ function renderProductDetails(product) {
     </div>
   `;
 }
-
-
 
 // Render Star Seller Badge
 function renderStarSellerBadge() {
@@ -111,14 +114,15 @@ function renderStarSellerBadge() {
     <div class="review-stars">
       <a href="#reviews" aria-label="See reviews">
           ${Array.from({ length: 5 }, (_, i) => i + 1)
-      .map((num) => `<svg class="star" viewBox="3 3 18 18" aria-hidden="true"><path d="M20.83,9.15l-6-.52L12.46,3.08h-.92L9.18,8.63l-6,.52L2.89,10l4.55,4L6.08,19.85l.75.55L12,17.3l5.17,3.1.75-.55L16.56,14l4.55-4Z"></path></svg>`)
-      .join("\n")}
+            .map(
+              (num) =>
+                `<svg class="star" viewBox="3 3 18 18" aria-hidden="true"><path d="M20.83,9.15l-6-.52L12.46,3.08h-.92L9.18,8.63l-6,.52L2.89,10l4.55,4L6.08,19.85l.75.55L12,17.3l5.17,3.1.75-.55L16.56,14l4.55-4Z"></path></svg>`
+            )
+            .join("\n")}
       </a>
     </div>
   `;
 }
-
-
 
 // Render Quantity Selector
 function renderQuantitySelector(quantity) {
@@ -127,14 +131,17 @@ function renderQuantitySelector(quantity) {
       <label for="quantity">Quantity</label>
       <select name="quantity" id="quantity">
         ${Array.from({ length: quantity }, (_, i) => i + 1)
-      .map((num) => `<option value="${num}" ${num == 1 ? "selected" : ""}>${num}</option>`)
-      .join("\n")}
+          .map(
+            (num) =>
+              `<option value="${num}" ${
+                num == 1 ? "selected" : ""
+              }>${num}</option>`
+          )
+          .join("\n")}
       </select>
     </div>
   `;
 }
-
-
 
 // Handle Add to Cart Button
 function handleCartButton(product) {
@@ -160,8 +167,6 @@ function handleCartButton(product) {
     updateCartIcon();
   });
 }
-
-
 
 // Execute Functions
 loadHeader();

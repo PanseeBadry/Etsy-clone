@@ -66,7 +66,7 @@
           </div>
           <span class="categories-arrow"></span>
         </div>
-        <div class="search">
+        <form id="search-con" class="search" autocomplete="off">
           <input
             type="text"
             name="search"
@@ -74,6 +74,7 @@
             id="header-search-input"
           />
           <button
+            type="reset"
             class="cancel-search hover-effect hide"
             id="header-search-cancel"
             title="Cancel Search"
@@ -89,7 +90,12 @@
               ></path>
             </svg>
           </button>
-          <button class="search-button" id="header-search" title="Search">
+          <button
+            type="submit"
+            class="search-button"
+            id="header-search"
+            title="Search"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -105,7 +111,7 @@
             </svg>
           </button>
           <ul class="search-menu hide" id="search-menu"></ul>
-        </div>
+        </form>
       </div>
       <nav>
         <a class="hover-effect" href="/pages/products.html?fav=true">

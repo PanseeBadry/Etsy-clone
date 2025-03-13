@@ -241,6 +241,8 @@ body {
         display: inline-block;
         color: #222;
         cursor: pointer;
+        /* width: fit-content; */
+        padding-right: 15px;
     }
 
     .all-categories::after {

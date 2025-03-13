@@ -43,13 +43,14 @@ async function fetchCategoriesData() {
  */
 function initializeCategoriesMenu() {
   categoriesMenu.innerHTML = categories
-    .map((category) => `<button data-category-id="${category.id}">${category.name}</button>`)
+    .filter((category) => category.id !== 0)
+    .map((category) => `<button class="category-btn" data-category-id="${category.id}">${category.name}</button>`)
     .join("");
 
-  activeBtn = document.querySelector(`[data-category-id="${categories[0].id}"]`);
+  activeBtn = document.querySelector(`[data-category-id="${categories[1].id}"]`);
   // activeBtn.classList.add("active");
   // allCategories.textContent = `All ${activeBtn.textContent}`;
-  setActiveCategory(categories[0].id);
+  setActiveCategory(categories[1].id);
 }
 
 
@@ -65,6 +66,10 @@ function setActiveCategory(categoryID) {
   activeBtn = document.querySelector(`[data-category-id="${categoryID}"]`);
   activeBtn.classList.add("active");
   allCategories.textContent = `All ${activeBtn.textContent}`;
+  allCategories.addEventListener("click", () => {
+    window.location.href = `/pages/products.html?catId=${categoryID}`;
+  }
+  );
 
   subCategoriesContainer.innerHTML = subCategories
     .filter((sub) => sub.category_id == categoryID)
@@ -78,6 +83,13 @@ function setActiveCategory(categoryID) {
       </div>
     </div>
   `).join('');
+
+  document.querySelectorAll(".sub-category-card").forEach((card) => {
+    card.addEventListener("click", (event) => {
+      const subCategoryID = event.currentTarget.getAttribute("data-sub-category-id");
+      window.location.href = `/pages/products.html?catId=${categoryID}&subCatId=${subCategoryID}`;
+    });
+  });
 
   window.innerWidth < 920 ? displaySubCategoriesList(categoryID) : '';
 }
@@ -107,11 +119,20 @@ function displaySubCategoriesList(categoryID) {
   subCategoryList.setAttribute("data-category-id", categoryID);
   subCategoryList.innerHTML = subCategories
     .filter((sub) => sub.category_id == categoryID)
-    .map((sub) => `<div class="sub-category-item">${sub.name}</div>`)
+    .map((sub) => `<div class="sub-category-item" data-category-id="${categoryID}" data-sub-category-id="${sub.id}">${sub.name}</div>`)
     .join("");
 
   activeBtn.insertAdjacentElement("afterend", subCategoryList);
   activeBtn.classList.add("rotated");
+
+  document.querySelectorAll(".sub-category-item").forEach((item) => {
+    item.addEventListener("click", (event) => {
+      const subCategoryID = event.target.getAttribute("data-sub-category-id");
+      window.location.href = `/pages/products.html?catId=${categoryID}&subCatId=${subCategoryID}`;
+    });
+  }
+  );
+
 }
 
 
@@ -171,6 +192,37 @@ function toggleMenu(forceClose = false) {
 
 
 
+// /**
+//  * Handles category selection and redirects to the products page.
+//  */
+// function handleCategoryClick(event) {
+//   const categoryBtn = event.target.closest("button");
+//   if (!categoryBtn) return;
+
+//   const categoryId = categoryBtn.getAttribute("data-category-id");
+//   if (categoryId) {
+//     window.location.href = `/pages/products.html?catId=${categoryId}`;
+//   }
+// }
+
+
+
+// /**
+//  * Handles subcategory selection and redirects to the products page.
+//  */
+// function handleSubCategoryClick(event) {
+//   const subCategoryCard = event.target.closest(".sub-category-card");
+//   if (!subCategoryCard) return;
+
+//   const categoryId = subCategoryCard.getAttribute("data-category-id");
+//   const subCategoryId = subCategoryCard.getAttribute("data-sub-category-id");
+//   if (categoryId && subCategoryId) {
+//     window.location.href = `/pages/products.html?catId=${categoryId}&subCatId=${subCategoryId}`;
+//   }
+// }
+
+
+
 // Event Listeners
 categoriesBtn.addEventListener("click", () => toggleMenu());
 closeBtn.addEventListener("click", () => toggleMenu());
@@ -180,6 +232,8 @@ document.addEventListener("click", (event) => {
   }
 });
 window.addEventListener("resize", updateMenuBehavior);
+// categoriesMenu.addEventListener("click", handleCategoryClick);
+// subCategoriesContainer.addEventListener("click", handleSubCategoryClick);
 
 
 

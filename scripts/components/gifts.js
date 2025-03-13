@@ -19,7 +19,7 @@ Promise.all([
 
       if (matchingProduct) {
         giftsCards.innerHTML += `
-                    <div class="gift-card" data-cat="12" data-sub-cat="${subCategory.id}">
+                    <div class="gift-card" data-cat="10" data-sub-cat="${subCategory.id}">
                         <div class="gift-img">
                             <img src="${matchingProduct.images[0]}" alt="${matchingProduct.name}">
                         </div>
@@ -27,6 +27,16 @@ Promise.all([
                     </div>
                 `;
       }
+
+      // Add event listener to each gift card
+      let giftCards = document.querySelectorAll(".gift-card");
+      giftCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          let catId = card.getAttribute("data-cat");
+          let subCatId = card.getAttribute("data-sub-cat");
+          window.location.href = `/pages/products.html?catId=${catId}&subCatId=${subCatId}`;
+        });
+      });
     }
   })
   .catch((error) => console.error("Error fetching data:", error));

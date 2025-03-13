@@ -8,9 +8,10 @@ export default function renderRecently(products) {
     let recentlyContainer =
       document.getElementsByClassName("recently-viewed")[0];
     recentlyProd = JSON.parse(recentlyProd);
-    products = products.filter((prod) =>
-      recentlyProd.includes(prod.product_id)
-    );
+    products = products
+      .filter((prod) => recentlyProd.includes(String(prod.product_id)))
+      .sort((a, b) => recentlyProd.indexOf(String(a.product_id)) - recentlyProd.indexOf(String(b.product_id)));
+
 
     for (let prod of products) {
       let card = document.createElement("div");
@@ -22,21 +23,19 @@ export default function renderRecently(products) {
         <img src=${prod.images[0]} alt=${prod.product_name} />
         <p class="price">
             <span class="current">USD ${prod.current_price}</span>
-            ${
-              +prod.discount > 0
-                ? `<span class="old">USD ${(
-                    prod.current_price /
-                    (1 - prod.discount / 100)
-                  ).toFixed(2)}</span>`
-                : ""
-            }
+            ${+prod.discount > 0
+          ? `<span class="old">USD ${(
+            prod.current_price /
+            (1 - prod.discount / 100)
+          ).toFixed(2)}</span>`
+          : ""
+        }
         </p>`;
 
       // add fav button
       let fav = document.createElement("i");
-      fav.className = `fa-heart product-favorite ${
-        Helper.isFav(prod.product_id) ? "fa-solid red" : "fa-regular"
-      }`;
+      fav.className = `fa-heart product-favorite ${Helper.isFav(prod.product_id) ? "fa-solid red" : "fa-regular"
+        }`;
       fav.onclick = Helper.toggleIcon;
       fav.dataset.prodId = prod.product_id;
       fav.addEventListener("click", Helper.toggleFav);

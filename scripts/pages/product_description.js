@@ -20,6 +20,7 @@ async function renderProductDescription() {
   } else {
     document.querySelector(".product-reviews").style.display = "none";
   }
+  updateRecentlyViewed(productId);
 }
 
 // Initialize Image Slider
@@ -161,6 +162,21 @@ function handleCartButton(product) {
     updateCartIcon();
   });
 }
+
+function updateRecentlyViewed(productId) {
+  let recentlyProd = LS.getItem("recentlyProd") || [];
+
+  recentlyProd = recentlyProd.filter(id => id !== productId);
+  recentlyProd.unshift(productId);
+
+  if (recentlyProd.length > 10) {
+    recentlyProd.pop();
+  }
+
+  LS.setItem("recentlyProd", recentlyProd);
+}
+
+
 
 // Execute Functions
 loadHeader();

@@ -1,4 +1,4 @@
-import loadHeader from "/scripts/utils/loadHeader.js";
+import loadHeaderFooter from "/scripts/utils/loadHeaderFooter.js";
 import DataStore from "/scripts/utils/data_store.js";
 import LS from "/scripts/utils/localStorage.js";
 import updateCartIcon from "/scripts/components/cartIcon.js";
@@ -6,7 +6,7 @@ import updateCartIcon from "/scripts/components/cartIcon.js";
 
 
 // Load the header component
-loadHeader();
+loadHeaderFooter();
 
 
 

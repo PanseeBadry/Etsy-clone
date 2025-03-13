@@ -2,7 +2,7 @@ import DataStore from "/scripts/utils/data_store.js";
 import ReviewsSection from "../components/review.js";
 import LS from "/scripts/utils/localStorage.js";
 import updateCartIcon from "/scripts/components/cartIcon.js";
-import loadHeader from "/scripts/utils/loadHeader.js";
+import loadHeaderFooter from "/scripts/utils/loadHeaderFooter.js";
 
 // Initialize Product Description Rendering
 async function renderProductDescription() {
@@ -15,12 +15,9 @@ async function renderProductDescription() {
   initializeSlider(product);
   renderProductDetails(product);
   handleCartButton(product);
-  if (product.reviews.length > 0) {
-    ReviewsSection.initialize(product.rating, product.reviews);
-  } else {
-    document.querySelector(".product-reviews").style.display = "none";
-  }
+  ReviewsSection.initialize(product.rating, product.reviews);
   updateRecentlyViewed(productId);
+  document.title = `${product.description}`;
 }
 
 // Initialize Image Slider
@@ -108,7 +105,7 @@ function renderStarSellerBadge() {
       </div>
     </div>
     <div class="review-stars">
-      <a href="#reviews" aria-label="See reviews">
+      <a href="#reviews-cards" aria-label="See reviews">
           ${Array.from({ length: 5 }, (_, i) => i + 1)
       .map(
         (num) =>
@@ -179,5 +176,5 @@ function updateRecentlyViewed(productId) {
 
 
 // Execute Functions
-loadHeader();
+loadHeaderFooter();
 renderProductDescription();

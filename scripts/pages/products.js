@@ -149,6 +149,7 @@ function displayCategory() {
                 
     `;
   categoryContainer.insertBefore(cat, categoryContainer.firstChild);
+  document.title = `${category.name} - Etsy Egypt`;
 }
 
 function displaySubCategories() {

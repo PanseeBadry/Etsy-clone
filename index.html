@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="styles/gifts.css" />
   <link rel="stylesheet" href="styles/categories.css" />
+  <link rel="stylesheet" href="styles/grid-sub-cat.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-    <script src="scripts/components/gifts.js" defer></script>
-    <script src="scripts/main.js" defer type="module"></script>
+  <script src="scripts/components/gifts.js" defer></script>
+  <script src="scripts/main.js" defer type="module"></script>
 
   <title>
     Etsy Egypt - Shop for handmade, vintage, custom, and unique gifts for
@@ -55,98 +56,630 @@
       <div class="gifts-cards"></div>
     </section>
 
-      <section id="scroller" class="big-deals container">
-        <header>
-          <h2>Today's big deals</h2>
-          <div class="control">
-            <button class="prev" id="prev" title="Previous">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path
-                  d="M16 21.002a1 1 0 0 1-.664-.253L5.5 12.002l9.841-8.748a1 1 0 0 1 1.328 1.494L8.5 12.002l8.159 7.252A1 1 0 0 1 16 21.002"
-                ></path>
-              </svg>
-            </button>
-            <button class="next" id="next" title="Next">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path
-                  d="M8 21a1 1 0 0 1-.664-1.747l8.164-7.254-8.164-7.252a1 1 0 0 1 1.328-1.494L18.5 12l-9.836 8.747A1 1 0 0 1 8 21"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </header>
-        <div id="carousel"></div>
-      </section>
+    <section id="scroller" class="big-deals container">
+      <header>
+        <h2>Today's big deals</h2>
+        <div class="control">
+          <button class="prev" id="prev" title="Previous">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M16 21.002a1 1 0 0 1-.664-.253L5.5 12.002l9.841-8.748a1 1 0 0 1 1.328 1.494L8.5 12.002l8.159 7.252A1 1 0 0 1 16 21.002">
+              </path>
+            </svg>
+          </button>
+          <button class="next" id="next" title="Next">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M8 21a1 1 0 0 1-.664-1.747l8.164-7.254-8.164-7.252a1 1 0 0 1 1.328-1.494L18.5 12l-9.836 8.747A1 1 0 0 1 8 21">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <div id="carousel"></div>
+    </section>
 
-    <section class="gifts-for-1 container"></section>
+    <section class="gifts-for-1 container">
+
+      <div class="grid-sub-cat1">
+
+        <div class="grid-sub-cat1-container">
+
+          <div class="grid-desc-container">
+            <p class="sub-name">Editors’ Picks</p>
+            <h2 class="grid-head">Essential Easter Finds</h2>
+            <p class="grid-desc">Discover original pieces and perfect gifts for the holiday.</p>
+            <a href="/pages/products.html?catId=4" title="Shop these unique finds"> Shop these unique finds </a>
+          </div>
+
+          <div class="picks-element">
+
+            <div class="picks-element-container">
+
+              <a href="/pages/products.html?prodId=4">
+                <div class="listing-card">
+                  <div class="placeholder">
+                    <div class="placeholder-content">
+                      <div class="height-placeholder">
+                        <img alt=""
+                          src="https://i.etsystatic.com/5255277/c/1063/1063/436/437/il/0ad17f/1139190460/il_600x600.1139190460_5con.jpg"
+                          loading="lazy">
+                        <p class="listing-card-price-badge">
+                          <span class="first-span">
+                            <span class="currency">
+                              <span class="currency-symbol">USD </span>
+                              <span dclass="currency-value">77.00</span>
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v2-listing-card__info">
+                  <h3 id="listing-title-267680897">
+                    Hand Embroidered Bunny Ribbon Easter Basket Liner with Ruffle and Bows - Made to Fit Pottery Barn
+                    Kids
+                    Sabrina Basket
+                  </h3>
+                </div>
+              </a>
+
+              <div class="v2-listing-card__actions ">
+                <button class="favorite-listing-button" aria-label="Add to Favorites">
+                  <div class="favorite-listing-button-icon-container">
+                    <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z">
+                        </path>
+                      </svg>
+                    </span>
+                    <!-- <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z">
+                        </path>
+                      </svg>
+                    </span> -->
+                  </div>
+                  <span aria-hidden="true" class="icon"></span>
+                  <!-- <span class="">
+                    Add to Favorites
+                  </span> -->
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="picks-element">
+
+            <div class="picks-element-container">
+
+              <a href="/pages/products.html?prodId=4">
+                <div class="listing-card">
+                  <div class="placeholder">
+                    <div class="placeholder-content">
+                      <div class="height-placeholder">
+                        <img alt=""
+                          src="https://i.etsystatic.com/5255277/c/1063/1063/436/437/il/0ad17f/1139190460/il_600x600.1139190460_5con.jpg"
+                          loading="lazy">
+                        <p class="listing-card-price-badge">
+                          <span class="first-span">
+                            <span class="currency">
+                              <span class="currency-symbol">USD </span>
+                              <span dclass="currency-value">77.00</span>
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v2-listing-card__info">
+                  <h3 id="listing-title-267680897">
+                    Hand Embroidered Bunny Ribbon Easter Basket Liner with Ruffle and Bows - Made to Fit Pottery Barn
+                    Kids
+                    Sabrina Basket
+                  </h3>
+                </div>
+              </a>
+
+              <div class="v2-listing-card__actions ">
+                <button class="favorite-listing-button" aria-label="Add to Favorites">
+                  <div class="favorite-listing-button-icon-container">
+                    <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z">
+                        </path>
+                      </svg>
+                    </span>
+                    <!-- <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z">
+                        </path>
+                      </svg>
+                    </span> -->
+                  </div>
+                  <span aria-hidden="true" class="icon"></span>
+                  <!-- <span class="">
+                    Add to Favorites
+                  </span> -->
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="picks-element">
+
+            <div class="picks-element-container">
+
+              <a href="/pages/products.html?prodId=4">
+                <div class="listing-card">
+                  <div class="placeholder">
+                    <div class="placeholder-content">
+                      <div class="height-placeholder">
+                        <img alt=""
+                          src="https://i.etsystatic.com/5255277/c/1063/1063/436/437/il/0ad17f/1139190460/il_600x600.1139190460_5con.jpg"
+                          loading="lazy">
+                        <p class="listing-card-price-badge">
+                          <span class="first-span">
+                            <span class="currency">
+                              <span class="currency-symbol">USD </span>
+                              <span dclass="currency-value">77.00</span>
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v2-listing-card__info">
+                  <h3 id="listing-title-267680897">
+                    Hand Embroidered Bunny Ribbon Easter Basket Liner with Ruffle and Bows - Made to Fit Pottery Barn
+                    Kids
+                    Sabrina Basket
+                  </h3>
+                </div>
+              </a>
+
+              <div class="v2-listing-card__actions ">
+                <button class="favorite-listing-button" aria-label="Add to Favorites">
+                  <div class="favorite-listing-button-icon-container">
+                    <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z">
+                        </path>
+                      </svg>
+                    </span>
+                    <!-- <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z">
+                        </path>
+                      </svg>
+                    </span> -->
+                  </div>
+                  <span aria-hidden="true" class="icon"></span>
+                  <!-- <span class="">
+                    Add to Favorites
+                  </span> -->
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="picks-element">
+
+            <div class="picks-element-container">
+
+              <a href="/pages/products.html?prodId=4">
+                <div class="listing-card">
+                  <div class="placeholder">
+                    <div class="placeholder-content">
+                      <div class="height-placeholder">
+                        <img alt=""
+                          src="https://i.etsystatic.com/5255277/c/1063/1063/436/437/il/0ad17f/1139190460/il_600x600.1139190460_5con.jpg"
+                          loading="lazy">
+                        <p class="listing-card-price-badge">
+                          <span class="first-span">
+                            <span class="currency">
+                              <span class="currency-symbol">USD </span>
+                              <span dclass="currency-value">77.00</span>
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v2-listing-card__info">
+                  <h3 id="listing-title-267680897">
+                    Hand Embroidered Bunny Ribbon Easter Basket Liner with Ruffle and Bows - Made to Fit Pottery Barn
+                    Kids
+                    Sabrina Basket
+                  </h3>
+                </div>
+              </a>
+
+              <div class="v2-listing-card__actions ">
+                <button class="favorite-listing-button" aria-label="Add to Favorites">
+                  <div class="favorite-listing-button-icon-container">
+                    <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z">
+                        </path>
+                      </svg>
+                    </span>
+                    <!-- <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z">
+                        </path>
+                      </svg>
+                    </span> -->
+                  </div>
+                  <span aria-hidden="true" class="icon"></span>
+                  <!-- <span class="">
+                    Add to Favorites
+                  </span> -->
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="picks-element">
+
+            <div class="picks-element-container">
+
+              <a href="/pages/products.html?prodId=4">
+                <div class="listing-card">
+                  <div class="placeholder">
+                    <div class="placeholder-content">
+                      <div class="height-placeholder">
+                        <img alt=""
+                          src="https://i.etsystatic.com/5255277/c/1063/1063/436/437/il/0ad17f/1139190460/il_600x600.1139190460_5con.jpg"
+                          loading="lazy">
+                        <p class="listing-card-price-badge">
+                          <span class="first-span">
+                            <span class="currency">
+                              <span class="currency-symbol">USD </span>
+                              <span dclass="currency-value">77.00</span>
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v2-listing-card__info">
+                  <h3 id="listing-title-267680897">
+                    Hand Embroidered Bunny Ribbon Easter Basket Liner with Ruffle and Bows - Made to Fit Pottery Barn
+                    Kids
+                    Sabrina Basket
+                  </h3>
+                </div>
+              </a>
+
+              <div class="v2-listing-card__actions ">
+                <button class="favorite-listing-button" aria-label="Add to Favorites">
+                  <div class="favorite-listing-button-icon-container">
+                    <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z">
+                        </path>
+                      </svg>
+                    </span>
+                    <!-- <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z">
+                        </path>
+                      </svg>
+                    </span> -->
+                  </div>
+                  <span aria-hidden="true" class="icon"></span>
+                  <!-- <span class="">
+                    Add to Favorites
+                  </span> -->
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="picks-element">
+
+            <div class="picks-element-container">
+
+              <a href="/pages/products.html?prodId=4">
+                <div class="listing-card">
+                  <div class="placeholder">
+                    <div class="placeholder-content">
+                      <div class="height-placeholder">
+                        <img alt=""
+                          src="https://i.etsystatic.com/5255277/c/1063/1063/436/437/il/0ad17f/1139190460/il_600x600.1139190460_5con.jpg"
+                          loading="lazy">
+                        <p class="listing-card-price-badge">
+                          <span class="first-span">
+                            <span class="currency">
+                              <span class="currency-symbol">USD </span>
+                              <span dclass="currency-value">77.00</span>
+                            </span>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="v2-listing-card__info">
+                  <h3 id="listing-title-267680897">
+                    Hand Embroidered Bunny Ribbon Easter Basket Liner with Ruffle and Bows - Made to Fit Pottery Barn
+                    Kids
+                    Sabrina Basket
+                  </h3>
+                </div>
+              </a>
+
+              <div class="v2-listing-card__actions">
+                <button class="favorite-listing-button" aria-label="Add to Favorites">
+                  <div class="favorite-listing-button-icon-container">
+                    <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z">
+                        </path>
+                      </svg>
+                    </span>
+                    <!-- <span class="etsy-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                          d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z">
+                        </path>
+                      </svg>
+                    </span> -->
+                  </div>
+                  <span aria-hidden="true" class="icon"></span>
+                  <!-- <span class="">
+                    Add to Favorites
+                  </span> -->
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </section>
 
     <section class="gifts-for-2 container"></section>
 
-      <section class="what-is">
-        <div class="container">
-          <h2>What is Etsy?</h2>
+    <section class="what-is">
+      <div class="container">
+        <h2>What is Etsy?</h2>
 
-          <div class="columns">
-            <div class="column">
-              <h3>A community doing good</h3>
-              <div>
-                Etsy is a global online marketplace, where people come together
-                to make, sell, buy, and collect unique items. We're also a
-                community pushing for positive change for small businesses,
-                people, and the planet.
-                <div class="msg">
-                  <span class="under-lined"
-                    >Here are some of the ways we're making a positive impact,
-                    together.
-                  </span>
-                  <ul>
-                    <li>
-                      Your purchases on Etsy in 2020 generated nearly $4 billion
-                      in income for small businesses.
-                    </li>
-                    <li>
-                      We advocate for policy—at the global and local level—that
-                      benefits creative entrepreneurs and helps small businesses
-                      grow and thrive.
-                    </li>
-                    <li>
-                      We are deepening our commitment to a sustainable future
-                      and are working towards a new goal to reach net zero
-                      emissions by 2030.
-                    </li>
-                  </ul>
-                </div>
+        <div class="columns">
+          <div class="column">
+            <h3>A community doing good</h3>
+            <div>
+              Etsy is a global online marketplace, where people come together
+              to make, sell, buy, and collect unique items. We're also a
+              community pushing for positive change for small businesses,
+              people, and the planet.
+              <div class="msg">
+                <span class="under-lined">Here are some of the ways we're making a positive impact,
+                  together.
+                </span>
+                <ul>
+                  <li>
+                    Your purchases on Etsy in 2020 generated nearly $4 billion
+                    in income for small businesses.
+                  </li>
+                  <li>
+                    We advocate for policy—at the global and local level—that
+                    benefits creative entrepreneurs and helps small businesses
+                    grow and thrive.
+                  </li>
+                  <li>
+                    We are deepening our commitment to a sustainable future
+                    and are working towards a new goal to reach net zero
+                    emissions by 2030.
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="column">
-              <h3>Support independent creators</h3>
-              <p>
-                There's no Etsy warehouse – just millions of people selling the
-                things they love. We make the whole process easy, helping you
-                connect directly with makers to find something extraordinary.
-              </p>
-            </div>
-            <div class="column">
-              <h3>Peace of mind</h3>
-              <p>
-                Your privacy is the highest priority of our dedicated team. And
-                if you ever need assistance, we are always ready to step in for
-                support.
-              </p>
-            </div>
+          </div>
+          <div class="column">
+            <h3>Support independent creators</h3>
+            <p>
+              There's no Etsy warehouse – just millions of people selling the
+              things they love. We make the whole process easy, helping you
+              connect directly with makers to find something extraordinary.
+            </p>
+          </div>
+          <div class="column">
+            <h3>Peace of mind</h3>
+            <p>
+              Your privacy is the highest priority of our dedicated team. And
+              if you ever need assistance, we are always ready to step in for
+              support.
+            </p>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

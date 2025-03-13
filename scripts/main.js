@@ -1,6 +1,7 @@
 import renderSlider from "./components/landingSlider.js";
 import renderRecently from "./components/recentlyViewed.js";
 import Helper from "./utils/helper.js";
+import renderPicks from "./components/gridSubCat.js";
 
 Promise.all([
   fetch("/components/header.html").then((res) => res.text()),
@@ -50,3 +51,6 @@ heroElement[1].dataset.subCat = 0;
 renderRecently(products);
 // render slider section
 renderSlider(products);
+
+// render picks section
+renderPicks();

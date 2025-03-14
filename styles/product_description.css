@@ -28,6 +28,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  max-height: 550px;
 }
 
 .scroll-container {

@@ -1,50 +1,60 @@
-# Etsy Clone
+# **Etsy Clone**  
 
-This project is a clone of the popular e-commerce website Etsy. It is built using only HTML, CSS, and JavaScript.
+This project is a simplified clone of the popular e-commerce platform Etsy, built using **HTML, CSS, and JavaScript**. It provides core functionalities such as product browsing, search, filtering, and a shopping cart experience.  
 
-## Features
+## **Live Demo**  
+[![📽️ Watch the project demo](https://img.shields.io/badge/Watch%20Demo-%F0%9F%8E%BD-red)](https://drive.google.com/file/d/1rhAyQgJHhSxZFp8LBvPg38-1UgN3DScE/view?usp=sharing)
 
-- Browse products
-- Search functionality
-- Filter products by category
-- Product details page
-- Add to cart functionality
+## **Features**  
+- Browse and explore products  
+- Search functionality  
+- Filter products by category  
+- Detailed product view  
+- Add products to the cart  
 
-## Technologies Used
+## **Technologies Used**  
+- **HTML** – Structuring the web pages  
+- **CSS** – Styling and layout design  
+- **JavaScript** – Enabling interactivity and functionality  
 
-- HTML
-- CSS
-- JavaScript
+## **Getting Started**  
 
-## Getting Started
+To run the project locally, follow these steps:  
 
-To get a local copy up and running follow these simple steps.
+### **Prerequisites**  
+You only need a web browser to view the project.  
 
-### Prerequisites
-
-You need a web browser to view the project.
-
-### Installation
-
-1. Clone the repo
+### **Installation**  
+1. Clone the repository:  
     ```sh
-    git clone https://github.com/yourusername/etsy-clone.git
+    git clone https://github.com/PanseeBadry/Etsy-clone.git
     ```
-2. Open the `index.html` file in your web browser
+2. Open the `index.html` file in your web browser.  
 
-## Usage
+## **Usage**  
+- Browse through available products.  
+- Use the search bar to find specific items.  
+- Apply category filters to refine your search.  
+- Click on a product to view details.  
+- Add products to the cart for a seamless shopping experience.  
 
-Browse through the products, search for items, view product details, and add items to your cart.
+## **Contributing**  
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. **Fork** the repository.  
+2. Create a new branch:  
+   ```sh
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes:  
+   ```sh
+   git commit -m `feat: add some AmazingFeature`
+   ```
+4. Push to the branch:  
+   ```sh
+   git push origin feature/AmazingFeature
+   ```
+5. Open a **Pull Request**.
 
 ## License
 
